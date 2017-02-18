@@ -1,0 +1,134 @@
+/*start screen*/
+#start_screen .ui-content {
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#start_screen .logo {
+    height: 100px;
+}
+h1 {
+    text-shadow: 0px 0 !important;
+    color: white;
+    font-family: Segoe UI !important;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.5 !important;
+}
+p {
+    text-shadow: 0px 0 !important;
+    color: #dddada;
+    font-family: Segoe UI;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.5 !important;
+}
+#start_screen .btn {
+    margin-bottom: 38px;
+    margin-top: 50px;
+}
+#start_screen .ui-btn {
+    background-color: #573d5c !important;
+    border-color: #573d5c !important;
+    color: white !important;
+    text-shadow: 0px 0 white !important;
+    font-family: Roboto !important;
+    font-weight: normal !important;
+    font-size: 20px !important;
+    width: 70% !important;
+    text-align: center !important;
+    box-shadow: 0 8px 15px rgba(29, 29, 29, 0.78) !important;
+    padding: 0.4em 0em !important;
+    margin: 0.3em 0 !important;
+    border-radius: 4px;
+    line-height: 1.5 !important;
+}
+
+/*register screen*/
+#register_screen .photo {
+    height: 200px;
+    background-image: url(../images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#register_screen img {
+    margin: auto;
+}
+#register_screen .btn .ui-btn {
+    background-color: #7b5785 !important;
+    border-color: #7b5785 !important;
+    color: white !important;
+    text-shadow: 0px 0 white !important;
+    font-family: Roboto !important;
+    font-weight: normal !important;
+    font-size: 20px !important;
+    text-align: center !important;
+    margin: 0em 0 !important;
+}
+#register_screen .ui-content {
+    padding: 0em !important;
+}
+#register_screen form {
+    border-radius: 0px !important;
+    font-size: 19px !important;
+    background-color: white !important;
+}
+#register_screen .ui-corner-all {
+    border-radius: 0em !important;
+}
+#register_screen .ui-input-text {
+    border-width: 0px !important;
+    margin: 0em 0 !important;
+    color: #757575;
+}
+#register_screen .ui-select  {
+    margin-bottom: 0em !important;
+    margin-top: 0em !important;
+}
+#register_screen .ui-btn-icon-right {
+    padding-right: 14.5em !important;
+    color: #757575 !important;
+}
+#register_screen .ui-input-text input {
+   
+    padding-left: 45px;
+    box-sizing: content-box !important;
+    font-family: Source Sans Pro !important;
+    color: #757575 !important;
+}
+#register_screen .icon .ui-btn {
+    background-color: white !important;
+    position: absolute;
+    border-color: white !important;
+}
+::-webkit-input-placeholder {
+   color: #cecccc;
+   font-size: 16px;
+   padding-left: 3px;
+}
+textarea {
+    font-size: 16px !important;
+    color: #cecccc !important;
+    
+    height: 79px !important;
+    padding-left: 48px !important;
+    padding-top: 30px !important;
+}
+
+input.user {background: url(../images/user.jpg) no-repeat left !important;}
+input.age {background: url(../images/age.jpg) no-repeat left !important;}
+input.email {background: url(../images/email.jpg) no-repeat left !important;}
+input.pass {background: url(../images/pass.jpg) no-repeat left !important;}
+select.role {background: url(../images/role.jpg) no-repeat left !important;}
+textarea.desc {background: url(../images/desc.jpg) no-repeat left !important;}
+/*login screen*/
+#login_screen .ui-btn {
+    background-color: #7b5785 !important;
+    border-color: #7b5785 !important;
+    color: white !important;
+    text-shadow: 0px 0 white !important;
+    font-family: Roboto !important;
+    font-weight: normal !important;
+    font-size: 20px !important;
+    text-align: center !important;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs ================================================== -->
+
+<meta charset="utf-8">
+<title>ICare</title>
+<meta name="description" content="Place to put your description text">
+<meta name="author" content="">
+
+<!-- Mobile Specific Metas ================================================== -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<script>
+		if (window.screen.height==568) { // iPhone 4"
+		document.querySelector("meta[name=viewport]").content="width=320.1";
+		}
+</script>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- css -->
+<link rel="stylesheet" href="css/rokia.css">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<link href="css/hover.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/animate.css">
+<!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">-->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+<!-- page1 -->
+<div data-role="page" id="start_screen">
+
+		<div role="main" class="ui-content">
+
+				<div class="logo">
+				    <img src="images/logo.png">
+				</div>
+
+				<center>
+				<div>
+				    <h1>The Most Convenient Way To</h1>
+				    <p>Consult Your Health</p>
+				    <p>Get Quick Chatting, Request For
+				       Online Laboratory And The Nearest
+				       Hospital And Pharmacy From <br>
+				       Your Location
+					</p>
+				    <p>It's Free And Secure</p>
+				</div>
+
+				<div class="btn">
+				    <a href="#register_screen" class="ui-btn ui-shadow hvr-grow">SIGN UP</a>
+				    <a href="#login_screen" class="ui-btn ui-shadow hvr-grow">LOGIN</a>
+                </div>
+				</center>
+		</div>
+
+</div>
+<!-- /page1 -->
+
+<!-- page2 -->
+<div data-role="page" id="register_screen">
+
+		<center>
+        <div class="photo">
+				<img src="images/pic.jpg">
+                <input type="file" name="file">
+        </div>
+		</center>
+
+   <div role="main" class="ui-content">
+
+	  <form method="post" action="demo.php">
+
+		<input class="user" type="text" name="name" id="fname" placeholder="Name">
+        <input class="age" type="number" name="age" id="age" min="1" max="100" placeholder="Age">
+		<input class="email" type="email" name="email" placeholder="Email Address">
+		<input class="pass" type="password" name="psw" placeholder="Password">
+		<select class="role" name="Role" id="select" value="Role">
+            <option value="1">Patient</option>
+            <option value="2">Doctor</option>
+            <option value="3">Laboratory</option>
+        </select>
+		<textarea class="desc" name="Description" rows="10" cols="30">Description</textarea>
+	  </form>
+
+   </div>
+   <div class="btn">
+      <a href="#home" class="ui-btn">SIGN UP</a>
+   </div>
+
+</div>
+<!-- page2 -->
+
+<!-- page3 -->
+<div data-role="page" id="login_screen">
+   <div data-role="header" class="header">
+      <h1>Header Text</h1>
+   </div>
+   <div role="main" class="ui-content">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  industry's standard dummy text ever since the 1500s.</p>
+      <p><a href="#start_screen">Back to previous page</a></p>
+   </div>
+   <div class="btn">
+      <a href="#home" class="ui-btn">LOGIN</a>
+   </div>
+
+</div>
+<!-- page3 -->
+</body>
+</html>
