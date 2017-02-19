@@ -102,22 +102,34 @@
 
 <!-- page3 -->
 <div data-role="page" id="login_screen">
-   <div data-role="header" class="header">
-      <h1>Header Text</h1>
-   </div>
-   <div role="main" class="ui-content">
-      
-	  <form method="post" action="demo.php">
-
-		<input class="user" type="text" name="name" id="fname" placeholder="Name">
-		<input class="email" type="email" name="email" placeholder="Email Address">
-		<input class="pass" type="password" name="psw" placeholder="Password">
-		
-	  </form>
-   </div>
-   <div class="btn">
-      <a href="#home" class="ui-btn">LOGIN</a>
-   </div>
+   
+		<center>
+        <div class="photo">
+				<br><br><br>
+				<h1>ICare</h1>
+        </div>
+		</center>
+		<div role="main" class="ui-content">
+		   
+		   <form method="post" action="demo.php">
+	 
+			 <input class="user" type="text" name="name" id="fname" placeholder="Name">
+			 <input class="email" type="email" name="email" placeholder="Email Address">
+			 <input class="pass" type="password" name="psw" placeholder="Password">
+			 
+		   </form>
+		</div>
+		<div class="error">
+				<center>
+				<br><br><br>
+				<p>error, please try again</p>
+				<h4>Don't have an account yet ?</h4>
+				<a href="#register_screen" class="ui-btn ui-shadow hvr-grow">Register for free</a>
+				</center>
+		</div>
+		<div class="btn">
+		   <a href="#home" class="ui-btn">LOGIN</a>
+		</div>
 
 </div>
 <!-- page3 -->

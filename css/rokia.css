@@ -7,7 +7,7 @@
 #start_screen .logo {
     height: 100px;
 }
-h1 {
+#start_screen h1 {
     text-shadow: 0px 0 !important;
     color: white;
     font-family: Segoe UI !important;
@@ -15,7 +15,7 @@ h1 {
     font-weight: normal;
     line-height: 1.5 !important;
 }
-p {
+#start_screen p {
     text-shadow: 0px 0 !important;
     color: #dddada;
     font-family: Segoe UI;
@@ -122,6 +122,13 @@ input.pass {background: url(../images/pass.jpg) no-repeat left !important;}
 select.role {background: url(../images/role.jpg) no-repeat left !important;}
 textarea.desc {background: url(../images/desc.jpg) no-repeat left !important;}
 /*login screen*/
+#login_screen {background-color: #dfdfdf !important;}
+#login_screen .photo {
+    height: 200px;
+    background-image: url(../images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #login_screen .ui-btn {
     background-color: #7b5785 !important;
     border-color: #7b5785 !important;
@@ -131,4 +138,104 @@ textarea.desc {background: url(../images/desc.jpg) no-repeat left !important;}
     font-weight: normal !important;
     font-size: 20px !important;
     text-align: center !important;
+}
+
+
+#login_screen .btn .ui-btn {
+    background-color: #7b5785 !important;
+    border-color: #7b5785 !important;
+    color: white !important;
+    text-shadow: 0px 0 white !important;
+    font-family: Roboto !important;
+    font-weight: normal !important;
+    font-size: 20px !important;
+    text-align: center !important;
+    margin: 0em 0 !important;
+}
+#login_screen .ui-content {
+    padding: 0em !important;
+}
+#login_screen form {
+    border-radius: 0px !important;
+    font-size: 19px !important;
+    background-color: white !important;
+}
+#login_screen .ui-corner-all {
+    border-radius: 0em !important;
+}
+#login_screen .ui-input-text {
+    border-width: 0px !important;
+    margin: 0em 0 !important;
+    color: #757575;
+}
+#login_screen .ui-select  {
+    margin-bottom: 0em !important;
+    margin-top: 0em !important;
+}
+#login_screen .ui-btn-icon-right {
+    padding-right: 14.5em !important;
+    color: #757575 !important;
+}
+#login_screen .ui-input-text input {
+   
+    padding-left: 45px;
+    box-sizing: content-box !important;
+    font-family: Source Sans Pro !important;
+    color: #757575 !important;
+    border-bottom: 1px #dfdfdf solid !important;
+}
+#login_screen .icon .ui-btn {
+    background-color: white !important;
+    position: absolute;
+    border-color: white !important;
+}
+::-webkit-input-placeholder {
+   color: #cecccc;
+   font-size: 16px;
+   padding-left: 3px;
+}
+input.user {background: url(../images/user.jpg) no-repeat left !important;}
+input.age {background: url(../images/age.jpg) no-repeat left !important;}
+input.email {background: url(../images/email.jpg) no-repeat left !important;}
+input.pass {background: url(../images/pass.jpg) no-repeat left !important;}
+#login_screen h1 {
+    text-shadow: 0px 0 !important;
+    color: white;
+    font-family: Source Sans Pro !important;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.5 !important;
+    margin-top: -3px !important;
+    text-shadow: -1px -1px 5px !important;
+}
+#login_screen .error {
+    background-color: white !important;
+}
+#login_screen .error p {
+    color: #de0000 !important;
+    font-family: Source Sans Pro !important;
+    margin-top: -6px;
+}
+#login_screen .error h4 {
+    color: #9fa1a3 !important;
+    font-family: Source Sans Pro !important;
+}
+
+#login_screen .error .ui-btn {
+    background-color: #573d5c !important;
+    border-color: #573d5c !important;
+    color: white !important;
+    text-shadow: 0px 0 white !important;
+    font-family: Roboto !important;
+    font-weight: normal !important;
+    font-size: 14px !important;
+    width: 36% !important;
+    text-align: center !important;
+    box-shadow: 4px 5px 15px rgba(29, 29, 29, 0.20) !important;
+    padding: 0.4em 0em !important;
+    margin: 0.3em 0 !important;
+    border-radius: 4px;
+    line-height: 1.5 !important;
+    margin-bottom: 98px !important;
+    margin-top: -9px !important;
 }
