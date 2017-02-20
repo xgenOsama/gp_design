@@ -1,5 +1,14 @@
 /***************************** page 1 *****************************/
 /*jq*/
+
+@media (min-width: 28em){
+.ui-field-contain>label~[class*=ui-], .ui-field-contain .ui-controlgroup-controls {
+    float: left;
+    width: 76%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 #page1 .ui-content{background-color: #fff}
 #page1 .ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head+body .ui-btn.ui-btn-a:visited {
      background-color: #83618c; 
@@ -8,9 +17,11 @@
 }
 #page1 .ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-b, .ui-grid-b>.ui-block-c {
     width: 49.333%;
+    margin-top:60px;
+
 }
 /*css style page 1*/
-#header{background-color: #83618c;}
+#header{background-color: #83618c;height: 100px}
 #page1 .bar-icon{color: #fff;
     padding: 15px;
     margin-left: 10px;
@@ -18,54 +29,82 @@
 }
 #page1 .bar-icon:hover{opacity: 0.5}
 #page1  .mess-icon{
- 	float: right;
+    float: right;
     opacity: 0.6;
-    padding: 15px;
-    margin-right: 5px;
+    padding: 18px;
+    margin-right: 15px;
     color: #fff;
     cursor:pointer;
  }
 #page1 .mess-icon:hover{opacity: 1}
 #page1 .not-icon{
- 	float: right;
+    float: right;
     opacity: 0.6;
-    padding: 15px;
+    padding: 18px;
     color: #fff;
-    margin-right: 2px;
+    margin-right: 15px;
     cursor:pointer;
  }
+ #page1 .ui-block-a img{width: 70%;margin-top: -50px}
 #page1 .not-icon:hover{opacity: 1}
-#page1 .title h2{font-size: 15px}
+#page1 .title h2{font-size: 40px;margin-left: 20px}
 #page1 .hr{width: 100%;opacity: 0.5}
 #page1 .content span{opacity: 0.5;
     font-family: Nirmala UI Bold;
-    font-size: 12px;
+    font-size: 35px;
 }
-#page1 .content h2{font-size: 14px}
+#page1 .content h2{font-size: 31px}
 #page1 .post img{width: 100%;}
 #page1 .post img:hover{opacity: 0.5;}
-#page1 .post p{line-height: 2;font-family: Tahoma}
-#page1 .post h2{color: #000;font-size: 13px;}
-#page1 .post h2:hover{opacity: 0.6;font-size: 14px}
+#page1 .post p{line-height: 2;
+    font-family: Tahoma;
+    font-size: 35px;
+padding: 30px}
+#page1 .post h2{color: #000;font-size: 30px;padding: 30px}
+#page1 .post h2:hover{opacity: 0.6;font-size: 30px;}
 #page1  .post a{text-decoration: none;}
 #page1 .icon-heart{color: #000;
     opacity: 0.5;
-    margin-left: 27%;}
+    margin-left: 27%;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+
+}
 #page1 .icon-heart:hover{color: #f00}
 
 #page1 .icon-comment{color: #000;
     opacity: 0.5;
-    margin-left: 17%;}
+    margin-left: 17%;
+    font-size: 40px;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
 #page1 .icon-comment:hover{opacity: 1}
-#page1 .rect{height: 9px;}
+
 
 #page1  .ui-popup.ui-body-inherit {
     border-width: 1px;
     border-style: none;
 }
 #page1 #myPanel{background-color:#83618c }
+#page1 .rect{width: 100%;}
 
-#footer{background-color: #83618c;height: 50px}
+#page1 .comment{width: 100%;height: 200px;background-color: #f6f7f9}
+#page1 .comment img{
+       width: 100px;
+    height: 93px;
+    padding: 20px;
+    margin-top: -13px;
+    margin-left: 67px;
+}
+#page1 .comment input{height: 86px;
+    margin-left: 20px;font-size: 25px}
+#page1 .likes{margin-left: 150px}
+#page1 #footer{background-color: #83618c;height: 100px}
 /**************** end page 1 *****************************/
 /************************* startpage 2 ********************/ 
 /* jq */
@@ -83,37 +122,37 @@
 }
 
 /**/
-#page2 #header{background-color: #83618c;}
+#page2 #header{background-color: #83618c;height: 100px}
 #page2 .bar-icon{color: #fff;
     padding: 15px;
     margin-left: 10px;
     cursor:pointer;
 }
 #page2 .bar-icon:hover{opacity: 0.5}
-#page2 .mess-icon{
+#page2  .mess-icon{
     float: right;
     opacity: 1;
-    padding: 15px;
-    margin-right: 5px;
+    padding: 18px;
+    margin-right: 15px;
     color: #fff;
     cursor:pointer;
  }
-
- #page2 .not-icon{
+#page2 .mess-icon:hover{opacity: 1}
+#page2 .not-icon{
     float: right;
     opacity: 0.6;
-    padding: 15px;
+    padding: 18px;
     color: #fff;
-    margin-right: 2px;
+    margin-right: 15px;
     cursor:pointer;
  }
 #page2 .not-icon:hover{opacity: 1}
 #page2 .title h3{
-font-family: Tahoma;
-margin-top: -10px;
-font-size: 12px;
-font-weight: 200;
-padding-left: 22px;
+    font-family: Tahoma; 
+    margin-top: 0px;
+    font-size: 40px;
+    font-weight: 200;
+    padding-left: 62px;
 
 }
 #page2 .title img{width: 100%;height: 2px}
@@ -121,51 +160,51 @@ padding-left: 22px;
 
 #page2 .ui-grid-b:hover{background-color: #f6f6f7; cursor:pointer;}
 #page2 .ui-block-a img{ 
-    margin-top: 10px;
-margin-bottom: 10px;
-width:63px;
-padding-left: 12px;
+  margin-top: 30px;
+    margin-bottom: 22px;
+    width: 50%;
+    padding-left: 28px;
 
 }
 
 #page2 .ui-block-b h2{
-    font-size: 15px;
+      font-size: 40px;
     font-family: Tahoma Bold;
-    margin-top: 24px;
+    margin-top: 17px;
     text-align: justify;
-    margin-left: -15px;
-    font-weight:800;
+    margin-left: -60px;
+    font-weight: 400;
     color: #000;
 }
 #page2 .ui-block-c p{   
-    font-size: 12px;
-    opacity: 0.5;
-    margin-top: -28px;
+       font-size: 30px;
+    opacity: 0.6;
+    margin-top: -130px;
     float: right;
-   margin-right: -28px;
+    margin-right: -105px;
 }
 #page2 .search{
-     margin-right: 20px;
-    margin-top: -13px;
+        margin-right: 113px;
+    margin-top: 0px;
     float: right;
-    width: 45px;
-    height: 43px;
+    width: 100px;
+    height: 100px;
     border-radius: 50px;
     background-color: #83618c;
     box-shadow: 5px 5px 5px #ccc;
     border: 1px solid #83618c;
 }
 
-#page2 .search i{color: #fff;margin: 15px}
+#page2 .search i{color: #fff;margin: 28px}
 #page2  #myPanel{background-color: #83618c}
 #page2  #footer h2{
 color: #fff;
     text-align: center;
     font-family: Tahoma;
     font-weight: 100;
-    font-size: 15px;
+    font-size: 30px;
 }
-#page2 #footer{background-color:#83618c }
+#page2 #footer{background-color:#83618c;font-size: 30px; height: 100px}
 
 /************************* end page 2 ************************/
 
@@ -183,20 +222,22 @@ color: #fff;
     color: #333;
     text-shadow: 0 1px 0 #f3f3f3;
 }
-
+.ui-grid-a>.ui-block-a, .ui-grid-a>.ui-block-b {
+    width: 42%;
+}
 /**/
-#page3 #header{background-color: #83618c;}
+#page3 #header{background-color: #83618c;height: 100px}
 #page3 .bar-icon{color: #fff;
     padding: 15px;
     margin-left: 10px;
     cursor:pointer;
 }
 #page3 .bar-icon:hover{opacity: 0.5}
-#page3 .mess-icon{
+#page3  .mess-icon{
     float: right;
     opacity: 0.6;
-    padding: 15px;
-    margin-right: 5px;
+    padding: 18px;
+    margin-right: 15px;
     color: #fff;
     cursor:pointer;
  }
@@ -204,53 +245,53 @@ color: #fff;
 #page3 .not-icon{
     float: right;
     opacity: 1;
-    padding: 15px;
+    padding: 18px;
     color: #fff;
-    margin-right: 10px;
+    margin-right: 15px;
     cursor:pointer;
  }
 #page3 .not-icon:hover{opacity: 1}
 #page3 .title h3{
    font-family: Tahoma;
-    margin-top: -8px;
-    margin-left: 10px;
-    font-size: 12px;
-    font-weight: 200;
+    margin-top: 10px;
+    margin-left: 45px;
+    font-size: 32px;
+    font-weight: 400;
 }
 #page3  .title img{width: 100%;height: 2px}
 #page3 .hr{width: 100%;height: 2px}
 #page3 .ui-grid-a:hover{background-color: #f6f6f7; cursor:pointer;}
 #page3 .ui-block-a img{ 
-margin-top: 10px;
-margin-bottom: 10px;
-width:63px;
-padding-left: 12px;
+      margin-top: 29px;
+    margin-bottom: 10px;
+    width: 45%;
+    padding-left: 12px;
 }
 
 #page3 .ui-block-b span{
     color: #000;
     opacity: 1;
-    font-size: 12px;
+    font-size: 32px;
     font-family: Tahoma bold;
     font-weight: 700;
     
 }
 #page3 .ui-block-b p{
-margin-left: -60px;
-font-size: 12px;
-line-height: 1.7;
-color: #868282;
+    margin-left: -110px;
+    font-size: 32px;
+    line-height: 1.7;
+    color: #565050;
 }
 
 #page3 .ui-block-b h4{
-margin-left: -60px;
-opacity: 0.4;
-font-size: 11px;
-margin-top: -5px;
+    margin-left: -114px;
+    opacity: 0.6;
+    font-size: 25px;
+    margin-top: -5px;
 
 }
 #page3 .search i{color: #fff;margin: 15px}
 #page3  #myPanel{background-color: #83618c}
-#page3  #footer h2{color: #fff;text-align: center;font-family: Tahoma}
-#page3  #footer{background-color:#83618c }
+#page3  #footer h2{color: #fff;text-align: center;font-family: Tahoma;font-size: 35px}
+#page3  #footer{background-color:#83618c;height: 100px }
 /******************************* end page 3*************************************/
