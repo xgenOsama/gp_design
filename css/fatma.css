@@ -1,297 +1,233 @@
-/***************************** page 1 *****************************/
-/*jq*/
+/* page 1*/
+/* jqury update*/
 
-@media (min-width: 28em){
-.ui-field-contain>label~[class*=ui-], .ui-field-contain .ui-controlgroup-controls {
-    float: left;
-    width: 76%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-#page1 .ui-content{background-color: #fff}
-#page1 .ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head+body .ui-btn.ui-btn-a:visited {
-     background-color: #83618c; 
-     border-color: #83618c; 
-   
-}
-#page1 .ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-b, .ui-grid-b>.ui-block-c {
-    width: 49.333%;
-    margin-top:60px;
+#home-reg .ui-content{background: #fff}
 
-}
-/*css style page 1*/
-#header{background-color: #83618c;height: 100px}
-#page1 .bar-icon{color: #fff;
-    padding: 15px;
-    margin-left: 10px;
-    cursor:pointer;
-}
-#page1 .bar-icon:hover{opacity: 0.5}
-#page1  .mess-icon{
-    float: right;
-    opacity: 0.6;
-    padding: 18px;
-    margin-right: 15px;
+/**/
+#home-reg #header{background: #7b5785;}
+#home-reg #footer{background: #7b5785;height: 50px}
+
+#header .bar-icon{color: #fff;padding: 10px;margin-left: 10px}
+#header .mess-icon
+ {
+	float: right;
     color: #fff;
-    cursor:pointer;
- }
-#page1 .mess-icon:hover{opacity: 1}
-#page1 .not-icon{
-    float: right;
     opacity: 0.6;
-    padding: 18px;
+    padding: 10px;
+    margin-right: 20px;
+}
+#home-reg #header .not-icon 
+{
+	float: right;
     color: #fff;
-    margin-right: 15px;
-    cursor:pointer;
- }
- #page1 .ui-block-a img{width: 70%;margin-top: -50px}
-#page1 .not-icon:hover{opacity: 1}
-#page1 .title h2{font-size: 40px;margin-left: 20px}
-#page1 .hr{width: 100%;opacity: 0.5}
-#page1 .content span{opacity: 0.5;
-    font-family: Nirmala UI Bold;
-    font-size: 35px;
+    opacity: 0.6;
+    padding: 10px;
+    margin-right: 10px;
 }
-#page1 .content h2{font-size: 31px}
-#page1 .post img{width: 100%;}
-#page1 .post img:hover{opacity: 0.5;}
-#page1 .post p{line-height: 2;
-    font-family: Tahoma;
-    font-size: 35px;
-padding: 30px}
-#page1 .post h2{color: #000;font-size: 30px;padding: 30px}
-#page1 .post h2:hover{opacity: 0.6;font-size: 30px;}
-#page1  .post a{text-decoration: none;}
-#page1 .icon-heart{color: #000;
-    opacity: 0.5;
-    margin-left: 27%;
-    font-size: 40px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-
+#home-reg .title{font-size: 17px;
+    margin-top: 8px;}
+#home-reg .hr{
+     width: 100%;
+    background: #ccc;
+    opacity: 0.8;
 }
-#page1 .icon-heart:hover{color: #f00}
-
-#page1 .icon-comment{color: #000;
-    opacity: 0.5;
-    margin-left: 17%;
-    font-size: 40px;
-    padding-left: 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-
+#home-reg .update{float: right;}
+#home-reg .update i
+{
+	    margin-right: 20px;
+    color: #7b5785;
 }
-#page1 .icon-comment:hover{opacity: 1}
 
-
-#page1  .ui-popup.ui-body-inherit {
-    border-width: 1px;
-    border-style: none;
+#home-reg .ui-block-a img{width: 130px;height: 130px}
+#home-reg .ui-block-b h2{font-size: 15px;}
+#home-reg .ui-block-b span{ font-size: 12px;opacity: 0.6}
+#home-reg .post img{width: 100%}
+#home-reg .post p{line-height: 2}
+#home-reg .post a{text-decoration: none;}
+#home-reg .post h2{font-size: 15px;color: #000}
+#home-reg .post h2:hover{color: #00f;}
+#home-reg .react .icon-heart{
+    color: #000;
+    text-align: center;
+    opacity: 0.6;
+    margin-left: 3%;
+    padding-right: 30px;
 }
-#page1 #myPanel{background-color:#83618c }
-#page1 .rect{width: 100%;}
-
-#page1 .comment{width: 100%;height: 200px;background-color: #f6f7f9}
-#page1 .comment img{
-       width: 100px;
-    height: 93px;
-    padding: 20px;
-    margin-top: -13px;
-    margin-left: 67px;
+#home-reg .react .icon-heart:hover{color:#ec084e}
+#home-reg .react img{width: 100%;margin-top: 10px;}
+#home-reg .react .icon-comment{color: #000;opacity: 0.6}
+#home-reg .likes{margin-left: 20px;color: #7b5785}
+#home-reg .coment{
+    width: 77%;
+    float: right;
+    margin-right: 6px;
 }
-#page1 .comment input{height: 86px;
-    margin-left: 20px;font-size: 25px}
-#page1 .likes{margin-left: 150px}
-#page1 #footer{background-color: #83618c;height: 100px}
-/**************** end page 1 *****************************/
-/************************* startpage 2 ********************/ 
-/* jq */
-#page2 .hr{width: 100%}
-#page2 .ui-content {
+#home-reg .fullcomment{
+    background: #f6f7f9;
+    height: 70px;
+}
+#home-reg .coment input
+{
+    height: 50px;
+}
+#home-reg .imgcomment{margin-top: 6px}
+/************pages 2*************************/
+
+/* jqury update*/
+#message-reg .ui-content{background: #fff}
+#message-reg .ui-content {
     border-width: 0;
     overflow: visible;
      padding: 1em 0em 0em 0em; 
 }
-#page2 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
-    background-color: #fff;
-    border-color: #bbb;
-    color: #333;
-    text-shadow: 0 1px 0 #f3f3f3;
+#message-reg .ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d, .ui-grid-solo {
+    overflow: hidden;
+    margin-top: -8px;
 }
-
 /**/
-#page2 #header{background-color: #83618c;height: 100px}
-#page2 .bar-icon{color: #fff;
-    padding: 15px;
-    margin-left: 10px;
-    cursor:pointer;
-}
-#page2 .bar-icon:hover{opacity: 0.5}
-#page2  .mess-icon{
-    float: right;
+#message-reg #header{background: #7b5785;}
+#message-reg #footer{background: #7b5785;}
+#message-reg #header .bar-icon{color: #fff;padding: 10px;margin-left: 10px}
+#message-reg #header .mess-icon
+ {
+	float: right;
+    color: #fff;
     opacity: 1;
-    padding: 18px;
-    margin-right: 15px;
+    padding: 10px;
+    margin-right: 20px;
+}
+#message-reg #header .not-icon 
+{
+	float: right;
     color: #fff;
-    cursor:pointer;
- }
-#page2 .mess-icon:hover{opacity: 1}
-#page2 .not-icon{
-    float: right;
     opacity: 0.6;
-    padding: 18px;
-    color: #fff;
-    margin-right: 15px;
-    cursor:pointer;
- }
-#page2 .not-icon:hover{opacity: 1}
-#page2 .title h3{
-    font-family: Tahoma; 
-    margin-top: 0px;
-    font-size: 40px;
-    font-weight: 200;
-    padding-left: 62px;
-
+    padding: 10px;
+    margin-right: 10px;
 }
-#page2 .title img{width: 100%;height: 2px}
-#page2 .hr{width: 100%;height: 2px}
-
-#page2 .ui-grid-b:hover{background-color: #f6f6f7; cursor:pointer;}
-#page2 .ui-block-a img{ 
-  margin-top: 30px;
-    margin-bottom: 22px;
-    width: 50%;
-    padding-left: 28px;
-
+#message-reg .title h3
+{
+	margin-top: 0;
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: Tahoma;
 }
-
-#page2 .ui-block-b h2{
-      font-size: 40px;
-    font-family: Tahoma Bold;
-    margin-top: 17px;
+#message-reg .hr1{width: 100%;opacity: 0.4;margin-top: 0}
+#message-reg .content{cursor: pointer;}
+#message-reg .content:hover{background: #edf2fa}
+#message-reg .content img
+{   
+	width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    padding: 5px;
+}
+#message-reg .content h2{    
+	font-size: 13px;
     text-align: justify;
-    margin-left: -60px;
-    font-weight: 400;
-    color: #000;
+    margin-left: 4px;
+    margin-top: 30px;
 }
-#page2 .ui-block-c p{   
-       font-size: 30px;
+#message-reg .content p{
+	font-size: 11px;
+	margin-left: 55px;
+	margin-top: 36px;
     opacity: 0.6;
-    margin-top: -130px;
-    float: right;
-    margin-right: -105px;
 }
-#page2 .search{
-        margin-right: 113px;
-    margin-top: 0px;
-    float: right;
-    width: 100px;
-    height: 100px;
+#message-reg .search{
+	width: 50px;
+    height: 50px;
+    background: #83618c;
     border-radius: 50px;
-    background-color: #83618c;
     box-shadow: 5px 5px 5px #ccc;
     border: 1px solid #83618c;
+    float: right;
+    margin-right: 27px;
+    margin-top: -41px;
 }
-
-#page2 .search i{color: #fff;margin: 28px}
-#page2  #myPanel{background-color: #83618c}
-#page2  #footer h2{
-color: #fff;
-    text-align: center;
-    font-family: Tahoma;
-    font-weight: 100;
-    font-size: 30px;
+#message-reg .search i{
+	color: #fff;
+    margin-top: 14px;
+    margin-left: 16px;
 }
-#page2 #footer{background-color:#83618c;font-size: 30px; height: 100px}
+/************pages 3*************************/
 
-/************************* end page 2 ************************/
-
-/* page 3 */
-/* jq */
-#page3 .hr{width: 100%}
-#page3 .ui-content {
+/* jqury update*/
+#notification-reg .ui-content{background: #fff}
+#notification-reg .ui-content {
     border-width: 0;
     overflow: visible;
      padding: 1em 0em 0em 0em; 
 }
-#page3 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
-    background-color: #fff;
-    border-color: #bbb;
-    color: #333;
-    text-shadow: 0 1px 0 #f3f3f3;
-}
-.ui-grid-a>.ui-block-a, .ui-grid-a>.ui-block-b {
-    width: 42%;
+#notification-reg .ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d, .ui-grid-solo {
+    overflow: hidden;
+    margin-top: -8px;
 }
 /**/
-#page3 #header{background-color: #83618c;height: 100px}
-#page3 .bar-icon{color: #fff;
-    padding: 15px;
+#notification-reg  #header{background: #7b5785;}
+#notification-reg  #footer{background: #7b5785;}
+#notification-reg  #header .bar-icon{color: #fff;padding: 10px;margin-left: 10px}
+#notification-reg  #header .mess-icon
+ {
+	float: right;
+    color: #fff;
+    opacity: 0.6;
+    padding: 10px;
+    margin-right: 20px;
+}
+#notification-reg  #header .not-icon 
+{
+	float: right;
+    color: #fff;
+    opacity: 1;
+    padding: 10px;
+    margin-right: 10px;
+}
+#notification-reg .title h3
+{
+	margin-top: 0;
     margin-left: 10px;
-    cursor:pointer;
+    font-size: 16px;
+    font-family: Tahoma;
 }
-#page3 .bar-icon:hover{opacity: 0.5}
-#page3  .mess-icon{
-    float: right;
-    opacity: 0.6;
-    padding: 18px;
-    margin-right: 15px;
-    color: #fff;
-    cursor:pointer;
- }
-#page3 .mess-icon:hover{opacity: 1}
-#page3 .not-icon{
-    float: right;
-    opacity: 1;
-    padding: 18px;
-    color: #fff;
-    margin-right: 15px;
-    cursor:pointer;
- }
-#page3 .not-icon:hover{opacity: 1}
-#page3 .title h3{
-   font-family: Tahoma;
-    margin-top: 10px;
-    margin-left: 45px;
-    font-size: 32px;
-    font-weight: 400;
+#notification-reg.content{cursor: pointer;}
+#notification-reg .hr1{width: 100%;opacity: 0.4;margin-top: 0}
+#notification-reg .content:hover{background: #edf2fa}
+#notification-reg .content img
+{   
+	width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    padding: 5px;
 }
-#page3  .title img{width: 100%;height: 2px}
-#page3 .hr{width: 100%;height: 2px}
-#page3 .ui-grid-a:hover{background-color: #f6f6f7; cursor:pointer;}
-#page3 .ui-block-a img{ 
-      margin-top: 29px;
-    margin-bottom: 10px;
-    width: 45%;
-    padding-left: 12px;
+#notification-reg .content h4{    
+	font-size: 10px;
+	opacity: 0.5;
+	margin-left:-52px;
 }
-
-#page3 .ui-block-b span{
-    color: #000;
-    opacity: 1;
-    font-size: 32px;
-    font-family: Tahoma bold;
-    font-weight: 700;
-    
+#notification-reg .content p{    
+	font-size: 12px;
+    margin-left: -55px;
+    line-height: 2;
 }
-#page3 .ui-block-b p{
-    margin-left: -110px;
-    font-size: 32px;
-    line-height: 1.7;
-    color: #565050;
-}
-
-#page3 .ui-block-b h4{
-    margin-left: -114px;
-    opacity: 0.6;
-    font-size: 25px;
-    margin-top: -5px;
+#notification-reg .content span
+{    
 
 }
-#page3 .search i{color: #fff;margin: 15px}
-#page3  #myPanel{background-color: #83618c}
-#page3  #footer h2{color: #fff;text-align: center;font-family: Tahoma;font-size: 35px}
-#page3  #footer{background-color:#83618c;height: 100px }
-/******************************* end page 3*************************************/
+#footer h2{text-align: center;font-family: Tahoma;color: #fff;font-weight: normal;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

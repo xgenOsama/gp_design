@@ -1,110 +1,140 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>FATMA</title>
-  <script type="text/javascript" src="jquerymob/jquery-2.1.1.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="jquerymob/jquery.mobile-1.4.5.min.css">
-  <link rel="stylesheet" type="text/css" href="css/fatma.css">
-  <link rel="stylesheet" type="text/css" href="css/media.css">
-   <link href="css/font-awesome.min.css" rel="stylesheet"/>
-   <link href="css/hover.css" rel="stylesheet" media="all">
-  <script type="text/javascript" src="jquerymob/jquery.mobile-1.4.5.min.js"></script>
+
+<!-- Basic Page Needs ================================================== -->
+
+<meta charset="utf-8">
+<title>ICare</title>
+<meta name="description" content="Place to put your description text">
+<meta name="author" content="">
+
+<!-- Mobile Specific Metas ================================================== -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<script>
+		if (window.screen.height==568) { // iPhone 4"
+		document.querySelector("meta[name=viewport]").content="width=320.1";
+		}
+</script>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- css -->
+<link rel="stylesheet" href="css/fatma.css">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<link href="css/hover.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/animate.css">
+<!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">-->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+
 </head>
 <body>
-  <!-- start home -->
-   <div data-role="page"id="page1">
-    <!--start  header -->
-    <div data-role="header" id="header">
-
-      <div>
-      <a href="#myPanel"><i class="fa fa-bars fa-4x bar-icon hvr-grow"></i></a>
-       <a href="#page2" data-transition="flip"><i class="fa fa-commenting-o fa-4x mess-icon hvr-grow"></i></a>
-       <a href="#page3" data-transition="flip"><i class="fa fa-globe fa-4x not-icon hvr-grow"></i></a>
+<!-- page1 -->
+<div data-role="page" id="home-reg">
+	<div data-role="header" id="header">
+	
+       <div>
+      <a href="#myPanel"><i class="fa fa-bars fa-2x bar-icon hvr-grow"></i></a>
+       <a href="#message-reg" data-transition="flip"><i class="fa fa-commenting-o fa-2x mess-icon hvr-grow"></i></a>
+       <a href="#notification-reg" data-transition="flip"><i class="fa fa-globe fa-2x not-icon hvr-grow"></i></a>
        </div>
+      
+       </div>
+    <div data-role="panel" id="myPanel">
+  <h2></h2>
+  <p></p>
+</div>
+		<div role="main" class="ui-content">
+			<h2 class="title">Heart attack and  blood pressure</h2>
+			<hr class="hr" />
+		<div class="ui-grid-a">
+      <div class="ui-block-a">
+         <a href="#"><img src="images/post1_03.png"></a>
+      </div>
+      <div class="ui-block-b">
+         <span >Recommended By</span>
+        <h2>Dr.Mohammed Fasil palanthodi </h2>
+        <span>Cardiologist</span>
+      </div>
     </div>
+    <!-- delete and change -->
+    <div class="update">
+    <a href="#popupMenu" data-rel="popup" data-transition="slidedown" ><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+    <div data-role="popup" id="popupMenu" data-theme="b">
+       <ul data-role="listview" data-inset="true">
+    
+    <li data-icon="delete"><a href="#" style="margin-top:-43px">Delete Post</a></li>
+    <li data-icon="edit"><a href="#"style="margin-top:-24px">Edit Post</a></li>
+</ul>
+</div>
+</div>
+ <!-- end delete and change -->
+    <!-- post -->
+     <div class="post">
+        <img src="images/picpost_19.png">
+        <p>Blood pressure is a measure of how hard the blood pushes against the walls of your arteries as it moves</p>
+         <a href="#"><h2>Read more...</h2></a>
+      </div>
+       <hr class="hr" />
+       <!-- react -->
+        <div class="react">
+         <a href="#"><i class="fa fa-heart fa-1x icon-heart hvr-grow">&nbsp;like</i></a> 
+           <a href="#"><i class="fa fa-comment fa-1x icon-comment hvr-grow">&nbsp;comment</i></a>
+           
+           <img src="images/rect_Hr_34.png">
+        </div>
+        <!-- comment -->
+        <a href="#"><i class="fa fa-thumbs-o-up fa-1x likes hvr-grow" aria-hidden="true">&nbsp;100</i></a>
+        <!-- <a href="#"><i class="fa fa-comment fa-1x likes hvr-grow" aria-hidden="true">&nbsp;50</i></a>-->
+        <hr class="hr" />
+       <div class="fullcomment">
+          <div class="coment">
+          	
+          <input type="text" placeholder="Enter comment">
+          </div>
+          <img  class="imgcomment"src="images/commentphoto_03.png">
+</div>
+
+
+</div>
+<div data-role="footer" id="footer">
+	 <span class="ui-title" />
+
+</div>
+</div>
+<!-- /page1 -->
+
+<!-- page2 -->
+<div data-role="page" id="message-reg">
+
+		  <div data-role="header" id="header">
+  
+       <div>
+      <a href="#myPanel"><i class="fa fa-bars fa-2x bar-icon hvr-grow"></i></a>
+       <a href="#message-reg" data-transition="flip"><i class="fa fa-commenting-o fa-2x mess-icon hvr-grow"></i></a>
+       <a href="#notification-reg" data-transition="flip"><i class="fa fa-globe fa-2x not-icon hvr-grow"></i></a>
+       </div>
+      
+       </div>
     <div data-role="panel" id="myPanel">
   <h2></h2>
   <p></p>
 </div>
 
-    <!--  end header -->
-    <!-- start body -->
-    <div data-role="main" class="ui-content">
-      <div class="title">
-        <h2>Heart attack and  blood pressure</h2>
-      </div>
-      <hr class="hr" />
-    
-     <div class="ui-grid-b">
-      <div class="ui-block-a">
-        <a href="#"><img src="images/post1_03.png"></a>
-      </div>
-      <div class="ui-block-b content" style="margin-top:62px;margin-left:-26px">
-          <span >Recommended By</span>
-        <h2>Dr.Mohammed Fasil palanthodi </h2>
-        <span>Cardiologist</span>
-      </div>
-      </div><br>
-      <div class="post">
-        <img src="images/picpost_19.png">
-        <p>Blood pressure is a measure of how hard the blood pushes against the walls of your arteries as it moves</p>
-         <a href="#"><h2>Read more...</h2></a>
-       
-      </div>
-        <hr class="hr" />
-
-        <div class="react">
-         <a href="#"><i class="fa fa-heart fa-1x icon-heart hvr-grow">&nbsp;like</i></a> 
-           <a href="#myPopup" data-rel="popup" data-transition="flow"><i class="fa fa-comment fa-1x icon-comment hvr-grow">&nbsp;comment</i></a>
-           <div data-role="popup" id="myPopup" data-theme="b">
-          
-            <textarea cols="40" rows="8" name="textarea" id="textarea" placeholder="comment"></textarea>
-            </div>
-        </div><br>
-        <img class="rect" src="images/rect_Hr_34.png">
-
-        <div class="comment"><br>
-          <i class="fa fa-thumbs-o-up fa-2x likes" aria-hidden="true">&nbsp;100</i>
-       <hr class="hr" />
-
-      <div class="ui-field-contain">
-    <label for="textinput-fc"><img src="images/commentphoto_03.png"></label>
-    <input type="text" name="textinput-fc" id="inputcomment" placeholder="Enter Comment" value="">
-        </div>
-        </div>
-  
-      </div>  
-   <div data-role="footer" id="footer">
-
-     <span class="ui-title" />
-    </div>
-    </div>
-    <!-- start footer -->
-   
-    <!-- end footer -->
-   </div>
-   <!-- end home -->
-  <!-- start home -->
-   <div data-role="page"id="page2">
-    
-    <!--start  header -->
-    <div data-role="header" id="header">
-      <div>
-      <a href="#page1"data-transition="flip"><i class="fa fa-bars fa-4x bar-icon hvr-grow"></i></a>
-       <a href="#page2" data-transition="flip"><i class="fa fa-commenting-o fa-4x mess-icon hvr-grow"></i></a>
-       <a href="#page3"data-transition="flip"><i class="fa fa-globe fa-4x not-icon hvr-grow"></i></a>
-      </div>
-      
-</div>
-    <!--  end header -->
-    <!-- start body -->
-    <div data-role="main" class="ui-content">
-      <div class="title">
+   <div role="main" class="ui-content">
+   		 <div class="title">
            <h3>Recent</h3>
-           <img  class="hr"src="images/hr_03.png">
+          <hr class="hr" />
         </div>
        <!-- /******************************************************/-->
 
-        <div class="ui-grid-b">
+        <div class="ui-grid-b content">
       <div class="ui-block-a">
        <a href="#"> <img src="images/photo1_07.png"></a>
 
@@ -116,130 +146,136 @@
         <p>9.33 PM</p>
       </div>
     </div>
-     <img class="hr" src="images/hr_03.png">
+    <hr class="hr1" />
 
     <!-- /******************************************************/-->
       <!-- /******************************************************/-->
-        <div class="ui-grid-b">
+
+        <div class="ui-grid-b content">
       <div class="ui-block-a">
-        <img src="images/photo2_10.png">
+       <a href="#"> <img src="images/photo2_10.png"></a>
 
       </div>
       <div class="ui-block-b">
       <h2>Felip Santana</h2>
       </div>
-      <div class="ui-block-c">
-        <p>3.37 PM</p>
+      <div class="ui-block-c ">
+        <p>9.33 PM</p>
       </div>
     </div>
-     <img class="hr" src="images/hr_03.png">
+    <hr class="hr1" />
 
     <!-- /******************************************************/-->
       <!-- /******************************************************/-->
-        <div class="ui-grid-b">
+
+        <div class="ui-grid-b content">
       <div class="ui-block-a">
-        <img src="images/photo3_13.png">
+       <a href="#"> <img src="images/photo3_13.png"></a>
 
       </div>
       <div class="ui-block-b">
       <h2>Adelle charles</h2>
       </div>
-      <div class="ui-block-c">
-        <p>11.37 AM</p>
+      <div class="ui-block-c ">
+        <p>9.33 PM</p>
       </div>
     </div>
-     <img class="hr" src="images/hr_03.png">
+    <hr class="hr1" />
 
     <!-- /******************************************************/-->
       <!-- /******************************************************/-->
-        <div class="ui-grid-b">
+
+        <div class="ui-grid-b content">
       <div class="ui-block-a">
-        <img src="images/photo4_17.png">
+       <a href="#"> <img src="images/photo4_17.png"></a>
 
       </div>
       <div class="ui-block-b">
       <h2>jina Anne</h2>
       </div>
-      <div class="ui-block-c">
-        <p>10.35 PM</p>
+      <div class="ui-block-c ">
+        <p>9.33 PM</p>
       </div>
     </div>
-     <img class="hr" src="images/hr_03.png">
+    <hr class="hr1" />
 
     <!-- /******************************************************/-->
       <!-- /******************************************************/-->
-        <div class="ui-grid-b">
+
+        <div class="ui-grid-b content">
       <div class="ui-block-a">
-        <img src="images/photo5_20.png">
+       <a href="#"> <img src="images/photo5_20.png"></a>
 
       </div>
       <div class="ui-block-b">
-      <h2>Riza selcuk Sydam</h2>
+      <h2>Riza selcuk </h2>
       </div>
-      <div class="ui-block-c">
-        <p>8.10 AM</p>
+      <div class="ui-block-c ">
+        <p>9.33 PM</p>
       </div>
     </div>
-     <img class="hr" src="images/hr_03.png">
+    <hr class="hr1" />
 
     <!-- /******************************************************/-->
       <!-- /******************************************************/-->
-        <div class="ui-grid-b">
+
+        <div class="ui-grid-b content">
       <div class="ui-block-a">
-        <img src="images/photo6_24.png">
+       <a href="#"> <img src="images/photo6_24.png"></a>
 
       </div>
       <div class="ui-block-b">
       <h2>Dann Counsell</h2>
       </div>
-      <div class="ui-block-c">
-        <p>12.00 PM</p>
+      <div class="ui-block-c ">
+        <p>9.33 PM</p>
       </div>
     </div>
-         <img class="hr" src="images/hr_03.png">
-         <br><br>
+    <hr class="hr1" />
 
     <!-- /******************************************************/-->
-    <div class="search hvr-grow">
-    <a href="#" ><i class="fa fa-search fa-3x"></i></a>
+     <br><br>
+    <div class="search">
+<i class="fa fa-search fa-1x"></i>
 </div>
-
-  </div>
-    <!-- end body -->
-
-    <!-- start footer -->
-    <br><br><br><br><br><br>
-    <div data-role="footer" id="footer">
-      <h2>See All messages</h2>
-      
-    </div>
-    <!-- end footer -->
+ <br>
+	   <!-- /******************************************************/-->
 
    </div>
-   <!-- end home -->  
+ 
+<div data-role="footer" id="footer">
+  <h2>see All Messages</h2>
+   
 
-   <!-- start home -->
-   <div data-role="page"id="page3">
-    
-    <!--start  header -->
-    <div data-role="header" id="header">
-      <div>
-      <a href="#page1" data-transition="flip"><i class="fa fa-bars fa-4x bar-icon hvr-grow"></i></a>
-       <a href="#page2" data-transition="flip"><i class="fa fa-commenting-o fa-4x mess-icon hvr-grow"></i></a>
-       <a href="#page3" data-transition="flip"><i class="fa fa-globe fa-4x not-icon hvr-grow"></i></a>
-      </div>
-      
 </div>
-    <!--  end header -->
-    <!-- start body -->
-    <div data-role="main" class="ui-content">
-      <div class="title">
+</div>
+<!-- page2 -->
+
+<!-- page3 -->
+<div data-role="page" id="notification-reg">
+   
+		 <div data-role="header" id="header">
+  
+       <div>
+      <a href="#myPanel"><i class="fa fa-bars fa-2x bar-icon hvr-grow"></i></a>
+       <a href="#message-reg" data-transition="flip"><i class="fa fa-commenting-o fa-2x mess-icon hvr-grow"></i></a>
+       <a href="#notification-reg" data-transition="flip"><i class="fa fa-globe fa-2x not-icon hvr-grow"></i></a>
+       </div>
+      
+       </div>
+    <div data-role="panel" id="myPanel">
+  <h2></h2>
+  <p></p>
+</div>
+
+   <div role="main" class="ui-content">
+       <div class="title">
            <h3>notification</h3>
-           <img src="images/hr_03.png">
+          <hr class="hr" />
         </div>
        <!-- /******************************************************/-->
 
-        <div class="ui-grid-a">
+        <div class="ui-grid-a content">
       <div class="ui-block-a">
        <a href="#"> <img src="images/photo1_07.png"></a>
 
@@ -250,103 +286,101 @@
       </div>
       
     </div>
-     <img class="hr" src="images/hr_03.png">
+    <hr class="hr1" />
 
     <!-- /******************************************************/-->
       <!-- /******************************************************/-->
-        <div class="ui-grid-a">
+
+        <div class="ui-grid-a content">
       <div class="ui-block-a">
-        <img src="images/photo2_10.png">
+       <a href="#"> <img src="images/photo2_10.png"></a>
 
       </div>
       <div class="ui-block-b">
-         <p><span>Felip Santana,5 other</span>&nbsp;like apost of Dr.Ahmed Magdy</p>
+       <p><span>Felip Santana,5 other</span>&nbsp;like apost of Dr.Ahmed Magdy</p>
+      <h4>21 Hours ago</h4>
+      </div>
+    
+    </div>
+    <hr class="hr1" />
+
+    <!-- /******************************************************/-->
+      <!-- /******************************************************/-->
+
+        <div class="ui-grid-a content">
+      <div class="ui-block-a">
+       <a href="#"> <img src="images/photo3_13.png"></a>
+
+      </div>
+      <div class="ui-block-b">
+       <p><span>Adelle charles,50 other</span>&nbsp;commented on Dr.Mohammed post</p>
       <h4>21 Hours ago</h4>
       </div>
      
     </div>
-     <img class="hr" src="images/hr_03.png">
+    <hr class="hr1" />
 
     <!-- /******************************************************/-->
       <!-- /******************************************************/-->
-        <div class="ui-grid-a">
+
+        <div class="ui-grid-a content">
       <div class="ui-block-a">
-        <img src="images/photo3_13.png">
+       <a href="#"> <img src="images/photo4_17.png"></a>
 
       </div>
       <div class="ui-block-b">
-         <p><span>Adelle charles,50 other</span>&nbsp;commented on Dr.Mohammed post</p>
-      <h4>21 Hours ago</h4>
-      </div>
-     
-    </div>
-     <img class="hr" src="images/hr_03.png">
-
-    <!-- /******************************************************/-->
-      <!-- /******************************************************/-->
-        <div class="ui-grid-a">
-      <div class="ui-block-a">
-        <img src="images/photo4_17.png">
-
-      </div>
-      <div class="ui-block-b">
-     <p><span>jina Anne , 16 other</span>&nbsp;like apost of Dr.Ahmed Magdy</p> 
+      <p><span>jina Anne , 16 other</span>&nbsp;like apost of Dr.Ahmed Magdy</p> 
       <h4> 20 minute ago</h4>
       </div>
-      
+     
     </div>
-     <img class="hr" src="images/hr_03.png">
+    <hr class="hr1" />
 
     <!-- /******************************************************/-->
       <!-- /******************************************************/-->
-        <div class="ui-grid-a">
-      <div class="ui-block-a">
-        <img src="images/photo5_20.png">
 
+        <div class="ui-grid-a content">
+      <div class="ui-block-a">
+       <a href="#"> <img src="images/photo5_20.png"></a>
+      
       </div>
       <div class="ui-block-b">
-        <p><span>Riza selcuk Sydam,20 other</span>&nbsp;
-          commented on Dr.Mohammed post</p>
+      <p><span>Riza selcuk Sydam,20 other</span>&nbsp;commented on Dr.Mohammed post</p>
       <h4>2 days ago</h4>
-      </div>
-      
-    </div>
-     <img class="hr" src="images/hr_03.png">
-
-    <!-- /******************************************************/-->
-      <!-- /******************************************************/-->
-        <div class="ui-grid-a">
-      <div class="ui-block-a">
-        <img src="images/photo6_24.png">
-
-      </div>
-      <div class="ui-block-b">
-        <p><span>Dann Counsell, 40 other</span> &nbsp;commented on Dr.Mohammed post</p>
-      <h4> 4 hours ago</h4>
       </div>
      
     </div>
-         <img class="hr" src="images/hr_03.png">
-         <br><br>
+    <hr class="hr1" />
 
     <!-- /******************************************************/-->
-    <div class="search">
-<i class="fa fa-search "></i>
-</div>
+      <!-- /******************************************************/-->
 
-  </div>
-    <!-- end body -->
+        <div class="ui-grid-a content">
+      <div class="ui-block-a">
+       <a href="#"> <img src="images/photo6_24.png"></a>
 
-    <!-- start footer -->
-    <br><br>
-    <div data-role="footer" id="footer">
-      <h2>See All </h2>
+      </div>
+      <div class="ui-block-b">
+       <p><span>Dann Counsell, 40 other</span> &nbsp;commented on Dr.Mohammed post</p>
+      <h4> 4 hours ago</h4>
+      </div>
       
     </div>
-    <!-- end footer -->
+    <hr class="hr1" />
+
+    <!-- /******************************************************/-->
+     
+   
 
    </div>
-   <!-- end home -->  
+  
+<div data-role="footer" id="footer">
+  <h2>See All</h2>
+  
+</div>
+		
 
+</div>
+<!-- page3 -->
 </body>
 </html>

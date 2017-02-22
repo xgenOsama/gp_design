@@ -51,16 +51,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-#register_screen h1 {
-    text-shadow: 0px 0 !important;
-    color: white;
-    font-family: Source Sans Pro !important;
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 1.5 !important;
-    margin-top: -3px !important;
-    text-shadow: -1px -1px 5px !important;
-}
 #register_screen img {
     margin: auto;
 }
@@ -98,7 +88,6 @@
 #register_screen .ui-btn-icon-right {
     padding-right: 14.5em !important;
     color: #757575 !important;
-    padding-top: 27px;
 }
 #register_screen .ui-input-text input {
    
@@ -112,16 +101,6 @@
     position: absolute;
     border-color: white !important;
 }
-#register_screen .ui-select .ui-btn select {
-    padding-left: 52px;
-    opacity: 5 !important;
-    background-color: white !important;
-    border: 1px white solid !important;
-    color: #cacaca !important;
-    font-size: 16px;
-    
-}
-
 ::-webkit-input-placeholder {
    color: #cecccc;
    font-size: 16px;
@@ -160,6 +139,8 @@ textarea.desc {background: url(../images/desc.jpg) no-repeat left !important;}
     font-size: 20px !important;
     text-align: center !important;
 }
+
+
 #login_screen .btn .ui-btn {
     background-color: #7b5785 !important;
     border-color: #7b5785 !important;
@@ -257,22 +238,4 @@ input.pass {background: url(../images/pass.jpg) no-repeat left !important;}
     line-height: 1.5 !important;
     margin-bottom: 98px !important;
     margin-top: -9px !important;
-}
-
-.inputfile {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-}
-.ui-mobile label, .ui-controlgroup-label {
-    padding-top: 16px;
-    padding-bottom: 9px;
-    
-}
-.ui-mobile label, div.ui-controlgroup-label {
-    color: #cacaca ;
-    font-size: 14px !important;
 }
