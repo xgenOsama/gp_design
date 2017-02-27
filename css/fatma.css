@@ -1,35 +1,84 @@
 /* page 1*/
 /* jqury update*/
-
-#home-reg .ui-content{background: #fff}
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+    background-color: #ccc;
+    border-color: #ddd;
+    color: #333;
+    text-shadow: 0 1px 0 #f3f3f3;
+}
+ 
+#home-reg .ui-content{background: #fff;}
 
 /**/
-#home-reg #header{background: #7b5785;}
-#home-reg #footer{background: #7b5785;height: 50px}
+#home-reg #header{background: #7b5785;height: 60px}
+#home-reg #footer{background: #7b5785;}
 
-#header .bar-icon{color: #fff;padding: 10px;margin-left: 10px}
-#header .mess-icon
- {
-	float: right;
-    color: #fff;
-    opacity: 0.6;
-    padding: 10px;
-    margin-right: 20px;
-}
-#home-reg #header .not-icon 
+#home-reg #header .bar-icon
 {
-	float: right;
-    color: #fff;
-    opacity: 0.6;
-    padding: 10px;
-    margin-right: 10px;
+    color: #fff !important;
+    padding: 10px !important;
+    margin-left: 3px !important;
+    display: block !important;
+    width: 30px !important;
+    height: 30px !important;
+    margin-top: 10px !important;
+  }
+#home-reg #header .map
+ {
+	width: 50px !important;
+    margin-top: -51px !important;
+    margin-left: 88px !important;
+    display: block !important;
 }
+#home-reg #header .message
+{
+    width: 85px !important;
+    margin-top: -58px !important;
+    margin-left: 150px !important;
+    display: block !important;
+}
+#home-reg #header .not
+{
+ width: 85px !important;
+    margin-top: -94px !important;
+    margin-left: 230px !important;
+    display: block !important;
+}
+#home-reg .newpost input
+{
+      font-family: Source Sans Pro;
+    font-weight: 400;
+   opacity: 0.5;
+    font-size: 15px;
+    padding: 32px;
+    padding-top: 12px;
+    padding-left: 10px; 
+    box-shadow: 5px 5px 16px 3px #ddd;
+    color: #000;
+
+}
+#home-reg .newpost a{
+  background: #7b5785;
+    color: #fff;
+    float: right;
+    height: 11px;
+    font-size: 13px;
+    margin-right: 10px;
+    box-shadow: 5px 5px 14px -2px #ddd;
+    margin-top: 0;
+      font-family: Source Sans Pro;
+    font-weight: 400;
+}
+
 #home-reg .title{font-size: 17px;
-    margin-top: 8px;}
+    margin-top: 8px;
+      font-family: Source Sans Pro;
+    font-weight: 400;
+}
 #home-reg .hr{
      width: 100%;
-    background: #ccc;
-    opacity: 0.8;
+    background: #ebeaea;
+    opacity: 0.4;
 }
 #home-reg .update{float: right;}
 #home-reg .update i
@@ -38,13 +87,61 @@
     color: #7b5785;
 }
 
-#home-reg .ui-block-a img{width: 130px;height: 130px}
-#home-reg .ui-block-b h2{font-size: 15px;}
-#home-reg .ui-block-b span{ font-size: 12px;opacity: 0.6}
+#home-reg .ui-block-a img{
+    width: 50px;
+    height:50px;
+    padding: 7px;
+    margin-top: -7px;
+}
+#home-reg .ui-block-a h2
+{
+      font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 17px;
+    margin-top: -57px;
+    margin-right: -130px;
+    text-align: center;
+}
+#home-reg .ui-block-a span
+{ 
+   font-size: 14px;
+    opacity: 0.6;
+    float: right;
+    margin-right:8px;
+    margin-top: -6px;
+}
+#home-reg .ui-block-b a
+{ 
+  float: right;
+  margin-top: 20px; 
+}
+#home-reg .ui-block-b img
+{ 
+  width: 18px;
+  height: 18px;
+}
+#home-reg .ui-block-b a
+{ 
+      font-family: Source Sans Pro;
+    font-weight: 400;
+  text-decoration: none;
+  color: #000;
+  font-size:12px;
+  text-align: right;
+  opacity: 0.5
+}
 #home-reg .post img{width: 100%}
-#home-reg .post p{line-height: 2}
-#home-reg .post a{text-decoration: none;}
-#home-reg .post h2{font-size: 15px;color: #000}
+#home-reg .post p{line-height: 2;
+  font-family: Source Sans Pro;
+    font-weight: 400;}
+#home-reg .post a{
+    text-decoration: none;
+  font-family: Source Sans Pro;
+    font-weight: 400;
+   
+}
+#home-reg .post h2{font-size: 15px;color: #000;opacity: 0.6;  font-family: Source Sans Pro;
+    font-weight: 400;}
 #home-reg .post h2:hover{color: #00f;}
 #home-reg .react .icon-heart{
     color: #000;
@@ -53,24 +150,100 @@
     margin-left: 3%;
     padding-right: 30px;
 }
-#home-reg .react .icon-heart:hover{color:#ec084e}
-#home-reg .react img{width: 100%;margin-top: 10px;}
-#home-reg .react .icon-comment{color: #000;opacity: 0.6}
-#home-reg .likes{margin-left: 20px;color: #7b5785}
-#home-reg .coment{
-    width: 77%;
-    float: right;
-    margin-right: 6px;
+
+#home-reg .react img{width:20px;margin-top: 10px}
+#home-reg .react a{padding: 20px;
+    text-decoration: none;
+    color: #000;
+
 }
-#home-reg .fullcomment{
-    background: #f6f7f9;
-    height: 70px;
-}
-#home-reg .coment input
+#home-reg .yourcomment{}
+#home-reg .yourcomment .ui-input-text, .ui-input-search
 {
-    height: 50px;
+    margin: .5em 0;
+    border-width: -10px;
+    border-style: none;
+   
+    background: #f7f7f7;
+    border-color:#fff ;
+     height: 80px;
+  
 }
-#home-reg .imgcomment{margin-top: 6px}
+
+#home-reg .comment input{height: 50px;}
+#home-reg .imgcomment{
+    background:url(../images/Untitled-2.png)no-repeat left !important;
+ padding-left: 67px;
+    margin-top: 6px;
+    height: 88px;
+    width: 100%;
+    padding-top: 4px;
+    font-weight: 400;
+    font-family:Source Sans Pro ;
+    }
+#home-reg #myPanel{background-image:url(../images/sub-menue.png);}
+#home-reg #myPanel input
+{
+    border-radius: 50%;
+    color: #fff;
+    padding: 12px;
+}
+#home-reg #myPanel .ui-input-text, .ui-input-search
+{
+    margin: .5em 0;
+    border-width: -10px;
+    border-style: solid;
+    border-radius: 20px;
+    background: #443049;
+    border-color:#443049 ;
+
+  
+}
+#home-reg #myPanel img
+{
+    width:240px;
+    height: 240px;
+}
+#home-reg #myPanel .info h2{color: #ce97d9;
+    font-size: 19px;
+    font-family: monospace;
+    margin-top: -40px;
+
+
+}
+#home-reg #myPanel .info span{
+    color: #ddd;
+    font-family: normal;
+    font-size: 18px;
+    opacity: 0.5;
+}
+#home-reg #myPanel .link1{
+   height: 50px;
+    margin-top: 10px;
+    width: 112%;
+    margin-left: -28px;
+}
+#home-reg #myPanel .link1 img{width: 37px;
+    height: 37px;
+margin-left: 37px;
+    margin-top: 7px;}
+#home-reg #myPanel .link1 a{margin-top: -10px}
+#home-reg #myPanel .link1 h2{
+    font-size: 15px;
+   font-family: Source Sans Pro ;
+    margin-left: 100px;
+    margin-top: -35px;
+    text-align: left;
+    color: #fff;
+    font-weight: 100;
+}
+#home-reg #myPanel .link1:hover
+{
+    background: #443049;
+    cursor: pointer;
+    
+}
+
 /************pages 2*************************/
 
 /* jqury update*/
@@ -85,25 +258,102 @@
     margin-top: -8px;
 }
 /**/
-#message-reg #header{background: #7b5785;}
+#message-reg #header{background: #7b5785;height: 60px}
 #message-reg #footer{background: #7b5785;}
-#message-reg #header .bar-icon{color: #fff;padding: 10px;margin-left: 10px}
-#message-reg #header .mess-icon
- {
-	float: right;
-    color: #fff;
-    opacity: 1;
-    padding: 10px;
-    margin-right: 20px;
-}
-#message-reg #header .not-icon 
+#message-reg #header .bar-icon
 {
-	float: right;
-    color: #fff;
-    opacity: 0.6;
-    padding: 10px;
-    margin-right: 10px;
+    color: #fff !important;
+    padding: 10px !important;
+    margin-left: 3px !important;
+    display: block !important;
+    width: 30px !important;
+    height: 30px !important;
+    margin-top: 10px !important;
+  }
+#message-reg #header .map
+ {
+    width: 50px !important;
+    margin-top: -51px !important;
+    margin-left: 88px !important;
+    display: block !important;
 }
+#message-reg #header .message
+{
+    width: 85px !important;
+    margin-top: -58px !important;
+    margin-left: 150px !important;
+    display: block !important;
+}
+#message-reg #header .not
+{
+ width: 85px !important;
+    margin-top: -94px !important;
+    margin-left: 230px !important;
+    display: block !important;
+}
+#message-reg #myPanel{background-image:url(../images/sub-menue.png);}
+#message-reg #myPanel input
+{
+    border-radius: 50%;
+    color: #fff;
+    padding: 12px;
+}
+#message-reg #myPanel .ui-input-text, .ui-input-search
+{
+    margin: .5em 0;
+    border-width: -10px;
+    border-style: solid;
+    border-radius: 20px;
+    background: #443049;
+    border-color:#443049 ;
+
+  
+}
+#message-reg #myPanel img
+{
+    width:240px;
+    height: 240px;
+}
+#message-reg #myPanel .info h2{color: #ce97d9;
+    font-size: 19px;
+    font-family: monospace;
+    margin-top: -40px;
+
+
+}
+#message-reg #myPanel .info span{
+    color: #ddd;
+    font-family: normal;
+    font-size: 18px;
+    opacity: 0.5;
+}
+#message-reg #myPanel .link1{
+   height: 50px;
+    margin-top: 10px;
+    width: 112%;
+    margin-left: -28px;
+}
+#message-reg #myPanel .link1 img{width: 37px;
+    height: 37px;
+margin-left: 37px;
+    margin-top: 7px;}
+#message-reg #myPanel .link1 a{margin-top: -10px}
+#message-reg #myPanel .link1 h2{
+    font-size: 15px;
+   font-family: Source Sans Pro ;
+    margin-left: 100px;
+    margin-top: -35px;
+    text-align: left;
+    color: #fff;
+    font-weight: 100;
+}
+#message-reg #myPanel .link1:hover
+{
+    background: #443049;
+    cursor: pointer;
+    
+}
+
 #message-reg .title h3
 {
 	margin-top: 0;
@@ -163,25 +413,102 @@
     margin-top: -8px;
 }
 /**/
-#notification-reg  #header{background: #7b5785;}
+#notification-reg  #header{background: #7b5785;height: 60px}
 #notification-reg  #footer{background: #7b5785;}
-#notification-reg  #header .bar-icon{color: #fff;padding: 10px;margin-left: 10px}
-#notification-reg  #header .mess-icon
- {
-	float: right;
-    color: #fff;
-    opacity: 0.6;
-    padding: 10px;
-    margin-right: 20px;
-}
-#notification-reg  #header .not-icon 
+#notification-reg  #header .bar-icon
 {
-	float: right;
-    color: #fff;
-    opacity: 1;
-    padding: 10px;
-    margin-right: 10px;
+    color: #fff !important;
+    padding: 10px !important;
+    margin-left: 3px !important;
+    display: block !important;
+    width: 30px !important;
+    height: 30px !important;
+    margin-top: 10px !important;
+  }
+#notification-reg  #header .map
+ {
+    width: 50px !important;
+    margin-top: -51px !important;
+    margin-left: 88px !important;
+    display: block !important;
 }
+#notification-reg  #header .message
+{
+    width: 85px !important;
+    margin-top: -58px !important;
+    margin-left: 150px !important;
+    display: block !important;
+}
+#notification-reg  #header .not
+{
+ width: 85px !important;
+    margin-top: -94px !important;
+    margin-left: 230px !important;
+    display: block !important;
+}
+#notification-reg #myPanel{background-image:url(../images/sub-menue.png);}
+#notification-reg  #myPanel input
+{
+    border-radius: 50%;
+    color: #fff;
+    padding: 12px;
+}
+#notification-reg  #myPanel .ui-input-text, .ui-input-search
+{
+    margin: .5em 0;
+    border-width: -10px;
+    border-style: solid;
+    border-radius: 20px;
+    background: #443049;
+    border-color:#443049 ;
+
+  
+}
+#notification-reg  #myPanel img
+{
+    width:240px;
+    height: 240px;
+}
+#notification-reg  #myPanel .info h2{color: #ce97d9;
+    font-size: 19px;
+    font-family: monospace;
+    margin-top: -40px;
+
+
+}
+#notification-reg  #myPanel .info span{
+    color: #ddd;
+    font-family: normal;
+    font-size: 18px;
+    opacity: 0.5;
+}
+#notification-reg  #myPanel .link1{
+   height: 50px;
+    margin-top: 10px;
+    width: 112%;
+    margin-left: -28px;
+}
+#notification-reg  #myPanel .link1 img{width: 37px;
+    height: 37px;
+margin-left: 37px;
+    margin-top: 7px;}
+#notification-reg  #myPanel .link1 a{margin-top: -10px}
+#notification-reg  #myPanel .link1 h2{
+    font-size: 15px;
+   font-family: Source Sans Pro ;
+    margin-left: 100px;
+    margin-top: -35px;
+    text-align: left;
+    color: #fff;
+    font-weight: 100;
+}
+#notification-reg  #myPanel .link1:hover
+{
+    background: #443049;
+    cursor: pointer;
+    
+}
+
 #notification-reg .title h3
 {
 	margin-top: 0;

@@ -40,33 +40,74 @@
 	<div data-role="header" id="header">
 	
        <div>
-      <a href="#myPanel"><i class="fa fa-bars fa-2x bar-icon hvr-grow"></i></a>
-       <a href="#message-reg" data-transition="flip"><i class="fa fa-commenting-o fa-2x mess-icon hvr-grow"></i></a>
-       <a href="#notification-reg" data-transition="flip"><i class="fa fa-globe fa-2x not-icon hvr-grow"></i></a>
+      <a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="bar-icon"></a>
+       <a href="#"><img src="images/placeholder-(1).png" class="map"></a>
+        <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option.png" class="message"></a>
+         <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell.png" class="not"></a>
+      <!--
+       <a href="#message-reg" data-transition="flip"><img src="images/mees_03.png" class="mess-icon"></a>
+       <a href="#notification-reg" data-transition="flip"><img src="images/not_03.png"></a>-->
        </div>
       
        </div>
-    <div data-role="panel" id="myPanel">
-  <h2></h2>
-  <p></p>
+    <div data-role="panel" id="myPanel" data-display="overlay">
+    <input type="text" placeholder="Search" >
+    <center class="info">
+      <img src="images/profile_03.png">
+      <h2>Travis Strok</h2>
+      <span>Doctor</span>
+
+    </center>
+  <div class="link1 hvr-grow">
+ <a href="#home-reg" ><img src="images/menue_03.png"></a>
+ <h2>Home</h2>
+</div>
+<div class="link1 hvr-grow">
+ <a href="#"><img src="images/info_03.png"></a>
+ <h2>About</h2>
+</div>
+<div class="link1 hvr-grow">
+ <a href="#"><img src="images/lock_03_03.png"></a>
+ <h2>Policy</h2>
+</div>
+<div class="link1 hvr-grow">
+ <a href="#"><img src="images/contact_05.png"></a>
+ <h2>Contact Us</h2>
+</div>
+<div class="link1 hvr-grow">
+ <a href="#"><img src="images/logout_07.png"></a>
+ <h2>Log Out</h2>
+</div>
+
 </div>
 		<div role="main" class="ui-content">
+      <div class="newpost">
+        <input type="text" placeholder="What's in your mind...?">
+         <a href="#" class="ui-btn ui-shadow hvr-grow">Add Post</a>
+
+      </div>
+      <br><br>
 			<h2 class="title">Heart attack and  blood pressure</h2>
 			<hr class="hr" />
 		<div class="ui-grid-a">
       <div class="ui-block-a">
-         <a href="#"><img src="images/post1_03.png"></a>
-      </div>
-      <div class="ui-block-b">
-         <span >Recommended By</span>
-        <h2>Dr.Mohammed Fasil palanthodi </h2>
+         <a href="#"><img src="images/picdoctor_15.png"></a>
+          <h2>Dr.Mohammed Fasil</h2>
         <span>Cardiologist</span>
       </div>
+      <div class="ui-block-b">
+      <a href="#popupMenu" data-rel="popup" data-transition="slidedown" >
+      <img src="images/seting_11_03.png"><br>
+      <span>Just Now</span>
+    </a>
+       
+      </div>
     </div>
+    <br>
     <!-- delete and change -->
     <div class="update">
-    <a href="#popupMenu" data-rel="popup" data-transition="slidedown" ><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-    <div data-role="popup" id="popupMenu" data-theme="b">
+   
+    <div data-role="popup" id="popupMenu" data-theme="a">
        <ul data-role="listview" data-inset="true">
     
     <li data-icon="delete"><a href="#" style="margin-top:-43px">Delete Post</a></li>
@@ -74,32 +115,26 @@
 </ul>
 </div>
 </div>
- <!-- end delete and change -->
+ 
     <!-- post -->
      <div class="post">
         <img src="images/picpost_19.png">
         <p>Blood pressure is a measure of how hard the blood pushes against the walls of your arteries as it moves</p>
          <a href="#"><h2>Read more...</h2></a>
       </div>
-       <hr class="hr" />
+      
        <!-- react -->
         <div class="react">
-         <a href="#"><i class="fa fa-heart fa-1x icon-heart hvr-grow">&nbsp;like</i></a> 
-           <a href="#"><i class="fa fa-comment fa-1x icon-comment hvr-grow">&nbsp;comment</i></a>
+         <a href="#" class="like"><img src="images/like.png">&nbsp; 23 </a> 
+           <a href="#" class="comment"><img src="images/chat.png">&nbsp; 5</i></a>
            
-           <img src="images/rect_Hr_34.png">
+          
         </div>
         <!-- comment -->
-        <a href="#"><i class="fa fa-thumbs-o-up fa-1x likes hvr-grow" aria-hidden="true">&nbsp;100</i></a>
-        <!-- <a href="#"><i class="fa fa-comment fa-1x likes hvr-grow" aria-hidden="true">&nbsp;50</i></a>-->
-        <hr class="hr" />
-       <div class="fullcomment">
-          <div class="coment">
-          	
-          <input type="text" placeholder="Enter comment">
-          </div>
-          <img  class="imgcomment"src="images/commentphoto_03.png">
-</div>
+        <div class="yourcomment">
+       <input type="text" placeholder="Write acomment" class="imgcomment">
+      </div>
+    
 
 
 </div>
@@ -115,18 +150,48 @@
 
 		  <div data-role="header" id="header">
   
+      
        <div>
-      <a href="#myPanel"><i class="fa fa-bars fa-2x bar-icon hvr-grow"></i></a>
-       <a href="#message-reg" data-transition="flip"><i class="fa fa-commenting-o fa-2x mess-icon hvr-grow"></i></a>
-       <a href="#notification-reg" data-transition="flip"><i class="fa fa-globe fa-2x not-icon hvr-grow"></i></a>
+      <a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="bar-icon"></a>
+       <a href="#"><img src="images/placeholder-(1).png" class="map"></a>
+        <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option.png" class="message"></a>
+         <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell.png" class="not"></a>
+      <!--
+       <a href="#message-reg" data-transition="flip"><img src="images/mees_03.png" class="mess-icon"></a>
+       <a href="#notification-reg" data-transition="flip"><img src="images/not_03.png"></a>-->
        </div>
       
        </div>
-    <div data-role="panel" id="myPanel">
-  <h2></h2>
-  <p></p>
+     <div data-role="panel" id="myPanel" data-display="overlay">
+    <input type="text" placeholder="Search" >
+    <center class="info">
+      <img src="images/profile_03.png">
+      <h2>Travis Strok</h2>
+      <span>Doctor</span>
+
+    </center>
+  <div class="link1 hvr-grow">
+ <a href="#home-reg" ><img src="images/menue_03.png"></a>
+ <h2>Home</h2>
+</div>
+<div class="link1 hvr-grow">
+ <a href="#"><img src="images/info_03.png"></a>
+ <h2>About</h2>
+</div>
+<div class="link1 hvr-grow">
+ <a href="#"><img src="images/lock_03_03.png"></a>
+ <h2>Policy</h2>
+</div>
+<div class="link1 hvr-grow">
+ <a href="#"><img src="images/contact_05.png"></a>
+ <h2>Contact Us</h2>
+</div>
+<div class="link1 hvr-grow">
+ <a href="#"><img src="images/logout_07.png"></a>
+ <h2>Log Out</h2>
 </div>
 
+</div>
    <div role="main" class="ui-content">
    		 <div class="title">
            <h3>Recent</h3>
@@ -257,15 +322,45 @@
 		 <div data-role="header" id="header">
   
        <div>
-      <a href="#myPanel"><i class="fa fa-bars fa-2x bar-icon hvr-grow"></i></a>
-       <a href="#message-reg" data-transition="flip"><i class="fa fa-commenting-o fa-2x mess-icon hvr-grow"></i></a>
-       <a href="#notification-reg" data-transition="flip"><i class="fa fa-globe fa-2x not-icon hvr-grow"></i></a>
+      <a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="bar-icon"></a>
+       <a href="#"><img src="images/placeholder-(1).png" class="map"></a>
+        <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option.png" class="message"></a>
+         <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell.png" class="not"></a>
+      <!--
+       <a href="#message-reg" data-transition="flip"><img src="images/mees_03.png" class="mess-icon"></a>
+       <a href="#notification-reg" data-transition="flip"><img src="images/not_03.png"></a>-->
        </div>
       
        </div>
-    <div data-role="panel" id="myPanel">
-  <h2></h2>
-  <p></p>
+    <div data-role="panel" id="myPanel" data-display="overlay">
+    <input type="text" placeholder="Search" >
+    <center class="info">
+      <img src="images/profile_03.png">
+      <h2>Travis Strok</h2>
+      <span>Doctor</span>
+
+    </center>
+  <div class="link1 hvr-grow">
+ <a href="#home-reg" ><img src="images/menue_03.png"></a>
+ <h2>Home</h2>
+</div>
+<div class="link1 hvr-grow">
+ <a href="#"><img src="images/info_03.png"></a>
+ <h2>About</h2>
+</div>
+<div class="link1 hvr-grow">
+ <a href="#"><img src="images/lock_03_03.png"></a>
+ <h2>Policy</h2>
+</div>
+<div class="link1 hvr-grow">
+ <a href="#"><img src="images/contact_05.png"></a>
+ <h2>Contact Us</h2>
+</div>
+<div class="link1 hvr-grow">
+ <a href="#"><img src="images/logout_07.png"></a>
+ <h2>Log Out</h2>
+</div>
+
 </div>
 
    <div role="main" class="ui-content">
