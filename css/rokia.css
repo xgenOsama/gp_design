@@ -1,3 +1,28 @@
+/*for responsive*/
+@media all and (min-height: 736px){
+    .error {
+        height: 306px !important;
+    }
+    textarea {
+        height: 135px !important;
+        padding-top: 57px !important;
+    }
+    #start_screen .ui-content {
+        height: 704px !important;
+    }
+}
+@media all and (min-height: 732px){
+    .error {
+        height: 306px !important;
+    }
+    textarea {
+        height: 135px !important;
+        padding-top: 57px !important;
+    }
+    #start_screen .ui-content {
+        height: 704px !important;
+    }
+}
 /*start screen*/
 #start_screen .ui-content {
     background-image: url(../images/bg.jpg);
@@ -45,6 +70,10 @@
 }
 
 /*register screen*/
+#register_screen .ui-content {
+    height: 100% !important;
+    overflow: initial !important;
+}
 #register_screen .photo {
     height: 200px;
     background-image: url(../images/bg2.jpg);
@@ -129,8 +158,6 @@
 textarea {
     font-size: 16px !important;
     color: #cecccc !important;
-    
-    height: 79px !important;
     padding-left: 48px !important;
     padding-top: 30px !important;
 }
@@ -191,6 +218,8 @@ textarea.desc {background: url(../images/desc.jpg) no-repeat left !important;}
 }
 #login_screen .ui-content {
     padding: 0em !important;
+    height: 100% !important;
+    overflow: initial !important;
 }
 #login_screen form {
     border-radius: 0px !important;
