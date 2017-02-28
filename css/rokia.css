@@ -305,3 +305,35 @@ input.pass {background: url(../images/pass.jpg) no-repeat left !important;}
     margin-bottom: 98px !important;
     margin-top: -9px !important;
 }
+
+.loader-default {
+	background: 0;
+    display: none;
+	filter: Alpha(Opacity=18);
+	opacity: .18;
+	width: 2.875em;
+	height: 2.875em;
+	margin-left: -1.4375em;
+	margin-top: -1.4375em;
+	z-index: 9999999;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	border: 0;
+}
+
+.loading {
+	background-color: #000 !important;
+	display: block;
+	margin: 0;
+	width: 2.75em;
+	height: 2.75em;
+	padding: .0625em;
+	-webkit-border-radius: 2.25em;
+	border-radius: 2.25em;
+}
+
+.loading {
+	background: url(images/ajax-loader.gif);
+	background-size: 2.875em 2.875em;
+}
