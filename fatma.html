@@ -13,9 +13,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 <script>
-		if (window.screen.height==568) { // iPhone 4"
-		document.querySelector("meta[name=viewport]").content="width=320.1";
-		}
+    if (window.screen.height==568) { // iPhone 4"
+    document.querySelector("meta[name=viewport]").content="width=320.1";
+    }
 </script>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -30,36 +30,35 @@
 
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 
 </head>
 <body>
 <!-- page1 -->
 <div data-role="page" id="home-reg">
-	<div data-role="header" id="header">
-	
-       <div>
-      <a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="bar-icon"></a>
-       <a href="#"><img src="images/placeholder-(1).png" class="map"></a>
-        <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option.png" class="message"></a>
-         <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell.png" class="not"></a>
-      <!--
-       <a href="#message-reg" data-transition="flip"><img src="images/mees_03.png" class="mess-icon"></a>
-       <a href="#notification-reg" data-transition="flip"><img src="images/not_03.png"></a>-->
+  <div data-role="header" id="header">
+  
+       <div class="right">
+        <a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="icon-bar"></a>
+       </div>
+       <div class="left">
+
+        <a href="#" data-transition="flip"><img src="images/placeholder-(1)_03.png" class="icon-map"></a>
+         <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option-(1)_03.png" class="message"></a>
+           <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell_03.png" class="not"></a>
        </div>
       
        </div>
     <div data-role="panel" id="myPanel" data-display="overlay">
     <input type="text" placeholder="Search" >
     <center class="info">
-      <img src="images/profile_03.png">
+      <img src="images/doc_profile_03.png">
       <h2>Travis Strok</h2>
       <span>Doctor</span>
 
     </center>
   <div class="link1 hvr-grow">
- <a href="#home-reg" ><img src="images/menue_03.png"></a>
+ <a href="#home-reg"data-transition="flip" ><img src="images/menue_03.png"></a>
  <h2>Home</h2>
 </div>
 <div class="link1 hvr-grow">
@@ -80,41 +79,42 @@
 </div>
 
 </div>
-		<div role="main" class="ui-content">
+    <div role="main" class="ui-content">
       <div class="newpost">
         <input type="text" placeholder="What's in your mind...?">
          <a href="#" class="ui-btn ui-shadow hvr-grow">Add Post</a>
 
       </div>
       <br><br>
-			<h2 class="title">Heart attack and  blood pressure</h2>
-			<hr class="hr" />
-		<div class="ui-grid-a">
+      <h2 class="title">Heart attack and  blood pressure</h2>
+      <hr class="hr" />
+    <div class="ui-grid-a">
       <div class="ui-block-a">
          <a href="#"><img src="images/picdoctor_15.png"></a>
+         <center>
           <h2>Dr.Mohammed Fasil</h2>
-        <span>Cardiologist</span>
+        <h4>Cardiologist</h4></center>
+        </center>
       </div>
       <div class="ui-block-b">
-      <a href="#popupMenu" data-rel="popup" data-transition="slidedown" >
+      <a href="#popupMenu" data-rel="popup" data-transition="slideup" >
       <img src="images/seting_11_03.png"><br>
       <span>Just Now</span>
     </a>
        
       </div>
     </div>
-    <br>
+    
     <!-- delete and change -->
-    <div class="update">
    
-    <div data-role="popup" id="popupMenu" data-theme="a">
-       <ul data-role="listview" data-inset="true">
-    
-    <li data-icon="delete"><a href="#" style="margin-top:-43px">Delete Post</a></li>
-    <li data-icon="edit"><a href="#"style="margin-top:-24px">Edit Post</a></li>
-</ul>
-</div>
-</div>
+   
+    <div data-role="popup" id="popupMenu" >
+      <div class="check">
+        <h3>Edit Post</h3>
+        <h3> Delete</h3>
+
+      </div>
+      </div>
  
     <!-- post -->
      <div class="post">
@@ -139,7 +139,7 @@
 
 </div>
 <div data-role="footer" id="footer">
-	 <span class="ui-title" />
+   <span class="ui-title" />
 
 </div>
 </div>
@@ -148,30 +148,32 @@
 <!-- page2 -->
 <div data-role="page" id="message-reg">
 
-		  <div data-role="header" id="header">
+      <div data-role="header" id="header">
   
       
-       <div>
-      <a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="bar-icon"></a>
-       <a href="#"><img src="images/placeholder-(1).png" class="map"></a>
-        <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option.png" class="message"></a>
-         <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell.png" class="not"></a>
-      <!--
-       <a href="#message-reg" data-transition="flip"><img src="images/mees_03.png" class="mess-icon"></a>
-       <a href="#notification-reg" data-transition="flip"><img src="images/not_03.png"></a>-->
+     
+       <div class="right">
+        <a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="icon-bar"></a>
        </div>
+       <div class="left">
+
+        <a href="#" data-transition="flip"><img src="images/placeholder-(1)_03.png" class="icon-map"></a>
+         <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option-(1)_03.png" class="message"></a>
+           <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell_03.png" class="not"></a>
+       </div>
+      
       
        </div>
      <div data-role="panel" id="myPanel" data-display="overlay">
     <input type="text" placeholder="Search" >
     <center class="info">
-      <img src="images/profile_03.png">
+      <img src="images/doc_profile_03.png">
       <h2>Travis Strok</h2>
       <span>Doctor</span>
 
     </center>
   <div class="link1 hvr-grow">
- <a href="#home-reg" ><img src="images/menue_03.png"></a>
+ <a href="#home-reg"data-transition="flip" ><img src="images/menue_03.png"></a>
  <h2>Home</h2>
 </div>
 <div class="link1 hvr-grow">
@@ -193,7 +195,7 @@
 
 </div>
    <div role="main" class="ui-content">
-   		 <div class="title">
+       <div class="title">
            <h3>Recent</h3>
           <hr class="hr" />
         </div>
@@ -304,7 +306,7 @@
 <i class="fa fa-search fa-1x"></i>
 </div>
  <br>
-	   <!-- /******************************************************/-->
+     <!-- /******************************************************/-->
 
    </div>
  
@@ -319,31 +321,34 @@
 <!-- page3 -->
 <div data-role="page" id="notification-reg">
    
-		 <div data-role="header" id="header">
+     <div data-role="header" id="header">
   
-       <div>
-      <a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="bar-icon"></a>
-       <a href="#"><img src="images/placeholder-(1).png" class="map"></a>
-        <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option.png" class="message"></a>
-         <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell.png" class="not"></a>
-      <!--
-       <a href="#message-reg" data-transition="flip"><img src="images/mees_03.png" class="mess-icon"></a>
-       <a href="#notification-reg" data-transition="flip"><img src="images/not_03.png"></a>-->
+      
+       <div class="right">
+        <a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="icon-bar"></a>
        </div>
+       <div class="left">
+
+        <a href="#" data-transition="flip"><img src="images/placeholder-(1)_03.png" class="icon-map"></a>
+         <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option-(1)_03.png" class="message"></a>
+           <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell_03.png" class="not"></a>
+       </div>
+      
       
        </div>
     <div data-role="panel" id="myPanel" data-display="overlay">
     <input type="text" placeholder="Search" >
     <center class="info">
-      <img src="images/profile_03.png">
+      <img src="images/doc_profile_03.png">
       <h2>Travis Strok</h2>
       <span>Doctor</span>
 
     </center>
   <div class="link1 hvr-grow">
- <a href="#home-reg" ><img src="images/menue_03.png"></a>
+ <a href="#home-reg" data-transition="flip" ><img src="images/menue_03.png"></a>
  <h2>Home</h2>
 </div>
+ 
 <div class="link1 hvr-grow">
  <a href="#"><img src="images/info_03.png"></a>
  <h2>About</h2>
@@ -473,7 +478,7 @@
   <h2>See All</h2>
   
 </div>
-		
+    
 
 </div>
 <!-- page3 -->
