@@ -6,7 +6,7 @@
     color: #333;
     text-shadow: 0 1px 0 #f3f3f3;
 }
- 
+
 #home-reg .ui-content{background: #fff;height:100%}
 
 /**/
@@ -19,9 +19,9 @@
 }
 #home-reg #header .left
  {
-    float: right;
-    padding: 10px;
     
+    padding: 10px;
+	
 }
 #home-reg #header .right .icon-bar 
 {
@@ -287,7 +287,7 @@ margin-left: 37px;
 }
 #message-reg #header .left
  {
-    float: right;
+    
     padding: 10px;
     
 }
@@ -389,7 +389,7 @@ margin-left: 37px;
 
 #message-reg .title h3
 {
-    margin-top: 0;
+	margin-top: 0;
     margin-left: 10px;
     font-size: 16px;
     font-family: Tahoma;
@@ -399,25 +399,25 @@ margin-left: 37px;
 #message-reg .content:hover{background: #edf2fa}
 #message-reg .content img
 {   
-    width: 70px;
+	width: 70px;
     height: 70px;
     margin-left: 10px;
     padding: 5px;
 }
 #message-reg .content h2{    
-    font-size: 13px;
+	font-size: 13px;
     text-align: justify;
     margin-left: 4px;
     margin-top: 30px;
 }
 #message-reg .content p{
-    font-size: 11px;
-    margin-left: 55px;
-    margin-top: 36px;
+	font-size: 11px;
+	margin-left: 55px;
+	margin-top: 36px;
     opacity: 0.6;
 }
 #message-reg .search{
-    width: 50px;
+	width: 50px;
     height: 50px;
     background: #83618c;
     border-radius: 50px;
@@ -428,7 +428,7 @@ margin-left: 37px;
     margin-top: -41px;
 }
 #message-reg .search i{
-    color: #fff;
+	color: #fff;
     margin-top: 14px;
     margin-left: 16px;
 }
@@ -454,7 +454,7 @@ margin-left: 37px;
 }
 #notification-reg  #header .left
  {
-    float: right;
+    
     padding: 10px;
     
 }
@@ -555,7 +555,7 @@ margin-left: 37px;
 
 #notification-reg .title h3
 {
-    margin-top: 0;
+	margin-top: 0;
     margin-left: 10px;
     font-size: 16px;
     font-family: Tahoma;
@@ -565,18 +565,18 @@ margin-left: 37px;
 #notification-reg .content:hover{background: #edf2fa}
 #notification-reg .content img
 {   
-    width: 70px;
+	width: 70px;
     height: 70px;
     margin-left: 10px;
     padding: 5px;
 }
 #notification-reg .content h4{    
-    font-size: 10px;
-    opacity: 0.5;
-    margin-left:-52px;
+	font-size: 10px;
+	opacity: 0.5;
+	margin-left:-52px;
 }
 #notification-reg .content p{    
-    font-size: 12px;
+	font-size: 12px;
     margin-left: -55px;
     line-height: 2;
 }
@@ -587,18 +587,182 @@ margin-left: 37px;
 #footer h2{text-align: center;font-family: Tahoma;color: #fff;font-weight: normal;}
 
 
+/************* page 4  profile Doctor **************/
 
 
 
+#profile-Docter #header{background: #7b5785;height: 60px;border-color: #7b5785}
+#profile-Docter #header .right
+{
+   float: left;
+}
+#profile-Docter #header .left
+ {
+    
+    padding: 10px;
+    
+}
+#profile-Docter #header .right .icon-bar 
+{
+    width: 30px;
+    height: 30px;
+    padding: 11px;
+    margin-top: 4px;
+}
+
+#profile-Docter #header .left .icon-map
+{
+    width: 25px;
+    height: 25px;
+    margin-right: 30px;
+    padding: 3px;
+     margin-top: 4px;
+}
+#profile-Docter #header .left .message
+{
+    width: 25px;
+    height: 25px;
+    margin-right: 30px;
+    padding: 3px;
+     margin-top: 4px;
+}
+#profile-Docter #header .left .not
+{
+    width: 25px;
+    height: 25px;
+    margin-right: 30px;
+    padding:3px;
+     margin-top: 4px;
+}
+
+#profile-Docter #myPanel{background-image:url(../images/sub-menue.png)}
+#profile-Docter #myPanel input
+{
+    border-radius: 50%;
+    color: #fff;
+    padding: 12px;
+}
+#profile-Docter #myPanel .ui-input-text, .ui-input-search
+{
+    margin: .5em 0;
+    border-width: -10px;
+    border-style: solid;
+    border-radius: 20px;
+    background: #443049;
+    border-color:#443049 ;
+
+  
+}
+#profile-Docter #myPanel img
+{
+    width:130px;
+    height: 130px;
+    margin-top: 10px
+}
+#profile-Docter #myPanel .info h2{color: #ce97d9;
+    font-size: 19px;
+    font-family: monospace;
+    margin-top: 15px;
 
 
+}
+#profile-Docter #myPanel .info span{
+    color: #ddd;
+    font-family: normal;
+    font-size: 18px;
+    opacity: 0.5;
+}
+#profile-Docter #myPanel .link1{
+   height: 50px;
+    margin-top: 10px;
+    width: 112%;
+    margin-left: -28px;
+}
+#profile-Docter #myPanel .link1 img{width: 37px;
+    height: 37px;
+margin-left: 37px;
+    margin-top: 7px;}
+#profile-Docter #myPanel .link1 a{margin-top: -10px}
+#profile-Docter #myPanel .link1 h2{
+    font-size: 15px;
+   font-family: Source Sans Pro ;
+    margin-left: 100px;
+    margin-top: -35px;
+    text-align: left;
+    color: #fff;
+    font-weight: 100;
+}
+#profile-Docter #myPanel .link1:hover
+{
+    background: #443049;
+    cursor: pointer;
+    
+}
+.backphoto{
+width: 100%;
+height: 260px;
+margin-top:-50px;
+}
+#profile-Docter .ui-content {
+    border-width: 0;
+    overflow: visible;
+    overflow-x: hidden;
+    padding: 0 0 0 0;
+    background-color: #fff
+}
+#profile-Docter .profile-pic
+{
+    width: 160px;
+    margin-top: -100px;
+}
+#profile-Docter .prof-info h1
+{
+    font-size: 26px;
+   font-family: Source Sans Pro ;
+    color: #b393b9;
+    font-weight: 300;
+    margin-top: 8px;
+}
+#profile-Docter .prof-info h4
+{
+    opacity: 0.5;
+    font-size: 22px;
+   font-family: Source Sans Pro ;
+   margin-top: -7px;
+   font-weight: 200;
+}
+
+#profile-Docter .bgfooter a{
+        background-color: #71507d;
+    color: #fff;
+    font-weight: 400;
+    width: 178px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: Source Sans Pro;
+    /* margin-left: -77px; */
+    box-shadow: 1px 8px 16px -1px #bfb2c7;
+    margin-top: -8px;
+   
+}
+#profile-Docter .bgfooter 
+{
+background: url(../images/ffooter.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
 
 
+}
+#profile-Docter .bgfooter p
+{
+    margin-top: -10px;
+   width: 80%;
+    padding: 26px;
+    text-align: justify;
+    color: #71507d;
+    font-size: 18px;
+    font-family: Source Sans Pro;
+}
 
-
-
-
-
-
-
-
+.clear{width: 50px;height: 50px;clear: both;}
