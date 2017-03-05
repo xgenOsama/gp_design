@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+   {
+     font-family: Source Sans Pro;
+   }
 
+
+  </style>
 <!-- Basic Page Needs ================================================== -->
 
 <meta charset="utf-8">
@@ -32,22 +38,6 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 
-<script type="text/javascript"> 
-  
-  function toggle() {
-	var ele = document.getElementById("mapselector");
-	var text = document.getElementById("popupMenu");
-	if(ele.style.display == "block") {
-    		ele.style.display = "none";
-		text.innerHTML = "show";
-  	}
-	else {
-		ele.style.display = "block";
-		text.innerHTML = "hide";
-	}
-} 
-</script>
-
 </head>
 <body>
 <!-- page1 -->
@@ -59,9 +49,9 @@
        </div>
        <div class="left">
         <center>
-        <a href="#map-reg" data-transition="flip"><img src="images/placeholder-(1)_03.png" class="icon-map"></a>
-         <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option-(1)_03.png" class="message"></a>
-           <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell_03.png" class="not"></a>
+        <a href="#map-reg" data-transition="flip"><img src="images/placeholder-(1)_03.png" class="icon-map hvr-grow"></a>
+         <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option-(1)_03.png" class="message hvr-grow"></a>
+           <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell_03.png" class="not hvr-grow"></a>
            </center>
        </div>
       
@@ -69,7 +59,7 @@
     <div data-role="panel" id="myPanel" data-display="overlay">
     <input type="text" placeholder="Search" >
     <center class="info">
-      <a href="#profile-Docter" data-transition="flip" ><img src="images/doc_profile_03.png"></a>
+      <a href="#profile-Docter" data-transition="flip" ><img src="images/doc_profile_03.png" class="hvr-grow"></a>
       <h2>Magdy Yacoub</h2>
       <span>Doctor</span>
 
@@ -98,12 +88,29 @@
 
 </div>
 		<div role="main" class="ui-content">
-      <div class="newpost">
+      <div class="newpost"> 
         <input type="text" placeholder="What's in your mind...?">
          <a href="#" class="ui-btn ui-shadow hvr-grow">Add Post</a>
+        </div>
+           <input type="file" name="file-3[]" id="file-3" class="inputfile">
 
-      </div>
-      <br><br>
+    <label for="file-3" style="width: 80px;
+    height: 16px;
+    background-color: #7b5785;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 6px;
+    float: right;
+    margin-top: 1px;
+    margin-right:5px;
+    box-shadow: 5px 5px 14px -2px #ddd;
+    font-weight: 400;
+    font-family: Source Sans Pro;"class="hvr-grow">
+       
+        <span>Choose File</span>
+    </label>
+      <br> <br>
 			<h2 class="title">Heart attack and  blood pressure</h2>
 			<hr class="hr" />
 		<div class="ui-grid-a">
@@ -186,7 +193,7 @@
     <input type="text" placeholder="Search" >
     <center class="info">
       <a href="#profile-Docter" data-transition="flip"><img src="images/doc_profile_03.png"></a>
-      <h2>Magdy Yacoub</h2>
+      <h2>Travis Strok</h2>
       <span>Doctor</span>
 
     </center>
@@ -360,7 +367,7 @@
     <input type="text" placeholder="Search" >
     <center class="info">
       <a href="#profile-Docter" data-transition="flip"><img src="images/doc_profile_03.png"></a>
-      <h2>Magdy Yacoub</h2>
+      <h2>Travis Strok</h2>
       <span>Doctor</span>
 
     </center>
@@ -523,7 +530,7 @@
     <input type="text" placeholder="Search" >
     <center class="info">
       <a href="#profile-Docter" class="hvr-grow"><img src="images/doc_profile_03.png"></a>
-      <h2>Magdy Yacoub</h2>
+      <h2>Travis Strok</h2>
       <span>Doctor</span>
 
     </center>
@@ -570,16 +577,15 @@
  <a href="#" class="ui-btn ui-btn-inline  ui-btn-shadow ui-btn-corner-all hvr-grow">Message</a>
 </center>
 
- </div>
-</div>
-</div>
-
+ </div> 
+  </div>
+   </div>
 <!-- end body -->
 <!-- end page 4-->
 
 <!-- page 5-->
 
-  <div data-role="page" id="profile-Docter">
+  <div data-role="page" id="profile-patient">
   <div data-role="header" id="header">
   
        <div class="right">
@@ -598,7 +604,7 @@
     <input type="text" placeholder="Search" >
     <center class="info">
       <a href="#" class="hvr-grow"><img src="images/doc_profile_03.png"></a>
-      <h2>Magdy Yacoub</h2>
+      <h2>Travis Strok</h2>
       <span>Doctor</span>
 
     </center>
@@ -644,19 +650,17 @@
 </center>
 
  </div>
-</div>
-</div>
+  </div>
+   </div>
+   <!-- end body -->
 
-<!-- end body -->
 
-
-<!-- end page5 -->
-
-<!-- page6 -->
+<!-- page5 -->
+<!-- start page6 -->
 
 <div data-role="page" id="map-reg">
 
-		  <div data-role="header" id="header">
+      <div data-role="header" id="header">
   
       <div class="right">
 
@@ -705,27 +709,27 @@
 </div>
 
         <div class="ui-grid-a content">
-				<div class="rokia">
-				<input type="text" placeholder="Search">
-				<!--
-				<div class="ui-block-b" href="#">
+        <div class="rokia">
+        <input type="text" placeholder="Search">
+        <!--
+        <div class="ui-block-b" href="#">
                 <a href="javascript:toggle();" id="#popupMenu">
                 <img src="images/mapselect.png"><br>
                 </a>
                 </div>
-				-->
-				
-				<select class="mapselect" aria-dropeffect="move">
-						<option value="icon">
+        -->
+        
+        <select class="mapselect" aria-dropeffect="move">
+            <option value="icon">
                           <img src="images/mapselect.png">
                         </option>
-						<option value="Hospital">Hospital</option>
-						<option value="Pharmacy">Pharmacy</option>
-						<option value="Laboratory">Laboratory</option>
-		        </select>
-				</div>
-		
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54695.48648760058!2d31.417859261952252!3d31.041071221694903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79db7a9053547%3A0xf8dab3bbed766c97!2z2KfZhNmF2YbYtdmI2LHYqdiMINin2YTZhdmG2LXZiNix2KkgKNmC2LPZhSAyKdiMINin2YTZhdmG2LXZiNix2KnYjCDYp9mE2K_ZgtmH2YTZitip!5e0!3m2!1sar!2seg!4v1488417348850" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <option value="Hospital">Hospital</option>
+            <option value="Pharmacy">Pharmacy</option>
+            <option value="Laboratory">Laboratory</option>
+            </select>
+        </div>
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54695.48648760058!2d31.417859261952252!3d31.041071221694903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79db7a9053547%3A0xf8dab3bbed766c97!2z2KfZhNmF2YbYtdmI2LHYqdiMINin2YTZhdmG2LXZiNix2KkgKNmC2LPZhSAyKdiMINin2YTZhdmG2LXZiNix2KnYjCDYp9mE2K_ZgtmH2YTZitip!5e0!3m2!1sar!2seg!4v1488417348850" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 
         </div>
 </div>

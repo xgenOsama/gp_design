@@ -1,29 +1,33 @@
 /* page 1*/
-/* jqury update*/
 .ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
-    background-color: #ccc;
-    border-color: #ddd;
+    background-color: #fff;
+    border-color: #ccc;
     color: #333;
     text-shadow: 0 1px 0 #f3f3f3;
+    border:none;
+}
+/* jqury update*/
+.inputfile {
+   
+    height: 0.1px;
+    opacity: 0;
+  
+    position: absolute;
+    z-index: -1;
 }
 
-#home-reg .ui-content{background: #fff;height:100%}
-
-/**/
-#home-reg #header{background: #7b5785;height: 60px}
-#home-reg #footer{background: #7b5785;}
-
-#home-reg #header .right
+/* Geeneral************************/
+ #header .right
 {
    float: left;
 }
-#home-reg #header .left
+ #header .left
  {
     
     padding: 10px;
-	
+    
 }
-#home-reg #header .right .icon-bar 
+#header .right .icon-bar 
 {
     width: 30px;
     height: 30px;
@@ -31,7 +35,7 @@
     margin-top: 4px;
 }
 
-#home-reg #header .left .icon-map
+#header .left .icon-map
 {
     width: 25px;
     height: 25px;
@@ -39,7 +43,7 @@
     padding: 3px;
      margin-top: 4px;
 }
-#home-reg #header .left .message
+#header .left .message
 {
     width: 25px;
     height: 25px;
@@ -47,7 +51,7 @@
     padding: 3px;
      margin-top: 4px;
 }
-#home-reg #header .left .not
+#header .left .not
 {
     width: 25px;
     height: 25px;
@@ -55,7 +59,77 @@
     padding:3px;
      margin-top: 4px;
 }
+#myPanel{background-image:url(../images/sub-menue.png)}
+#myPanel input
+{
+    border-radius: 50%;
+    color: #fff;
+    padding: 12px;
+}
+#myPanel .ui-input-text, .ui-input-search
+{
+    margin: .5em 0;
+    border-width: -10px;
+    border-style: solid;
+    border-radius: 20px;
+    background: #443049;
+    border-color:#443049 ;
 
+  
+}
+#myPanel img
+{
+    width:130px;
+    height: 130px;
+    margin-top: 10px
+}
+#myPanel .info h2{color: #ce97d9;
+    font-size: 19px;
+    font-family: monospace;
+    margin-top: 15px;
+
+
+}
+#myPanel .info span{
+    color: #ddd;
+    font-family: normal;
+    font-size: 18px;
+    opacity: 0.5;
+}
+#myPanel .link1{
+   height: 50px;
+    margin-top: 10px;
+    width: 112%;
+    margin-left: -28px;
+}
+#myPanel .link1 img{width: 37px;
+    height: 37px;
+margin-left: 37px;
+    margin-top: 7px;}
+#myPanel .link1 a{margin-top: -10px}
+#myPanel .link1 h2{
+    font-size: 15px;
+   font-family: Source Sans Pro ;
+    margin-left: 100px;
+    margin-top: -35px;
+    text-align: left;
+    color: #fff;
+    font-weight: 100;
+}
+ #myPanel .link1:hover
+{
+    background: #443049;
+    cursor: pointer;
+    
+}
+
+/* end general */
+#home-reg .ui-content{background: #fff;height:100%}
+
+/**/
+#home-reg #header{background: #7b5785;height: 60px}
+#home-reg #footer{background: #7b5785;}
+#home-reg .newpost {width: 100%;}
 #home-reg .newpost input
 {
       font-family: Source Sans Pro;
@@ -95,7 +169,7 @@
 #home-reg #popupMenu
 {
     background-color: #f7f7f7;
-    box-shadow: 5px 5px 5px #ccc;
+     box-shadow: 5px 5px 5px #ccc;
 }
 #home-reg #popupMenu h3{font-size: 17px; opacity: 0.5;font-family:  Source Sans Pro; font-weight: 200px}
 #home-reg .check
@@ -201,69 +275,6 @@
     font-weight: 400;
     font-family:Source Sans Pro ;
     }
-#home-reg #myPanel{background-image:url(../images/sub-menue.png)}
-#home-reg #myPanel input
-{
-    border-radius: 50%;
-    color: #fff;
-    padding: 12px;
-}
-#home-reg #myPanel .ui-input-text, .ui-input-search
-{
-    margin: .5em 0;
-    border-width: -10px;
-    border-style: solid;
-    border-radius: 20px;
-    background: #443049;
-    border-color:#443049 ;
-
-  
-}
-#home-reg #myPanel img
-{
-    width:130px;
-    height: 130px;
-    margin-top: 10px
-}
-#home-reg #myPanel .info h2{color: #ce97d9;
-    font-size: 19px;
-    font-family: monospace;
-    margin-top: 15px;
-
-
-}
-#home-reg #myPanel .info span{
-    color: #ddd;
-    font-family: normal;
-    font-size: 18px;
-    opacity: 0.5;
-}
-#home-reg #myPanel .link1{
-   height: 50px;
-    margin-top: 10px;
-    width: 112%;
-    margin-left: -28px;
-}
-#home-reg #myPanel .link1 img{width: 37px;
-    height: 37px;
-margin-left: 37px;
-    margin-top: 7px;}
-#home-reg #myPanel .link1 a{margin-top: -10px}
-#home-reg #myPanel .link1 h2{
-    font-size: 15px;
-   font-family: Source Sans Pro ;
-    margin-left: 100px;
-    margin-top: -35px;
-    text-align: left;
-    color: #fff;
-    font-weight: 100;
-}
-#home-reg #myPanel .link1:hover
-{
-    background: #443049;
-    cursor: pointer;
-    
-}
 
 /************pages 2*************************/
 
@@ -281,112 +292,8 @@ margin-left: 37px;
 /**/
 #message-reg #header{background: #7b5785;height: 60px}
 #message-reg #footer{background: #7b5785;}
-#message-reg #header .right
-{
-   float: left;
-}
-#message-reg #header .left
- {
-    
-    padding: 10px;
-    
-}
-#message-reg #header .right .icon-bar 
-{
-    width: 30px;
-    height: 30px;
-    padding: 11px;
-    margin-top: 4px;
-}
-
-#message-reg #header .left .icon-map
-{
-    width: 25px;
-    height: 25px;
-    margin-right: 30px;
-    padding: 3px;
-     margin-top: 4px;
-}
-#message-reg #header .left .message
-{
-    width: 25px;
-    height: 25px;
-    margin-right: 30px;
-    padding: 3px;
-     margin-top: 4px;
-}
-#message-reg #header .left .not
-{
-    width: 25px;
-    height: 25px;
-    margin-right: 30px;
-    padding:3px;
-     margin-top: 4px;
-}
-#message-reg #myPanel{background-image:url(../images/sub-menue.png);}
-#message-reg #myPanel input
-{
-    border-radius: 50%;
-    color: #fff;
-    padding: 12px;
-}
-#message-reg #myPanel .ui-input-text, .ui-input-search
-{
-    margin: .5em 0;
-    border-width: -10px;
-    border-style: solid;
-    border-radius: 20px;
-    background: #443049;
-    border-color:#443049 ;
 
   
-}
-#message-reg #myPanel img
-{
-    width:130px;
-    height: 130px;
-    margin-top: 10px;
-}
-#message-reg #myPanel .info h2{color: #ce97d9;
-    font-size: 19px;
-    font-family: monospace;
-    margin-top: 15px;
-
-
-}
-#message-reg #myPanel .info span{
-    color: #ddd;
-    font-family: normal;
-    font-size: 18px;
-    opacity: 0.5;
-}
-#message-reg #myPanel .link1{
-   height: 50px;
-    margin-top: 10px;
-    width: 112%;
-    margin-left: -28px;
-}
-#message-reg #myPanel .link1 img{width: 37px;
-    height: 37px;
-margin-left: 37px;
-    margin-top: 7px;}
-#message-reg #myPanel .link1 a{margin-top: -10px}
-#message-reg #myPanel .link1 h2{
-    font-size: 15px;
-   font-family: Source Sans Pro ;
-    margin-left: 100px;
-    margin-top: -35px;
-    text-align: left;
-    color: #fff;
-    font-weight: 100;
-}
-#message-reg #myPanel .link1:hover
-{
-    background: #443049;
-    cursor: pointer;
-    
-}
-
 #message-reg .title h3
 {
 	margin-top: 0;
@@ -448,110 +355,6 @@ margin-left: 37px;
 /**/
 #notification-reg  #header{background: #7b5785;height: 60px}
 #notification-reg  #footer{background: #7b5785;}
-#notification-reg  #header .right
-{
-   float: left;
-}
-#notification-reg  #header .left
- {
-    
-    padding: 10px;
-    
-}
-#notification-reg  #header .right .icon-bar 
-{
-    width: 30px;
-    height: 30px;
-    padding: 11px;
-    margin-top: 4px;
-}
-
-#notification-reg  #header .left .icon-map
-{
-    width: 25px;
-    height: 25px;
-    margin-right: 30px;
-    padding: 3px;
-     margin-top: 4px;
-}
-#notification-reg #header .left .message
-{
-    width: 25px;
-    height: 25px;
-    margin-right: 30px;
-    padding: 3px;
-     margin-top: 4px;
-}
-#notification-reg #header .left .not
-{
-    width: 25px;
-    height: 25px;
-    margin-right: 30px;
-    padding:3px;
-     margin-top: 4px;
-}
-#notification-reg #myPanel{background-image:url(../images/sub-menue.png);}
-#notification-reg  #myPanel input
-{
-    border-radius: 50%;
-    color: #fff;
-    padding: 12px;
-}
-#notification-reg  #myPanel .ui-input-text, .ui-input-search
-{
-    margin: .5em 0;
-    border-width: -10px;
-    border-style: solid;
-    border-radius: 20px;
-    background: #443049;
-    border-color:#443049 ;
-
-  
-}
-#notification-reg  #myPanel img
-{
-    width:130px;
-    height: 130px;
-}
-#notification-reg  #myPanel .info h2{color: #ce97d9;
-    font-size: 19px;
-    font-family: monospace;
-    margin-top: 15px;
-
-
-}
-#notification-reg  #myPanel .info span{
-    color: #ddd;
-    font-family: normal;
-    font-size: 18px;
-    opacity: 0.5;
-}
-#notification-reg  #myPanel .link1{
-   height: 50px;
-    margin-top: 10px;
-    width: 112%;
-    margin-left: -28px;
-}
-#notification-reg  #myPanel .link1 img{width: 37px;
-    height: 37px;
-margin-left: 37px;
-    margin-top: 7px;}
-#notification-reg  #myPanel .link1 a{margin-top: -10px}
-#notification-reg  #myPanel .link1 h2{
-    font-size: 15px;
-   font-family: Source Sans Pro ;
-    margin-left: 100px;
-    margin-top: -35px;
-    text-align: left;
-    color: #fff;
-    font-weight: 100;
-}
-#notification-reg  #myPanel .link1:hover
-{
-    background: #443049;
-    cursor: pointer;
-    
-}
 
 #notification-reg .title h3
 {
@@ -592,112 +395,7 @@ margin-left: 37px;
 
 
 #profile-Docter #header{background: #7b5785;height: 60px;border-color: #7b5785}
-#profile-Docter #header .right
-{
-   float: left;
-}
-#profile-Docter #header .left
- {
-    
-    padding: 10px;
-    
-}
-#profile-Docter #header .right .icon-bar 
-{
-    width: 30px;
-    height: 30px;
-    padding: 11px;
-    margin-top: 4px;
-}
 
-#profile-Docter #header .left .icon-map
-{
-    width: 25px;
-    height: 25px;
-    margin-right: 30px;
-    padding: 3px;
-     margin-top: 4px;
-}
-#profile-Docter #header .left .message
-{
-    width: 25px;
-    height: 25px;
-    margin-right: 30px;
-    padding: 3px;
-     margin-top: 4px;
-}
-#profile-Docter #header .left .not
-{
-    width: 25px;
-    height: 25px;
-    margin-right: 30px;
-    padding:3px;
-     margin-top: 4px;
-}
-
-#profile-Docter #myPanel{background-image:url(../images/sub-menue.png)}
-#profile-Docter #myPanel input
-{
-    border-radius: 50%;
-    color: #fff;
-    padding: 12px;
-}
-#profile-Docter #myPanel .ui-input-text, .ui-input-search
-{
-    margin: .5em 0;
-    border-width: -10px;
-    border-style: solid;
-    border-radius: 20px;
-    background: #443049;
-    border-color:#443049 ;
-
-  
-}
-#profile-Docter #myPanel img
-{
-    width:130px;
-    height: 130px;
-    margin-top: 10px
-}
-#profile-Docter #myPanel .info h2{color: #ce97d9;
-    font-size: 19px;
-    font-family: monospace;
-    margin-top: 15px;
-
-
-}
-#profile-Docter #myPanel .info span{
-    color: #ddd;
-    font-family: normal;
-    font-size: 18px;
-    opacity: 0.5;
-}
-#profile-Docter #myPanel .link1{
-   height: 50px;
-    margin-top: 10px;
-    width: 112%;
-    margin-left: -28px;
-}
-#profile-Docter #myPanel .link1 img{width: 37px;
-    height: 37px;
-margin-left: 37px;
-    margin-top: 7px;}
-#profile-Docter #myPanel .link1 a{margin-top: -10px}
-#profile-Docter #myPanel .link1 h2{
-    font-size: 15px;
-   font-family: Source Sans Pro ;
-    margin-left: 100px;
-    margin-top: -35px;
-    text-align: left;
-    color: #fff;
-    font-weight: 100;
-}
-#profile-Docter #myPanel .link1:hover
-{
-    background: #443049;
-    cursor: pointer;
-    
-}
 .backphoto{
 width: 100%;
 height: 260px;
@@ -771,53 +469,12 @@ background: url(../images/ffooter.png) no-repeat;
 /* jqury update*/
 .ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page {height: 100% !important;}
 #map-reg .ui-content{background: #fff;height:100%}
-.ui-input-text input, .ui-input-search input, textarea.ui-input-text {padding: 10px !important;}
+#map-reg.ui-input-text input, .ui-input-search input, textarea.ui-input-text {padding: 10px !important;}
 /**/
 #map-reg #header{background: #7b5785;height: 60px}
 #map-reg #footer{background: #7b5785;}
 
-#map-reg #header .right
-{
-   float: left;
-}
-#map-reg #header .left
- {
-    
-    padding: 10px;
-	
-}
-#map-reg #header .right .icon-bar 
-{
-    width: 30px;
-    height: 30px;
-    padding: 11px;
-    margin-top: 4px;
-}
 
-#map-reg #header .left .icon-map
-{
-    width: 25px;
-    height: 25px;
-    margin-right: 30px;
-    padding: 3px;
-     margin-top: 4px;
-}
-#map-reg #header .left .message
-{
-    width: 25px;
-    height: 25px;
-    margin-right: 30px;
-    padding: 3px;
-     margin-top: 4px;
-}
-#map-reg #header .left .not
-{
-    width: 25px;
-    height: 25px;
-    margin-right: 30px;
-    padding:3px;
-    margin-top: 4px;
-}
 #map-reg .content
 {
     width: 100%;
@@ -829,7 +486,7 @@ background: url(../images/ffooter.png) no-repeat;
     margin-top: -16px !important;
     position: relative;
 }
-#map-reg .ui-input-text, .ui-input-search
+#map-reg .content  .ui-input-text, .ui-input-search
 {
     border-width: -10px;
     border-style: solid;
@@ -846,6 +503,7 @@ background: url(../images/ffooter.png) no-repeat;
     font-family: Source Sans Pro !important;
     box-shadow: 2px 7px 19px #888888 !important;
 }
+
 #map-reg iframe
 {
     position: relative;
@@ -865,68 +523,6 @@ background: url(../images/ffooter.png) no-repeat;
     border-radius: 50%;
     width: 54px;
 }
-#map-reg #myPanel{background-image:url(../images/sub-menue.png)}
-#map-reg #myPanel input
-{
-    border-radius: 50%;
-    color: #fff;
-    padding: 12px;
-}
-#map-reg #myPanel .ui-input-text, .ui-input-search
-{
-    margin: .5em 0;
-    border-width: -10px;
-    border-style: solid;
-    border-radius: 20px;
-    background: #443049;
-    border-color:#443049 ;
-}
-#map-reg #myPanel img
-{
-    width:130px;
-    height: 130px;
-    margin-top: 10px
-}
-#map-reg #myPanel .info h2{color: #ce97d9;
-    font-size: 19px;
-    font-family: monospace;
-    margin-top: 15px;
-
-
-}
-#map-reg #myPanel .info span{
-    color: #ddd;
-    font-family: normal;
-    font-size: 18px;
-    opacity: 0.5;
-}
-#map-reg #myPanel .link1{
-   height: 50px;
-    margin-top: 10px;
-    width: 112%;
-    margin-left: -28px;
-}
-#map-reg #myPanel .link1 img{width: 37px;
-    height: 37px;
-margin-left: 37px;
-    margin-top: 7px;}
-#map-reg #myPanel .link1 a{margin-top: -10px}
-#map-reg #myPanel .link1 h2{
-    font-size: 15px;
-   font-family: Source Sans Pro ;
-    margin-left: 100px;
-    margin-top: -35px;
-    text-align: left;
-    color: #fff;
-    font-weight: 100;
-}
-#map-reg #myPanel .link1:hover
-{
-    background: #443049;
-    cursor: pointer;
-    
-}
-
 
 /**********/
 #map-reg .ui-block-b img
