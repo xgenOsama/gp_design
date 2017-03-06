@@ -6,6 +6,22 @@
     text-shadow: 0 1px 0 #f3f3f3;
     border:none;
 }
+.ui-controlgroup-horizontal .ui-controlgroup-controls .ui-btn.ui-last-child {
+    border-right-width: 1px;
+    background: #7b5785;
+    color: #fff;
+    padding: 8px 37px 3px 12px;
+     float: left; 
+    margin-left: -67px;
+    margin-top: -9px;
+    font-weight: 100;
+    font-size: 14px;
+    box-shadow: 5px 5px 14px -2px #ddd;
+    width: 50px;
+    position: absolute;
+
+}
+
 /* jqury update*/
 .inputfile {
    
@@ -149,7 +165,7 @@ margin-left: 37px;
     float: right;
     height: 11px;
     font-size: 13px;
-    margin-right: 10px;
+    margin-right: 4px;
     box-shadow: 5px 5px 14px -2px #ddd;
     margin-top: 0;
       font-family: Source Sans Pro;
@@ -467,9 +483,9 @@ background: url(../images/ffooter.png) no-repeat;
 
 /************* page 6  map screen **************/
 /* jqury update*/
-.ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page {height: 100% !important;}
+#map-reg .ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page {height: 100% !important;}
 #map-reg .ui-content{background: #fff;height:100%}
-#map-reg.ui-input-text input, .ui-input-search input, textarea.ui-input-text {padding: 10px !important;}
+#map-reg .ui-input-text input, .ui-input-search input, textarea.ui-input-text {padding: 10px !important;}
 /**/
 #map-reg #header{background: #7b5785;height: 60px}
 #map-reg #footer{background: #7b5785;}
@@ -504,7 +520,7 @@ background: url(../images/ffooter.png) no-repeat;
     font-family: Source Sans Pro !important;
     box-shadow: 2px 7px 19px #888888 !important;
 }
-::-webkit-input-placeholder {
+#map-reg ::-webkit-input-placeholder {
    color: #fff;
    font-size: 16px;
    padding-left: 3px;
