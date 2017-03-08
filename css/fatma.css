@@ -267,8 +267,7 @@ margin-left: 37px;
     color: #000;
 
 }
-#home-reg .yourcomment{}
-#home-reg .yourcomment .ui-input-text, .ui-input-search
+.yourcomment .ui-input-text, .ui-input-search
 {
     margin: .5em 0;
     border-width: -10px;
@@ -280,8 +279,8 @@ margin-left: 37px;
   
 }
 
-#home-reg .comment input{height: 50px;}
-#home-reg .imgcomment{
+ .comment input{height: 50px;}
+ .imgcomment{
     background:url(../images/Untitled-2.png)no-repeat left !important;
  padding-left: 67px;
     margin-top: 6px;
@@ -571,10 +570,111 @@ select:hover
     position: relative;
     top: -64px;
 }
+#chat-screen .ui-content {
+    border-width: 0;
+    overflow: visible;
+    overflow-x: hidden;
+    padding: 1em;
+   height: 70%;
+}
+#chat-screen  #header
+{
+    background-color: #573d5c;
+    height: 100px;
+}
+#chat-screen  #header i{
+    font-size: 30px;
+    color: #fff;
+    padding: 30px;
+}
+#chat-screen #header  img
+{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 20px;
 
+}
+#chat-screen  h2{
+    
+    color: #fff;
+    margin-right: -100px;
+    font-weight: 100;
+    margin-top: -67px;
+    font-size: 18px;
+    font-family: Source Sans Pro ;
+}
+#chat-screen #header h4{
+     color: #b3a1b7;
+    margin-right: -68px;
+    font-weight: 100;
+    opacity: 0.5;
+    font-size: 14px;
+    margin-top: -5px;
+}
+#chat-screen .ui-input-text, .ui-input-search {
+
+    border-width: 1px;
+    border-style: solid;
+    padding: 4px;
+    border: 1px solid #ddd;
+}
+#chat-screen .leftchat
+{
+    width: 40px;
+    float: left;
+    height: 41px;
+    margin-top: 55px;
+    padding: 16px;
+
+}
+#chat-screen  .left{
+     font-family: Source Sans Pro ;
+    font-size: 18px;
+    color: #000;
+    box-shadow: 0px 0px 5px 1px #ddd;
+     float: left;
+    background-color: #ebebeb;
+    padding: 20px;
+     margin-top: 20px;
+}
+#chat-screen  .left p{font-size: 16px;font-weight: lighter;font-family: Source Sans Pro ; }
+#chat-screen  .Right
+{
+     font-family: Source Sans Pro ;
+     font-size: 15px;
+    color: #000;
+    box-shadow: 0px 0px 5px 1px #ddd;
+    float: right;
+    background-color: #573d5c;
+    padding: 2px 26px 0 20px;
+    color: #fff;
+    margin-top: 38px;
+    text-align: center;
+    margin-right: 20px
+}
+ #chat-screen  .Right p{font-size: 15px;font-weight: lighter;font-family: Source Sans Pro ; }
+#chat-screen .imgreply{
+    background:url(../images/reply-arrow_03.png)no-repeat right !important;
+    margin-top: 10px;
+    margin-left: -22px;
+ 
+    }
+#chat-screen .reply .imgreply
+{
+    padding-left: 34px;
+    font-size: 15px;
+    padding-top: 0px;
+    font-weight: lighter;
+    font-family: Source Sans Pro;
+
+}
+#chat-screen .reply input{height: 40px;}
 @media (height: 568px)
 {
-    .mapsearch {
+    .mapsearch 
+    {
         margin-top: -44px !important;
     }
     #select-button {
