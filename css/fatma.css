@@ -23,6 +23,9 @@
 }
 
 /* jqury update*/
+.ui-mobile .ui-page-active {
+    overflow-x: visible !important; 
+}
 .inputfile {
    
     height: 0.1px;
@@ -33,15 +36,26 @@
 }
 
 /* Geeneral************************/
- #header .right
+.ui-header {
+    background-color: #7b5785;
+    height: 60px;
+    border: 1px solid #7b5785;
+}
+.ui-footer {
+    background-color: #7b5785;
+    height: 60px;
+    border: 1px solid #7b5785;
+}
+.ui-panel {
+    
+}
+#header .right
 {
    float: left;
 }
  #header .left
- {
-    
-    padding: 10px;
-    
+{   
+    padding: 10px;   
 }
 #header .right .icon-bar 
 {
@@ -65,7 +79,7 @@
     height: 25px;
     margin-right: 30px;
     padding: 3px;
-     margin-top: 4px;
+    margin-top: 4px;
 }
 #header .left .not
 {
@@ -75,7 +89,7 @@
     padding:3px;
      margin-top: 4px;
 }
-#myPanel{background-image:url(../images/sub-menue.png)}
+#myPanel{background-image:url(../images/sub-menue.png); position: absolute;}
 #myPanel input
 {
     border-radius: 50%;
@@ -140,7 +154,7 @@ margin-left: 37px;
 }
 
 /* end general */
-#home-reg .ui-content{background: #fff;height:100%; overflow: hidden !important;}
+#home-reg .ui-content{background: #fff; overflow: hidden !important;}
 
 /**/
 #home-reg #header{background: #7b5785;height: 60px}
@@ -568,14 +582,14 @@ select:hover
 #map-reg iframe
 {
     position: relative;
-    top: -64px;
+    top: -41px;
 }
 #chat-screen .ui-content {
     border-width: 0;
     overflow: visible;
     overflow-x: hidden;
     padding: 1em;
-   height: 70%;
+    height: 70%;
 }
 #chat-screen  #header
 {

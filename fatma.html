@@ -1,733 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-   {
-     font-family: Source Sans Pro;
-   }
-
-
-  </style>
+		<style>
+				{
+				  font-family: Source Sans Pro;
+				}
+		</style>
 <!-- Basic Page Needs ================================================== -->
-
-<meta charset="utf-8">
-<title>ICare</title>
-<meta name="description" content="Place to put your description text">
-<meta name="author" content="">
-
+		<meta charset="utf-8">
+		<title>ICare</title>
+		<meta name="description" content="Place to put your description text">
+		<meta name="author" content="">
 <!-- Mobile Specific Metas ================================================== -->
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<script>
-		if (window.screen.height==568) { // iPhone 4"
-		document.querySelector("meta[name=viewport]").content="width=320.1";
-		}
-</script>
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<script>
+				if (window.screen.height==568) { // iPhone 4"
+				document.querySelector("meta[name=viewport]").content="width=320.1";
+				}
+		</script>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <!-- css -->
-<link rel="stylesheet" href="css/fatma.css">
-<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
-<link href="css/hover.css" rel="stylesheet" media="all">
-<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/fatma.css">
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+		<link href="css/hover.css" rel="stylesheet" media="all">
+		<link rel="stylesheet" href="css/animate.css">
 <!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">-->
-<link rel="stylesheet" href="css/font-awesome.min.css">
-
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 <!-- Scripts -->
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
-
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script>
+				$(document).ready(function(){
+						$( "[data-role='header'],[data-role='footer']" ).toolbar();
+				});
+				
+				$(document).ready(function(){
+				        $("#home-reg").on("swiperight", function(event, ui){
+							    $("#myPanel").panel("open");	
+						});	
+				});
+		</script>
 </head>
 <body>
+<!--header-->
+<div data-role="header" id="header" data-position="fixed">
+	
+		<div class="right">
+				<a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="icon-bar"></a>
+		</div>
+		<div class="left">
+				<center>
+						<a href="#map-reg" data-transition="flip"><img src="images/placeholder-(1)_03.png" class="icon-map hvr-grow"></a>
+						<a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option-(1)_03.png" class="message hvr-grow"></a>
+						<a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell_03.png" class="not hvr-grow"></a>
+				</center>
+		</div>
+      
+</div>
+<!--footer-->
+<div data-role="footer" id="footer" data-position="fixed">
+		<span class="ui-title" />
+</div>
+<!--sub menu-->
+        <div data-role="panel" id="myPanel" data-display="overlay" class="ui-panel-inner">
+				<input type="text" placeholder="Search" >
+				<center class="info">
+						<a href="#profile-Docter" data-transition="flip" ><img src="images/doc_profile_03.png" class="hvr-grow"></a>
+						<h2>Magdy Yacoub</h2>
+						<span>Doctor</span>
+				  
+				</center>
+			    <a href="#home-reg"data-transition="flip" >
+				<div class="link1 hvr-grow">
+						<img src="images/menue_03.png">
+						<h2>Home</h2>
+				</div></a>
+
+				<div class="link1 hvr-grow">
+						<a href="#"><img src="images/info_03.png"></a>
+						<h2>About</h2>
+				</div>
+				<div class="link1 hvr-grow">
+						<a href="#"><img src="images/lock_03_03.png"></a>
+						<h2>Policy</h2>
+				</div>
+				<div class="link1 hvr-grow">
+						<a href="#"><img src="images/contact_05.png"></a>
+						<h2>Contact Us</h2>
+				</div>
+				<div class="link1 hvr-grow">
+						<a href="#"><img src="images/logout_07.png"></a>
+						<h2>Log Out</h2>
+				</div>
+
+		</div>
 <!-- page1 -->
 <div data-role="page" id="home-reg">
-	<div data-role="header" id="header">
-	
-       <div class="right">
-        <a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="icon-bar"></a>
-       </div>
-       <div class="left">
-        <center>
-        <a href="#map-reg" data-transition="flip"><img src="images/placeholder-(1)_03.png" class="icon-map hvr-grow"></a>
-         <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option-(1)_03.png" class="message hvr-grow"></a>
-           <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell_03.png" class="not hvr-grow"></a>
-           </center>
-       </div>
-      
-       </div>
-    <div data-role="panel" id="myPanel" data-display="overlay">
-    <input type="text" placeholder="Search" >
-    <center class="info">
-      <a href="#profile-Docter" data-transition="flip" ><img src="images/doc_profile_03.png" class="hvr-grow"></a>
-      <h2>Magdy Yacoub</h2>
-      <span>Doctor</span>
-
-    </center>
-<a href="#home-reg"data-transition="flip" > <div class="link1 hvr-grow">
-<img src="images/menue_03.png">
- <h2>Home</h2>
-</div></a>
-
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/info_03.png"></a>
- <h2>About</h2>
-</div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/lock_03_03.png"></a>
- <h2>Policy</h2>
-</div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/contact_05.png"></a>
- <h2>Contact Us</h2>
-</div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/logout_07.png"></a>
- <h2>Log Out</h2>
-</div>
-
-</div>
+	    
+<!--header-->
+<!--sub menu-->		
+<!--home posts-->	
 		<div role="main" class="ui-content">
-      <div class="newpost"> 
-        <input type="text" placeholder="What's in your mind...?">
-         <a href="#" class="ui-btn ui-shadow hvr-grow">Add Post</a>
-        </div>
+				<div class="newpost"> 
+						<input type="text" placeholder="What's in your mind...?">
+						<a href="#" class="ui-btn ui-shadow hvr-grow">Add Post</a>
+				</div>
 
-    <input type="file" name="file-3[]" id="file-3" class="inputfile">
-    <label for="file-3" style="width: 80px;
-    height: 16px;
-    background-color: #7b5785;
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
-    padding: 6px;
-    float: right;
-    margin-top: 1px;
-    margin-right:5px;
-    box-shadow: 5px 5px 14px -2px #ddd;
-    font-weight: 400;
-    font-family: Source Sans Pro;"class="hvr-grow">
-       
-        <span>Choose File</span>
-    </label>
+				<input type="file" name="file-3[]" id="file-3" class="inputfile">
+				<label for="file-3" style="width: 80px;
+						height: 16px;
+						background-color: #7b5785;
+						color: #fff;
+						font-size: 14px;
+						text-align: center;
+						padding: 6px;
+						float: right;
+						margin-top: 1px;
+						margin-right:5px;
+						box-shadow: 5px 5px 14px -2px #ddd;
+						font-weight: 400;
+						font-family: Source Sans Pro;"class="hvr-grow">
+						   
+						<span>Choose File</span>
+				</label>
 
-  
-<fieldset data-role="controlgroup" data-type="horizontal" style="float:right">
-    <label for="select-native-11">Select A</label>
-    <select name="select-native-11" id="select-native-11">
-        <option value="#">Heart attack and  blood pressure</option>
-        <option value="#">Heart attack and  blood pressure</option>
-        <option value="#">Heart attack and  blood pressure</option>
-    </select>
-</fieldset>
+				<fieldset data-role="controlgroup" data-type="horizontal" style="float:right">
+					    <label for="select-native-11">Select A</label>
+					    <select name="select-native-11" id="select-native-11">
+					        <option value="#">Heart attack and  blood pressure</option>
+					        <option value="#">Heart attack and  blood pressure</option>
+					        <option value="#">Heart attack and  blood pressure</option>
+					    </select>
+				</fieldset>
+				<br> <br>
+				<h2 class="title">Heart attack and  blood pressure</h2>
+				<hr class="hr" />
+				<div class="ui-grid-a">
+						<div class="ui-block-a">
+								<a href="#"><img src="images/picdoctor_15.png"></a>
+								<center>
+										<h2>Dr.Mohammed Fasil</h2>
+									    <h4>Cardiologist</h4></center>
+							   </center>
+						</div>
+						<div class="ui-block-b">
+								<a href="#popupMenu" data-rel="popup" data-transition="slideup" >
+										<img src="images/seting_11_03.png"><br>
+										<span>Just Now</span>
+								</a>
+								 
+						</div>
+				</div>
+		
+<!-- delete and change -->
 
-      <br> <br>
-			<h2 class="title">Heart attack and  blood pressure</h2>
-			<hr class="hr" />
-		<div class="ui-grid-a">
-      <div class="ui-block-a">
-         <a href="#"><img src="images/picdoctor_15.png"></a>
-         <center>
-          <h2>Dr.Mohammed Fasil</h2>
-        <h4>Cardiologist</h4></center>
-        </center>
-      </div>
-      <div class="ui-block-b">
-      <a href="#popupMenu" data-rel="popup" data-transition="slideup" >
-      <img src="images/seting_11_03.png"><br>
-      <span>Just Now</span>
-    </a>
-       
-      </div>
-    </div>
-    
-    <!-- delete and change -->
-   
-   
-    <div data-role="popup" id="popupMenu" >
-      <div class="check">
-        <h3>Edit Post</h3>
-        <h3> Delete</h3>
-
-      </div>
-      </div>
+				<div data-role="popup" id="popupMenu" >
+						<div class="check">
+								<h3>Edit Post</h3>
+								<h3> Delete</h3>
+				  
+						</div>
+			    </div>
  
-    <!-- post -->
-     <div class="post">
-        <img src="images/picpost_19.png">
-        <p>Blood pressure is a measure of how hard the blood pushes against the walls of your arteries as it moves</p>
-         <a href="#"><h2>Read more...</h2></a>
-      </div>
+<!-- post -->
+				<div class="post">
+						<img src="images/picpost_19.png">
+						<p>Blood pressure is a measure of how hard the blood pushes against the walls of your arteries as it moves</p>
+						<a href="#"><h2>Read more...</h2></a>
+				</div>
       
-       <!-- react -->
-        <div class="react">
-         <a href="#" class="like"><img src="images/like.png">&nbsp; 23 </a> 
-           <a href="#" class="comment"><img src="images/chat.png">&nbsp; 5</i></a>
-           
-          
-        </div>
-        <!-- comment -->
-        <div class="yourcomment">
-       <input type="text" placeholder="Write acomment" class="imgcomment">
-      </div>
-    
-
-
-</div>
-<div data-role="footer" id="footer">
-	 <span class="ui-title" />
-
-</div>
+<!-- react -->
+				<div class="react">
+						<a href="#" class="like"><img src="images/like.png">&nbsp; 23 </a> 
+						<a href="#" class="comment"><img src="images/chat.png">&nbsp; 5</i></a>
+				</div>
+<!-- comment -->
+				<div class="yourcomment">
+						<input type="text" placeholder="Write acomment" class="imgcomment">
+			    </div>
+				
+		</div>
+<!--footer-->
 </div>
 <!-- /page1 -->
 
 <!-- page2 -->
 <div data-role="page" id="message-reg">
 
-		  <div data-role="header" id="header">
-  
-      <div class="right">
+<!--header-->
+<!--sub menu-->	
+<!--msg content-->	
+        <div role="main" class="ui-content">
+				<div class="title">
+						<h3>Recent</h3>
+					    <hr class="hr" />
+			   </div>
+<!-- /******************************************************/-->
+				<div class="ui-grid-b content">
+						<div class="ui-block-a">
+								<a href="#chat-screen" data-transition="flip"> <img src="images/photo1_07.png"></a>		
+			            </div>
 
-        <a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="icon-bar"></a>
-       </div>
-       <div class="left">
-        <center>
-        <a href="#map-reg" data-transition="flip"><img src="images/placeholder-(1)_03.png" class="icon-map"></a>
-         <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option-(1)_03.png" class="message"></a>
-           <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell_03.png" class="not"></a>
-           </center>
-       </div>
-      
-      
-       </div>
-     <div data-role="panel" id="myPanel" data-display="overlay">
-    <input type="text" placeholder="Search" >
-    <center class="info">
-      <a href="#profile-Docter" data-transition="flip"><img src="images/doc_profile_03.png"></a>
-      <h2>Travis Strok</h2>
-      <span>Doctor</span>
-
-    </center>
-  <a href="#home-reg"data-transition="flip" > <div class="link1 hvr-grow">
-<img src="images/menue_03.png">
- <h2>Home</h2>
-</div></a>
-
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/info_03.png"></a>
- <h2>About</h2>
-</div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/lock_03_03.png"></a>
- <h2>Policy</h2>
-</div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/contact_05.png"></a>
- <h2>Contact Us</h2>
-</div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/logout_07.png"></a>
- <h2>Log Out</h2>
-</div>
-
-</div>
-   <div role="main" class="ui-content">
-   		 <div class="title">
-           <h3>Recent</h3>
-          <hr class="hr" />
+						<div class="ui-block-b">
+								<h2>Ashley Ford</h2>
+						</div>
+		
+						<div class="ui-block-c ">
+								<p>9.33 PM</p>
+						</div>
+				</div>
+ 
+                <hr class="hr1" />
+<!-- /******************************************************/-->
+                <div class="ui-grid-b content">
+						<div class="ui-block-a">
+								<a href="#chat-screen" data-transition="flip"> <img src="images/photo2_10.png"></a>
+					    </div>
+						<div class="ui-block-b">
+							    <h2>Felip Santana</h2>
+						</div>
+						<div class="ui-block-c ">
+						        <p>9.33 PM</p>
+						</div>
+				</div>
+				
+				<hr class="hr1" />
+<!-- /******************************************************/-->
+                <div class="ui-grid-b content">
+						<div class="ui-block-a">
+								<a href="#chat-screen" data-transition="flip"> <img src="images/photo3_13.png"></a>
+						</div>
+						<div class="ui-block-b">
+								<h2>Adelle charles</h2>
+						</div>
+						<div class="ui-block-c ">
+							    <p>9.33 PM</p>
+						</div>
+				</div>
+				<hr class="hr1" />
+<!-- /******************************************************/-->
+				<div class="ui-grid-b content">
+						<div class="ui-block-a">
+						        <a href="#chat-screen" data-transition="flip"> <img src="images/photo4_17.png"></a>
+				  
+						</div>
+						<div class="ui-block-b">
+						        <h2>jina Anne</h2>
+						</div>
+						<div class="ui-block-c ">
+						        <p>9.33 PM</p>
+						</div>
+				</div>
+                <hr class="hr1" />
+<!-- /******************************************************/-->
+				<div class="ui-grid-b content">
+						<div class="ui-block-a">
+						        <a href="#chat-screen" data-transition="flip"> <img src="images/photo5_20.png"></a>
+						</div>
+						<div class="ui-block-b">
+						        <h2>Riza selcuk </h2>
+						</div>
+						<div class="ui-block-c ">
+						        <p>9.33 PM</p>
+						</div>
+				</div>
+				<hr class="hr1" />
+<!-- /******************************************************/-->
+				<div class="ui-grid-b content">
+					    <div class="ui-block-a">
+							    <a href="#chat-screen" data-transition="flip"> <img src="images/photo6_24.png"></a>
+						
+					    </div>
+						<div class="ui-block-b">
+							    <h2>Dann Counsell</h2>
+						</div>
+						<div class="ui-block-c ">
+								<p>9.33 PM</p>
+						</div>
+				</div>
+				<hr class="hr1" />
+<!-- /******************************************************/-->
+                <br><br>
+				<div class="search">
+					    <i class="fa fa-search fa-1x"></i>
+				</div>
+                <br>
+<!-- /******************************************************/-->
         </div>
-       <!-- /******************************************************/-->
-   
-        <div class="ui-grid-b content">
-        <div class="ui-block-a">
-       <a href="#chat-screen" data-transition="flip"> <img src="images/photo1_07.png"></a>
-
-      </div>
-
-      <div class="ui-block-b">
-      <h2>Ashley Ford</h2>
-      </div>
-
-      <div class="ui-block-c ">
-        <p>9.33 PM</p>
-      </div>
-
-    </div>
- 
-    <hr class="hr1" />
-
-    <!-- /******************************************************/-->
-      <!-- /******************************************************/-->
-
-        <div class="ui-grid-b content">
-      <div class="ui-block-a">
-       <a href="#chat-screen" data-transition="flip"> <img src="images/photo2_10.png"></a>
-
-      </div>
-      <div class="ui-block-b">
-      <h2>Felip Santana</h2>
-      </div>
-      <div class="ui-block-c ">
-        <p>9.33 PM</p>
-      </div>
-    </div>
-    <hr class="hr1" />
-
-    <!-- /******************************************************/-->
-      <!-- /******************************************************/-->
-
-        <div class="ui-grid-b content">
-      <div class="ui-block-a">
-       <a href="#chat-screen" data-transition="flip"> <img src="images/photo3_13.png"></a>
-
-      </div>
-      <div class="ui-block-b">
-      <h2>Adelle charles</h2>
-      </div>
-      <div class="ui-block-c ">
-        <p>9.33 PM</p>
-      </div>
-    </div>
-    <hr class="hr1" />
-
-    <!-- /******************************************************/-->
-      <!-- /******************************************************/-->
-
-        <div class="ui-grid-b content">
-      <div class="ui-block-a">
-       <a href="#chat-screen" data-transition="flip"> <img src="images/photo4_17.png"></a>
-
-      </div>
-      <div class="ui-block-b">
-      <h2>jina Anne</h2>
-      </div>
-      <div class="ui-block-c ">
-        <p>9.33 PM</p>
-      </div>
-    </div>
-    <hr class="hr1" />
-
-    <!-- /******************************************************/-->
-      <!-- /******************************************************/-->
-
-        <div class="ui-grid-b content">
-      <div class="ui-block-a">
-       <a href="#chat-screen" data-transition="flip"> <img src="images/photo5_20.png"></a>
-
-      </div>
-      <div class="ui-block-b">
-      <h2>Riza selcuk </h2>
-      </div>
-      <div class="ui-block-c ">
-        <p>9.33 PM</p>
-      </div>
-    </div>
-    <hr class="hr1" />
-
-    <!-- /******************************************************/-->
-      <!-- /******************************************************/-->
-
-        <div class="ui-grid-b content">
-      <div class="ui-block-a">
-       <a href="#chat-screen" data-transition="flip"> <img src="images/photo6_24.png"></a>
-
-      </div>
-      <div class="ui-block-b">
-      <h2>Dann Counsell</h2>
-      </div>
-      <div class="ui-block-c ">
-        <p>9.33 PM</p>
-      </div>
-    </div>
-    <hr class="hr1" />
-
-    <!-- /******************************************************/-->
-     <br><br>
-    <div class="search">
-<i class="fa fa-search fa-1x"></i>
-</div>
- <br>
-	   <!-- /******************************************************/-->
-
-   </div>
- 
-<div data-role="footer" id="footer">
-  <h2>see All Messages</h2>
-   
-
-</div>
+ <!--footer-->
 </div>
 <!-- page2 -->
 
 <!-- page3 -->
 <div data-role="page" id="notification-reg">
    
-		 <div data-role="header" id="header">
-  
-      
-       <div class="right">
-        <a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="icon-bar"></a>
-       </div>
-       <div class="left">
-        <center>
-        <a href="#map-reg" data-transition="flip"><img src="images/placeholder-(1)_03.png" class="icon-map"></a>
-         <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option-(1)_03.png" class="message"></a>
-           <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell_03.png" class="not"></a>
-           </center>
-       </div>
-      
-      
-       </div>
-    <div data-role="panel" id="myPanel" data-display="overlay">
-    <input type="text" placeholder="Search" >
-    <center class="info">
-      <a href="#profile-Docter" data-transition="flip"><img src="images/doc_profile_03.png"></a>
-      <h2>Travis Strok</h2>
-      <span>Doctor</span>
-
-    </center>
-  <a href="#home-reg"data-transition="flip" > <div class="link1 hvr-grow">
-<img src="images/menue_03.png">
- <h2>Home</h2>
-</div></a>
- 
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/info_03.png"></a>
- <h2>About</h2>
+<!--header-->
+<!--sub menu-->	
+<!--notification content-->
+		<div role="main" class="ui-content">
+				<div class="title">
+						<h3>notification</h3>
+					    <hr class="hr" />
+				</div>
+<!-- /******************************************************/-->
+				<div class="ui-grid-a content">
+						<div class="ui-block-a">
+								<a href="#"> <img src="images/photo1_07.png"></a>
+						</div>
+						<div class="ui-block-b">
+								<p><span>Ashley Ford,20 other</span>&nbsp;commented on Dr.Mohammed post</p>
+								<h4>40 minute ago</h4>
+						</div>
+				</div>
+				<hr class="hr1" />
+<!-- /******************************************************/-->
+				<div class="ui-grid-a content">
+						<div class="ui-block-a">
+								<a href="#"> <img src="images/photo2_10.png"></a>
+						</div>
+						<div class="ui-block-b">
+								<p><span>Felip Santana,5 other</span>&nbsp;like apost of Dr.Ahmed Magdy</p>
+								<h4>21 Hours ago</h4>
+						</div>
+				</div>
+				<hr class="hr1" />
+<!-- /******************************************************/-->
+				<div class="ui-grid-a content">
+						<div class="ui-block-a">
+								<a href="#"> <img src="images/photo3_13.png"></a>
+						</div>
+						<div class="ui-block-b">
+								<p><span>Adelle charles,50 other</span>&nbsp;commented on Dr.Mohammed post</p>
+								<h4>21 Hours ago</h4>
+						</div>
+				</div>
+				<hr class="hr1" />
+<!-- /******************************************************/-->
+				<div class="ui-grid-a content">
+						<div class="ui-block-a">
+								<a href="#"> <img src="images/photo4_17.png"></a>
+						</div>
+						<div class="ui-block-b">
+								<p><span>jina Anne , 16 other</span>&nbsp;like apost of Dr.Ahmed Magdy</p> 
+								<h4> 20 minute ago</h4>
+						</div>
+				</div>
+				<hr class="hr1" />
+<!-- /******************************************************/-->
+				<div class="ui-grid-a content">
+						<div class="ui-block-a">
+								<a href="#"> <img src="images/photo5_20.png"></a>
+						</div>
+						<div class="ui-block-b">
+								<p><span>Riza selcuk Sydam,20 other</span>&nbsp;commented on Dr.Mohammed post</p>
+								<h4>2 days ago</h4>
+						</div>
+				</div>
+				<hr class="hr1" />
+<!-- /******************************************************/-->
+				<div class="ui-grid-a content">
+						<div class="ui-block-a">
+								<a href="#"> <img src="images/photo6_24.png"></a>
+						</div>
+						<div class="ui-block-b">
+								<p><span>Dann Counsell, 40 other</span> &nbsp;commented on Dr.Mohammed post</p>
+								<h4> 4 hours ago</h4>
+						</div>		
+				</div>
+				<hr class="hr1" />
+<!-- /******************************************************/-->
+		</div>
+<!--footer-->
 </div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/lock_03_03.png"></a>
- <h2>Policy</h2>
-</div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/contact_05.png"></a>
- <h2>Contact Us</h2>
-</div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/logout_07.png"></a>
- <h2>Log Out</h2>
-</div>
-
-</div>
-
-   <div role="main" class="ui-content">
-       <div class="title">
-           <h3>notification</h3>
-          <hr class="hr" />
-        </div>
-       <!-- /******************************************************/-->
-
-        <div class="ui-grid-a content">
-      <div class="ui-block-a">
-       <a href="#"> <img src="images/photo1_07.png"></a>
-
-      </div>
-      <div class="ui-block-b">
-        <p><span>Ashley Ford,20 other</span>&nbsp;commented on Dr.Mohammed post</p>
-      <h4>40 minute ago</h4>
-      </div>
-      
-    </div>
-    <hr class="hr1" />
-
-    <!-- /******************************************************/-->
-      <!-- /******************************************************/-->
-
-        <div class="ui-grid-a content">
-      <div class="ui-block-a">
-       <a href="#"> <img src="images/photo2_10.png"></a>
-
-      </div>
-      <div class="ui-block-b">
-       <p><span>Felip Santana,5 other</span>&nbsp;like apost of Dr.Ahmed Magdy</p>
-      <h4>21 Hours ago</h4>
-      </div>
-    
-    </div>
-    <hr class="hr1" />
-
-    <!-- /******************************************************/-->
-      <!-- /******************************************************/-->
-
-        <div class="ui-grid-a content">
-      <div class="ui-block-a">
-       <a href="#"> <img src="images/photo3_13.png"></a>
-
-      </div>
-      <div class="ui-block-b">
-       <p><span>Adelle charles,50 other</span>&nbsp;commented on Dr.Mohammed post</p>
-      <h4>21 Hours ago</h4>
-      </div>
-     
-    </div>
-    <hr class="hr1" />
-
-    <!-- /******************************************************/-->
-      <!-- /******************************************************/-->
-
-        <div class="ui-grid-a content">
-      <div class="ui-block-a">
-       <a href="#"> <img src="images/photo4_17.png"></a>
-
-      </div>
-      <div class="ui-block-b">
-      <p><span>jina Anne , 16 other</span>&nbsp;like apost of Dr.Ahmed Magdy</p> 
-      <h4> 20 minute ago</h4>
-      </div>
-     
-    </div>
-    <hr class="hr1" />
-
-    <!-- /******************************************************/-->
-      <!-- /******************************************************/-->
-
-        <div class="ui-grid-a content">
-      <div class="ui-block-a">
-       <a href="#"> <img src="images/photo5_20.png"></a>
-      
-      </div>
-      <div class="ui-block-b">
-      <p><span>Riza selcuk Sydam,20 other</span>&nbsp;commented on Dr.Mohammed post</p>
-      <h4>2 days ago</h4>
-      </div>
-     
-    </div>
-    <hr class="hr1" />
-
-    <!-- /******************************************************/-->
-      <!-- /******************************************************/-->
-
-        <div class="ui-grid-a content">
-      <div class="ui-block-a">
-       <a href="#"> <img src="images/photo6_24.png"></a>
-
-      </div>
-      <div class="ui-block-b">
-       <p><span>Dann Counsell, 40 other</span> &nbsp;commented on Dr.Mohammed post</p>
-      <h4> 4 hours ago</h4>
-      </div>
-      
-    </div>
-    <hr class="hr1" />
-
-    <!-- /******************************************************/-->
-     
-   
-
-   </div>
-  
-<div data-role="footer" id="footer">
-  <h2>See All</h2>
-  
-</div>
-		
-
-</div>
-<!-- page3 -->
+<!-- /page3 -->
 <!-- page4 -->
-
-  <div data-role="page" id="profile-Docter">
-  <div data-role="header" id="header">
-  
-       <div class="right">
-        <a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="icon-bar hvr-grow"></a>
-       </div>
-       <div class="left">
-        <center>
-        <a href="#map-reg" data-transition="flip"><img src="images/placeholder-(1)_03.png" class="icon-map hvr-grow"></a>
-         <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option-(1)_03.png" class="message hvr-grow"></a>
-           <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell_03.png" class="not hvr-grow"></a>
-           </center>
-       </div>
-      
-       </div>
-    <div data-role="panel" id="myPanel" data-display="overlay">
-    <input type="text" placeholder="Search" >
-    <center class="info">
-      <a href="#profile-Docter" class="hvr-grow"><img src="images/doc_profile_03.png"></a>
-      <h2>Travis Strok</h2>
-      <span>Doctor</span>
-
-    </center>
-  <a href="#home-reg"data-transition="flip" ><div class="link1 hvr-grow">
- <img src="images/menue_03.png">
- <h2>Home</h2>
-</div></a>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/info_03.png"></a>
- <h2>About</h2>
+<div data-role="page" id="profile-Docter">
+<!--header-->
+<!--doc profile-->
+		<div role="main" class="ui-content">
+				<img class="backphoto"src="images/headrerprof_01.png">
+				<center class="prof-info">
+						<a href="#"><img class="profile-pic hvr-grow"src="images/doc_profile_03.png"></a> 
+						<h1>Magdi Yacoub</h1>
+						<h4>Doctor</h4>
+	            </center>   
+                <div class="bgfooter">
+						<div class="clear"></div>
+						<center>
+								<p>Professor of Cardiothoracic Surgery at the
+								National Heart and Lung Institute, Imperial
+								College London and Founder and Director
+								of Research at the Harefield Heart ScienceCentre
+								</p>
+								<a href="#chat-screen" data-transition="flip" class="ui-btn ui-btn-inline  ui-btn-shadow ui-btn-corner-all hvr-grow">Message</a>
+					    </center>
+				</div> 
+        </div>
 </div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/lock_03_03.png"></a>
- <h2>Policy</h2>
-</div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/contact_05.png"></a>
- <h2>Contact Us</h2>
-</div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/logout_07.png"></a>
- <h2>Log Out</h2>
-</div>
-
-</div>
-      <div role="main" class="ui-content">
-     <img class="backphoto"src="images/headrerprof_01.png">
-     <center class="prof-info">
-     <a href="#"><img class="profile-pic hvr-grow"src="images/doc_profile_03.png"></a> 
-     <h1>Magdi Yacoub</h1>
-     <h4>Doctor</h4>
-     </center>   
-
-
-     <div class="bgfooter">
-    <div class="clear"></div>
-     <center>
-        
-        <p>Professor of Cardiothoracic Surgery at the
-        National Heart and Lung Institute, Imperial
-        College London and Founder and Director
-        of Research at the Harefield Heart ScienceCentre
-</p>
- <a href="#chat-screen" data-transition="flip" class="ui-btn ui-btn-inline  ui-btn-shadow ui-btn-corner-all hvr-grow">Message</a>
-</center>
-
- </div> 
-  </div>
-   </div>
-<!-- end body -->
-<!-- end page 4-->
-
+<!-- /page 4-->
 <!-- page 5-->
-
-  <div data-role="page" id="profile-patient">
-  <div data-role="header" id="header">
-  
-       <div class="right">
-        <a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="icon-bar hvr-grow"></a>
-       </div>
-       <div class="left">
-        <center>
-        <a href="#map-reg" data-transition="flip"><img src="images/placeholder-(1)_03.png" class="icon-map hvr-grow"></a>
-         <a href="#chat-screen" data-transition="flip"><img src="images/speech-bubbles-comment-option-(1)_03.png" class="message hvr-grow"></a>
-           <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell_03.png" class="not hvr-grow"></a>
-           </center>
-       </div>
-      
-       </div>
-    <div data-role="panel" id="myPanel" data-display="overlay">
-    <input type="text" placeholder="Search" >
-    <center class="info">
-      <a href="#" class="hvr-grow"><img src="images/doc_profile_03.png"></a>
-      <h2>Travis Strok</h2>
-      <span>Doctor</span>
-
-    </center>
-  <div class="link1 hvr-grow">
- <a href="#home-reg"data-transition="flip" ><img src="images/menue_03.png"></a>
- <h2>Home</h2>
+<div data-role="page" id="profile-patient">
+<!--header-->
+<!--patient profile-->		
+		<div role="main" class="ui-content">
+				<img class="backphoto"src="images/headrerprof_01.png">
+				<center class="prof-info">
+						<a href="#"><img class="profile-pic hvr-grow"src="images/osama_03.png"></a> 
+						<h1>Osama Mohammed</h1>
+						<h4>Patient</h4>
+				</center>   
+				<div class="bgfooter">
+			            <div class="clear"></div>
+				        <center>
+								<p>
+								student at faculty of computer and information science mansoura university Pentesting webdeveloper (php,python,nodejs)system admin
+								</p>
+								<a href="#" class="ui-btn ui-btn-inline  ui-btn-shadow ui-btn-corner-all hvr-grow">Message</a>
+					    </center>
+                </div>
+        </div>
 </div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/info_03.png"></a>
- <h2>About</h2>
-</div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/lock_03_03.png"></a>
- <h2>Policy</h2>
-</div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/contact_05.png"></a>
- <h2>Contact Us</h2>
-</div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/logout_07.png"></a>
- <h2>Log Out</h2>
-</div>
-
-</div>
-      <div role="main" class="ui-content">
-     <img class="backphoto"src="images/headrerprof_01.png">
-     <center class="prof-info">
-     <a href="#"><img class="profile-pic hvr-grow"src="images/osama_03.png"></a> 
-     <h1>Osama Mohammed</h1>
-     <h4>Patient</h4>
-     </center>   
-
-
-     <div class="bgfooter">
-    <div class="clear"></div>
-     <center>
-        
-      <p>
-        student at faculty of computer and information science mansoura university Pentesting webdeveloper (php,python,nodejs)system admin
-      </p>
- <a href="#" class="ui-btn ui-btn-inline  ui-btn-shadow ui-btn-corner-all hvr-grow">Message</a>
-</center>
-
- </div>
-  </div>
-   </div>
-   <!-- end body -->
-
-
-<!-- page5 -->
-<!-- start page6 -->
-
+<!-- /page5 -->
+<!-- page6 -->
 <div data-role="page" id="map-reg">
-
-      <div data-role="header" id="header">
-  
-      <div class="right">
-
-        <a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="icon-bar"></a>
-       </div>
-       <div class="left">
-        <center>
-        <a href="#map-reg" data-transition="flip"><img src="images/placeholder-(1)_03.png" class="icon-map"></a>
-         <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option-(1)_03.png" class="message"></a>
-           <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell_03.png" class="not"></a>
-           </center>
-       </div>
-      
-      
-       </div>
-     <div data-role="panel" id="myPanel" data-display="overlay">
-    <input type="text" placeholder="Search" >
-    <center class="info">
-      <a href="#profile-Docter" data-transition="flip"><img src="images/doc_profile_03.png"></a>
-      <h2>Magdy Yacoub</h2>
-      <span>Doctor</span>
-
-    </center>
-  <a href="#home-reg"data-transition="flip" > <div class="link1 hvr-grow">
-<img src="images/menue_03.png">
- <h2>Home</h2>
-</div></a>
-
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/info_03.png"></a>
- <h2>About</h2>
-</div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/lock_03_03.png"></a>
- <h2>Policy</h2>
-</div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/contact_05.png"></a>
- <h2>Contact Us</h2>
-</div>
-<div class="link1 hvr-grow">
- <a href="#"><img src="images/logout_07.png"></a>
- <h2>Log Out</h2>
-</div>
-
-</div>
- 
-
+<!--header-->
+<!--map-->
         <div class="ui-grid-a content">
 				<div class="mapsearch">
 						<input type="text" placeholder="Search">
-			   
 				</div>
 				<div class="mapselect">
 						<select class="role" name="Role" id="select" value="Role">
@@ -736,66 +437,47 @@
 								<option value="3">Laboratory</option>
 						</select>
 				</div>
-   
-        
-    
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54695.48648760058!2d31.417859261952252!3d31.041071221694903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79db7a9053547%3A0xf8dab3bbed766c97!2z2KfZhNmF2YbYtdmI2LHYqdiMINin2YTZhdmG2LXZiNix2KkgKNmC2LPZhSAyKdiMINin2YTZhdmG2LXZiNix2KnYjCDYp9mE2K_ZgtmH2YTZitip!5e0!3m2!1sar!2seg!4v1488417348850" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54695.48648760058!2d31.417859261952252!3d31.041071221694903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79db7a9053547%3A0xf8dab3bbed766c97!2z2KfZhNmF2YbYtdmI2LHYqdiMINin2YTZhdmG2LXZiNix2KkgKNmC2LPZhSAyKdiMINin2YTZhdmG2LXZiNix2KnYjCDYp9mE2K_ZgtmH2YTZitip!5e0!3m2!1sar!2seg!4v1488417348850" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
-        
-
-
 </div>
-
-
-<!-- end body -->
-<!-- end page6 -->
+<!-- /page6 -->
 <!-- page7 -->
-  <div data-role="page" id="chat-screen">
-
-    <div data-role="header" id="header">
-     <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
-
-      <img src="images/doc_profile_03.png">
-      <center>
-      <h2>Magdy Yacoub</h2>
-      <h4>Active Now</h4>
-      </center>
-</div>
-
-    <div data-role="main"class="ui-content">
-      <img class="leftchat"src="images/doc_profile_03.png">
-      <div class="ui-grid-solo">
-        <div class="ui-block-a">
-      <div class="left">
-     
-        <p>
-          Hi ;<br>
-          Do you need help with GPs?
-
-        </p>
-</div>
-      </div>
-      </div>
-       <div class="ui-grid-solo">
-        <div class="ui-block-a">
-        <div class="Right">
-        <p>
-        No Thanks
-        </p>
-      </div>
-      </div>
-      </div>
-          </div>
-
-  <!-- comment -->
+<div data-role="page" id="chat-screen">
+		<div data-role="header" id="header">
+				<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
+				<img src="images/doc_profile_03.png">
+				<center>
+						<h2>Magdy Yacoub</h2>
+						<h4>Active Now</h4>
+				</center>
+	    </div>
+		<div data-role="main"class="ui-content">
+				<img class="leftchat"src="images/doc_profile_03.png">
+				<div class="ui-grid-solo">
+						<div class="ui-block-a">
+								<div class="left">
+										<p>
+										Hi ;<br>
+										Do you need help with GPs?
+										</p>
+						        </div>
+					    </div>
+			    </div>
+				<div class="ui-grid-solo">
+						<div class="ui-block-a">
+								<div class="Right">
+										<p>
+										No Thanks
+										</p>
+								</div>
+						</div>
+				</div>
+		</div>
+<!-- comment -->
         <div class="reply">
-       <input type="text" placeholder="Write a reply..." class="imgreply">
-      </div>
-    
-     
-
-  </div>
-<!-- page 7 -->
-
+				<input type="text" placeholder="Write a reply..." class="imgreply">
+		</div>
+</div>
+<!-- /page 7 -->
 </body>
 </html>
