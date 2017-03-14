@@ -32,14 +32,12 @@
 		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 		<script>
 				$(document).ready(function(){
-						$( "[data-role='header'],[data-role='footer']" ).toolbar();
+						$( "[data-role='header']" ).toolbar();
 				});
 				
-				$(document).ready(function(){
-				        $("#home-reg").on("swiperight", function(event, ui){
-							    $("#myPanel").panel("open");	
-						});	
-				});
+				$(function () {
+  $("[data-role=panel]").enhanceWithin().panel();
+});
 		</script>
 </head>
 <body>
@@ -134,6 +132,56 @@
 					    </select>
 				</fieldset>
 				<br> <br>
+				<h2 class="title">Heart attack and  blood pressure</h2>
+				<hr class="hr" />
+				<div class="ui-grid-a">
+						<div class="ui-block-a">
+								<a href="#"><img src="images/picdoctor_15.png"></a>
+								<center>
+										<h2>Dr.Mohammed Fasil</h2>
+									    <h4>Cardiologist</h4></center>
+							   </center>
+						</div>
+						<div class="ui-block-b">
+								<a href="#popupMenu" data-rel="popup" data-transition="slideup" >
+										<img src="images/seting_11_03.png"><br>
+										<span>Just Now</span>
+								</a>
+								 
+						</div>
+				</div>
+		
+<!-- delete and change -->
+
+				<div data-role="popup" id="popupMenu" >
+						<div class="check">
+								<h3>Edit Post</h3>
+								<h3> Delete</h3>
+				  
+						</div>
+			    </div>
+ 
+<!-- post -->
+				<div class="post">
+						<img src="images/picpost_19.png">
+						<p>Blood pressure is a measure of how hard the blood pushes against the walls of your arteries as it moves</p>
+						<a href="#"><h2>Read more...</h2></a>
+				</div>
+      
+<!-- react -->
+				<div class="react">
+						<a href="#" class="like"><img src="images/like.png">&nbsp; 23 </a> 
+						<a href="#" class="comment"><img src="images/chat.png">&nbsp; 5</i></a>
+				</div>
+<!-- comment -->
+				<div class="yourcomment">
+						<input type="text" placeholder="Write acomment" class="imgcomment">
+			    </div>
+				
+		</div>
+		
+		
+		<br> <br>
 				<h2 class="title">Heart attack and  blood pressure</h2>
 				<hr class="hr" />
 				<div class="ui-grid-a">
