@@ -7,17 +7,18 @@
     border:none;
 }
 .ui-controlgroup-horizontal .ui-controlgroup-controls .ui-btn.ui-last-child {
-    border-right-width: 1px;
+      border-right-width: 1px;
     background: #7b5785;
     color: #fff;
     padding: 8px 37px 3px 12px;
-     float: left; 
-    margin-left: -67px;
+    float: left;
+    margin-left: -204px;
     margin-top: -9px;
     font-weight: 100;
     font-size: 14px;
     box-shadow: 5px 5px 14px -2px #ddd;
-    width: 50px;
+    width: 185px;
+    border-radius: 50px;
     position: absolute;
 
 }
@@ -154,8 +155,27 @@ margin-left: 37px;
 }
 
 /* end general */
-#home-reg .ui-content{background: #fff; overflow: hidden !important;}
-
+#home-reg .ui-content{background: #f5f3f6; overflow: hidden !important;}
+#home-reg .fullcontent{background: #fff;padding: 8px}
+#home-reg .yourcomment ::-webkit-input-placeholder {
+   color: #ccc;
+   font-size: 14px;
+   padding-left: 60px;
+   font-weight: lighter;
+   font-family: Source Sans Pro;
+   text-shadow: none !important;
+}
+#home-reg .yourcomment .ui-input-text input, .ui-input-search input {
+    margin: 0;
+    min-height: 2.2em;
+    text-align: left;
+    border: 0;
+    background: transparent none;
+    -webkit-appearance: none;
+    -webkit-border-radius: inherit;
+    border-radius: inherit;
+    background-color: #ccc;
+}
 /**/
 #home-reg #header{background: #7b5785;height: 60px}
 #home-reg #footer{background: #7b5785;}
@@ -173,8 +193,7 @@ margin-left: 37px;
     color: #000;
 
 }
-#home-reg .newpost a{
-  background: #7b5785;
+#home-reg .newpost a{background: #7b5785;
     color: #fff;
     float: right;
     height: 11px;
@@ -182,12 +201,14 @@ margin-left: 37px;
     margin-right: 4px;
     box-shadow: 5px 5px 14px -2px #ddd;
     margin-top: 0;
-      font-family: Source Sans Pro;
+    font-family: Source Sans Pro;
     font-weight: 400;
+    border-radius: 50px;
 }
 
-#home-reg .title{font-size: 17px;
-    margin-top: 8px;
+#home-reg .title{
+    font-size: 15px;
+    margin-top: -1px;
       font-family: Source Sans Pro;
     font-weight: 400;
 }
@@ -226,10 +247,9 @@ margin-left: 37px;
 }
 #home-reg .ui-block-a h4
 { 
-   font-size: 14px;
+       font-size: 12px;
     opacity: 0.6;
-    
-    margin-left:90px;
+    margin-left: 65px;
     margin-top: -6px;
 }
 #home-reg .ui-block-b a
@@ -287,13 +307,12 @@ margin-left: 37px;
     border-width: -10px;
     border-style: none;
    
-    background: #f7f7f7;
     border-color:#fff ;
      height: 80px;
   
 }
 
- .comment input{height: 50px;}
+ .comment input{height: 50px;background: #ddd}
  .imgcomment{
     background:url(../images/Untitled-2.png)no-repeat left !important;
  padding-left: 67px;
