@@ -7,17 +7,18 @@
     border:none;
 }
 .ui-controlgroup-horizontal .ui-controlgroup-controls .ui-btn.ui-last-child {
-    border-right-width: 1px;
+      border-right-width: 1px;
     background: #7b5785;
     color: #fff;
     padding: 8px 37px 3px 12px;
-     float: left; 
-    margin-left: -67px;
+    float: left;
+    margin-left: -204px;
     margin-top: -9px;
     font-weight: 100;
     font-size: 14px;
     box-shadow: 5px 5px 14px -2px #ddd;
-    width: 50px;
+    width: 185px;
+    border-radius: 50px;
     position: absolute;
 
 }
@@ -26,11 +27,9 @@
 .ui-mobile .ui-page-active {
     overflow-x: visible !important; 
 }
-.inputfile {
-   
+.inputfile {  
     height: 0.1px;
     opacity: 0;
-  
     position: absolute;
     z-index: -1;
 }
@@ -95,6 +94,7 @@
     border-radius: 50%;
     color: #fff;
     padding: 12px;
+    text-shadow: none;
 }
 #myPanel .ui-input-text, .ui-input-search
 {
@@ -114,23 +114,24 @@
     margin-top: 10px
 }
 #myPanel .info h2{color: #ce97d9;
-    font-size: 19px;
-    font-family: monospace;
+    font-size: 24px;
+    font-family: Source Sans Pro;
     margin-top: 15px;
-
-
+    text-shadow: 1px 1px 1px black;
 }
 #myPanel .info span{
-    color: #ddd;
-    font-family: normal;
+    color: #fff;
+    font-weight: 100;
     font-size: 18px;
-    opacity: 0.5;
+    text-shadow: none;
+    font-family: Source Sans Pro;
 }
 #myPanel .link1{
-   height: 50px;
+    height: 50px;
     margin-top: 10px;
-    width: 112%;
+    width: 118%;
     margin-left: -28px;
+    text-shadow: none;
 }
 #myPanel .link1 img{width: 37px;
     height: 37px;
@@ -138,13 +139,14 @@ margin-left: 37px;
     margin-top: 7px;}
 #myPanel .link1 a{margin-top: -10px}
 #myPanel .link1 h2{
-    font-size: 15px;
-   font-family: Source Sans Pro ;
+    font-size: 20px;
+    font-family: Source Sans Pro ;
     margin-left: 100px;
     margin-top: -35px;
     text-align: left;
     color: #fff;
     font-weight: 100;
+    text-shadow: none;
 }
  #myPanel .link1:hover
 {
@@ -154,12 +156,80 @@ margin-left: 37px;
 }
 
 /* end general */
-#home-reg .ui-content{background: #f5f3f6; overflow: hidden !important;}
+/***********************/
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a
+{
+    /*background-color: #f5f3f6 !important;*/
+    border-radius: 5px !important;
+}
+input
+{
+    border: 0px !important;
+    border-style: none;
+}
+.ui-shadow-inset
+{
+    -webkit-box-shadow:inset 0 0px 0px rgba(0,0,0,.0) !important;
+    box-shadow: inset 0 0px 0px rgba(0,0,0,.0) !important;
+}
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a
+{
+    border-style: none;
+}
 
+/*select category post*/
+
+#select-native-11-button
+{
+    background-color: #968699 !important;
+   color: white !important;
+   border-radius: 50px !important;
+   font-size: 16px !important;
+   box-shadow: 5px 5px 14px -2px #ddd !important;
+   top: -27px;
+   margin-left: 12px;
+   text-align: left !important;
+   font-weight: normal !important;
+   text-shadow: none !important;
+}
+/***********************/
+
+#home-reg .ui-content{background: #f5f3f6; overflow: hidden !important;}
+<<<<<<< HEAD
+
+=======
+#home-reg .fullcontent{background: white !important;padding: 8px}
+#home-reg .yourcomment ::-webkit-input-placeholder {
+   color: #ccc;
+   font-size: 14px;
+   padding-left: 60px;
+   font-weight: lighter;
+   font-family: Source Sans Pro;
+   text-shadow: none !important;
+}
+#home-reg .yourcomment .ui-input-text input, .ui-input-search input {
+    margin: 0;
+    min-height: 2.2em;
+    text-align: left;
+    border: 0;
+    background: transparent none;
+    -webkit-appearance: none;
+    -webkit-border-radius: inherit;
+    border-radius: inherit;
+    background-color: #ccc;
+}
+>>>>>>> 17753aa5c9047c249b032d228be3e4dbf8f4eb83
 /**/
 #home-reg #header{background: #7b5785;height: 60px}
 #home-reg #footer{background: #7b5785;}
-#home-reg .newpost {width: 100%;}
+#home-reg .newpost {
+    margin-bottom: -16px;
+    width: 100%;
+    background-color: white;
+    height: 126px;
+    box-shadow: 5px 5px 16px 3px #ddd;
+    border-radius: 5px;
+}
 #home-reg .newpost input
 {
     font-family: Source Sans Pro;
@@ -169,25 +239,27 @@ margin-left: 37px;
     padding: 32px;
     padding-top: 12px;
     padding-left: 10px; 
-    box-shadow: 5px 5px 16px 3px #ddd;
     color: #000;
 
 }
 #home-reg .newpost a{
-  background: #7b5785;
+    text-shadow: none !important;
+    background: #7b5785;
     color: #fff;
     float: right;
-    height: 11px;
-    font-size: 13px;
-    margin-right: 4px;
+    font-size: 16px;
     box-shadow: 5px 5px 14px -2px #ddd;
     margin-top: 0;
-      font-family: Source Sans Pro;
-    font-weight: 400;
+    font-family: Source Sans Pro;
+    font-weight: normal;
+    border-radius: 50px;
+    margin-right: 12px;
+    margin-left: 10px;
 }
 
-#home-reg .title{font-size: 17px;
-    margin-top: 8px;
+#home-reg .title{
+    font-size: 15px;
+    margin-top: -1px;
       font-family: Source Sans Pro;
     font-weight: 400;
 }
@@ -226,10 +298,9 @@ margin-left: 37px;
 }
 #home-reg .ui-block-a h4
 { 
-   font-size: 14px;
+       font-size: 12px;
     opacity: 0.6;
-    
-    margin-left:90px;
+    margin-left: 65px;
     margin-top: -6px;
 }
 #home-reg .ui-block-b a
@@ -287,18 +358,17 @@ margin-left: 37px;
     border-width: -10px;
     border-style: none;
    
-    background: #f7f7f7;
     border-color:#fff ;
-     height: 80px;
+     height: 57px;
   
 }
 
- .comment input{height: 50px;}
+ .comment input{height: 50px;background: #ddd}
  .imgcomment{
     background:url(../images/Untitled-2.png)no-repeat left !important;
- padding-left: 67px;
+    padding-left: 67px;
     margin-top: 6px;
-    height: 88px;
+    height: 65px;
     width: 100%;
     padding-top: 4px;
     font-weight: 400;
@@ -700,3 +770,4 @@ select:hover
         width: 45%;
     }
 }
+
