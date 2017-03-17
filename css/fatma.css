@@ -1,4 +1,5 @@
 /* page 1*/
+
 .ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
     background-color: #fff;
     border-color: #ccc;
@@ -179,11 +180,23 @@ input
 
 /*select category post*/
 
-#select-native-11-button
+.newpost #select-native-11-button
 {
     background-color: #968699 !important;
    color: white !important;
    border-radius: 50px !important;
+   font-size: 16px !important;
+   box-shadow: 5px 5px 14px -2px #ddd !important;
+   top: -27px;
+   margin-left: 12px;
+   text-align: left !important;
+   font-weight: normal !important;
+   text-shadow: none !important;
+}
+.postedit #select-native-11-button
+{
+    background-color: #7b5785  !important;
+   color: white !important;
    font-size: 16px !important;
    box-shadow: 5px 5px 14px -2px #ddd !important;
    top: -27px;
@@ -202,7 +215,6 @@ input
 #home-reg .yourcomment ::-webkit-input-placeholder {
    color: #ccc;
    font-size: 14px;
-   padding-left: 60px;
    font-weight: lighter;
    font-family: Source Sans Pro;
    text-shadow: none !important;
@@ -217,6 +229,7 @@ input
     -webkit-border-radius: inherit;
     border-radius: inherit;
     background-color: #f5f3f6 !important;
+    
 }
 >>>>>>> 17753aa5c9047c249b032d228be3e4dbf8f4eb83
 /**/
@@ -270,17 +283,22 @@ input
 }
 #home-reg #popupMenu
 {
-    background-color: #f7f7f7;
-     box-shadow: 5px 5px 5px #ccc;
+       background-color: #f7f7f7;
+    box-shadow: 5px 5px 5px transparent;
+    background: none;
+}
+#home-reg .ui-popup.ui-body-inherit {
+    border-width: 1px;
+    border-style: none; 
 }
 #home-reg #popupMenu h3{font-size: 17px; opacity: 0.5;font-family:  Source Sans Pro; font-weight: 200px}
-#home-reg .check
+/*#home-reg .check
 {
     width: 92px;
     height: 60px;
     padding: 0;
     margin-left: 10px;
-}
+}*/
 #home-reg .ui-block-a img{
     width: 50px;
     height:50px;
@@ -352,24 +370,13 @@ input
     color: #000;
 
 }
-.yourcomment .ui-input-text, .ui-input-search
-{
-    margin: .5em 0;
-    border-width: -10px;
-    border-style: none;
-   
-    border-color:#fff ;
-     height: 57px;
-  
-}
 
- .comment input{height: 50px;background: #ddd}
- .imgcomment{
+#home-reg .imgcomment{
     background:url(../images/Untitled-2.png)no-repeat left !important;
-    padding-left: 67px;
     margin-top: 6px;
     height: 60px;
     width: 100%;
+    padding-left: 70px;
     padding-top: 4px;
     font-weight: 400;
     font-family:Source Sans Pro ;
