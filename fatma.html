@@ -29,15 +29,15 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 <!-- Scripts -->
 
-        
+
         <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
-       
+
 		<script>
 				$(document).ready(function(){
 						$( "[data-role='header']" ).toolbar();
 				});
-				
+
 				$(function () {
 				$("[data-role=panel]").enhanceWithin().panel();
 			    });
@@ -46,7 +46,7 @@
 <body>
 <!--header-->
 <div data-role="header" id="header" data-position="fixed">
-	
+
 		<div class="right">
 				<a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="icon-bar"></a>
 		</div>
@@ -65,7 +65,7 @@
 						<a href="#profile-Docter" data-transition="flip" ><img src="images/doc_profile_03.png" class="hvr-grow"></a>
 						<h2>Magdy Yacoub</h2>
 						<span>Doctor</span>
-				  
+
 				</center>
 			    <a href="#home-reg"data-transition="flip" >
 				<div class="link1 hvr-grow">
@@ -93,21 +93,23 @@
 		</div>
 <!-- page1 -->
 <div data-role="page" id="home-reg">
-	    
+
 <!--header-->
-<!--sub menu-->		
-<!--home posts-->	
+<!--sub menu-->
+<!--home posts-->
 		<div role="main" class="ui-content">
-				<div class="newpost"> 
+				<div class="newpost">
 						<input type="text" placeholder="What's in your mind...?">
 						<a href="#" class="ui-btn ui-shadow hvr-grow">Add Post</a>
-						
-					    <select name="select-native-11" id="select-native-11" >
+						<div class="ui-field-contain">
+
+					    <select name="select-native-11" id="select-native-11"   data-native-menu="false">
 					        <option value="#">Heart attack and  blood pressure</option>
 					        <option value="#">Heart attack and  blood pressure</option>
 					        <option value="#">Heart attack and  blood pressure</option>
 					    </select>
-				
+					</div>
+
 				</div>
                 <!--
 				<input type="file" name="file-3[]" id="file-3" class="inputfile">
@@ -124,7 +126,7 @@
 						box-shadow: 5px 5px 14px -2px #ddd;
 						font-weight: 400;
 						font-family: Source Sans Pro;"class="hvr-grow">
-						   
+
 						<span>Choose File</span>
 				</label>
                 -->
@@ -145,38 +147,38 @@
 										<img src="images/seting_11_03.png"><br>
 										<span>Just Now</span>
 								</a>
-								 
+
 						</div>
 				</div>
-		
+
 <!-- delete and change -->
 
 				<div data-role="popup" id="popupMenu" >
 						<div class="postedit">
-		
+
    <select  name="select-native-11" id="select-native-11">
 
    	<!--<option><i class="fa fa-pencil" aria-hidden="true"></i></option>-->
       <option >Edit</option>
       <option>Delete</option>
-     
+
 
    </select>
 
-				  
+
 						</div>
 			    </div>
- 
+
 <!-- post -->
 				<div class="post">
 						<img src="images/picpost_19.png">
 						<p>Blood pressure is a measure of how hard the blood pushes against the walls of your arteries as it moves</p>
 						<a href="#"><h2>Read more...</h2></a>
 				</div>
-      
+
 <!-- react -->
 				<div class="react">
-						<a href="#" class="like"><img src="images/like.png">&nbsp; 23 </a> 
+						<a href="#" class="like"><img src="images/like.png">&nbsp; 23 </a>
 						<a href="#" class="comment"><img src="images/chat.png">&nbsp; 5</i></a>
 				</div>
 <!-- comment -->
@@ -188,10 +190,10 @@
 						</span>
 				        -->
 			    </div>
-				
+
 		</div>
-		
-		
+
+
 		<br>
 		<div class="fullcontent" style="background-color: white !important; padding: 15px; border-radius: 5px;">
 				<h2 class="title">Heart attack and  blood pressure</h2>
@@ -209,30 +211,30 @@
 										<img src="images/seting_11_03.png"><br>
 										<span>Just Now</span>
 								</a>
-								 
+
 						</div>
 				</div>
-		
+
 <!-- delete and change -->
 
 				<div data-role="popup" id="popupMenu" >
 						<div class="check">
 								<h3>Edit Post</h3>
 								<h3> Delete</h3>
-				  
+
 						</div>
 			    </div>
- 
+
 <!-- post -->
 				<div class="post">
 						<img src="images/picpost_19.png">
 						<p>Blood pressure is a measure of how hard the blood pushes against the walls of your arteries as it moves</p>
 						<a href="#"><h2>Read more...</h2></a>
 				</div>
-      
+
 <!-- react -->
 				<div class="react">
-						<a href="#" class="like"><img src="images/like.png">&nbsp; 23 </a> 
+						<a href="#" class="like"><img src="images/like.png">&nbsp; 23 </a>
 						<a href="#" class="comment"><img src="images/chat.png">&nbsp; 5</i></a>
 				</div>
 <!-- comment -->
@@ -250,29 +252,29 @@
 <div data-role="page" id="message-reg">
 
 <!--header-->
-<!--sub menu-->	
-<!--msg content-->	
+<!--sub menu-->
+<!--msg content-->
         <div role="main" class="ui-content">
 				<div class="title">
-					
+
 					   <hr class="hr" style="margin-top: -16px;">
 			   </div>
 <!-- /******************************************************/-->
 				<div class="ui-grid-b content">
 						<div class="ui-block-a">
-								<a href="#chat-screen" data-transition="flip"> <img src="images/photo1_07.png"></a>		
+								<a href="#chat-screen" data-transition="flip"> <img src="images/photo1_07.png"></a>
 			            </div>
 
 						<div class="ui-block-b">
 								<h2>Ashley Ford</h2>
 								<p>Ok,Thanks alot.</p>
 						</div>
-		
+
 						<div class="ui-block-c ">
 								<p>9.33 PM</p>
 						</div>
 				</div>
- 
+
                 <hr class="hr1" />
 <!-- /******************************************************/-->
                 <div class="ui-grid-b content">
@@ -286,7 +288,7 @@
 						        <p>9.33 PM</p>
 						</div>
 				</div>
-				
+
 				<hr class="hr1" />
 <!-- /******************************************************/-->
                 <div class="ui-grid-b content">
@@ -305,7 +307,7 @@
 				<div class="ui-grid-b content">
 						<div class="ui-block-a">
 						        <a href="#chat-screen" data-transition="flip"> <img src="images/photo4_17.png"></a>
-				  
+
 						</div>
 						<div class="ui-block-b">
 						        <h2>jina Anne</h2>
@@ -332,7 +334,7 @@
 				<div class="ui-grid-b content">
 					    <div class="ui-block-a">
 							    <a href="#chat-screen" data-transition="flip"> <img src="images/photo6_24.png"></a>
-						
+
 					    </div>
 						<div class="ui-block-b">
 							    <h2>Dann Counsell</h2>
@@ -357,13 +359,13 @@
 
 <!-- page3 -->
 <div data-role="page" id="notification-reg">
-   
+
 <!--header-->
-<!--sub menu-->	
+<!--sub menu-->
 <!--notification content-->
 		<div role="main" class="ui-content">
 				<div class="title">
-						
+
 					    <hr class="hr" style= " margin-top: -16px;"/>
 				</div>
 <!-- /******************************************************/-->
@@ -429,7 +431,7 @@
 						<div class="ui-block-b">
 							<p>Dann Counsel and 30 other also commented on Dr.Mohamed’s post</p>
 								<h4> 4 hours ago</h4>
-						</div>		
+						</div>
 				</div>
 				<hr class="hr1" />
 <!-- /******************************************************/-->
@@ -444,10 +446,10 @@
 		<div role="main" class="ui-content">
 				<img class="backphoto"src="images/headrerprof_01.png">
 				<center class="prof-info">
-						<a href="#"><img class="profile-pic hvr-grow"src="images/doc_profile_03.png"></a> 
+						<a href="#"><img class="profile-pic hvr-grow"src="images/doc_profile_03.png"></a>
 						<h1>Magdi Yacoub</h1>
 						<h4>Doctor</h4>
-	            </center>   
+	            </center>
                 <div class="bgfooter">
 						<div class="clear"></div>
 						<center>
@@ -458,21 +460,21 @@
 								</p>
 								<a href="#chat-screen" data-transition="flip" class="ui-btn ui-btn-inline  ui-btn-shadow ui-btn-corner-all hvr-grow">Message</a>
 					    </center>
-				</div> 
+				</div>
         </div>
 </div>
 <!-- /page 4-->
 <!-- page 5-->
 <div data-role="page" id="profile-patient">
 <!--header-->
-<!--patient profile-->		
+<!--patient profile-->
 		<div role="main" class="ui-content">
 				<img class="backphoto"src="images/headrerprof_01.png">
 				<center class="prof-info">
-						<a href="#"><img class="profile-pic hvr-grow"src="images/osama_03.png"></a> 
+						<a href="#"><img class="profile-pic hvr-grow"src="images/osama_03.png"></a>
 						<h1>Osama Mohammed</h1>
 						<h4>Patient</h4>
-				</center>   
+				</center>
 				<div class="bgfooter">
 			            <div class="clear"></div>
 				        <center>
@@ -547,7 +549,7 @@
 		</div>
 </div>
 <!-- /page 7 -->
-		
-		
+
+
 </body>
 </html>
