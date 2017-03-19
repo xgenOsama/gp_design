@@ -141,7 +141,7 @@
     padding-top: 27px;
 }
 #register_screen .ui-input-text input {
-   
+
     padding-left: 45px;
     box-sizing: content-box !important;
     font-family: Source Sans Pro !important;
@@ -159,7 +159,7 @@
     border: 1px white solid !important;
     color: #cacaca !important;
     font-size: 16px;
-   
+
 }
 ::-webkit-input-placeholder {
    color: #cecccc;
@@ -183,7 +183,7 @@ textarea {
 .ui-mobile label, .ui-controlgroup-label {
     padding-top: 16px;
     padding-bottom: 9px;
-    
+
 }
 .ui-mobile label, div.ui-controlgroup-label {
     color: #cacaca ;
@@ -255,7 +255,7 @@ textarea.desc {background: url(../images/desc.jpg) no-repeat left !important;}
     color: #757575 !important;
 }
 #login_screen .ui-input-text input {
-   
+
     padding-left: 45px;
     box-sizing: content-box !important;
     font-family: Source Sans Pro !important;
@@ -317,6 +317,11 @@ input.pass {background: url(../images/pass.jpg) no-repeat left !important;}
     margin-bottom: 98px !important;
     margin-top: -9px !important;
 }
+
+.ui-selectmenu-list .ui-btn-active {
+    background-color: #573d5c !important;
+    border-color: #573d5c !important;
+    }
 
 .loader-default {
 	background: 0;
