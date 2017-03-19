@@ -26,9 +26,9 @@
 
 /* jqury update*/
 .ui-mobile .ui-page-active {
-    overflow-x: visible !important; 
+    overflow-x: visible !important;
 }
-.inputfile {  
+.inputfile {
     height: 0.1px;
     opacity: 0;
     position: absolute;
@@ -47,17 +47,17 @@
     border: 1px solid #7b5785;
 }
 .ui-panel {
-    
+
 }
 #header .right
 {
    float: left;
 }
  #header .left
-{   
-    padding: 10px;   
+{
+    padding: 10px;
 }
-#header .right .icon-bar 
+#header .right .icon-bar
 {
     width: 30px;
     height: 30px;
@@ -106,7 +106,7 @@
     background: #443049;
     border-color:#443049 ;
 
-  
+
 }
 #myPanel img
 {
@@ -153,7 +153,7 @@ margin-left: 37px;
 {
     background: #443049;
     cursor: pointer;
-    
+
 }
 
 /* end general */
@@ -179,8 +179,21 @@ input
 }
 
 /*select category post*/
+.newpost select {
+   background-color: #968699 !important;
+   color: white !important;
+   border-radius: 50px !important;
+   font-size: 16px !important;
+   box-shadow: 5px 5px 14px -2px #ddd !important;
+   top: -27px;
+   float: right;
+   margin-left: 12px;
+   text-align: left !important;
+   font-weight: normal !important;
+   text-shadow: none !important;
+}
 
-.newpost #select-native-11-button
+/*.newpost #select-native-11-button
 {
     background-color: #968699 !important;
    color: white !important;
@@ -205,12 +218,9 @@ input
    font-weight: normal !important;
    text-shadow: none !important;
 }
-/***********************/
+/***********************/*/
 
 #home-reg .ui-cont;ent{background: #f5f3f6; overflow: hidden !important;}
-<<<<<<< HEAD
-
-=======
 #home-reg .fullcontent{background: white !important;padding: 8px}
 #home-reg .yourcomment ::-webkit-input-placeholder {
    color: #ddd
@@ -229,7 +239,7 @@ input
     -webkit-border-radius: inherit;
     border-radius: inherit;
     background-color: #f5f3f6 !important;
-    
+
 }
 .fa
 {
@@ -237,8 +247,6 @@ input
     color: #7b5785;
     float: right;
 }
-
->>>>>>> 17753aa5c9047c249b032d228be3e4dbf8f4eb83
 /**/
 #home-reg #header{background: #7b5785;height: 60px}
 #home-reg .newpost {
@@ -257,7 +265,7 @@ input
     font-size: 15px;
     padding: 32px;
     padding-top: 12px;
-    padding-left: 10px; 
+    padding-left: 10px;
     color: #000;
 
 }
@@ -295,7 +303,7 @@ input
 }
 #home-reg .ui-popup.ui-body-inherit {
     border-width: 1px;
-    border-style: none; 
+    border-style: none;
 }
 #home-reg #popupMenu h3{font-size: 17px; opacity: 0.5;font-family:  Source Sans Pro; font-weight: 200px}
 /*#home-reg .check
@@ -321,26 +329,26 @@ input
     text-align: center;
 }
 #home-reg .ui-block-a h4
-{ 
+{
        font-size: 12px;
     opacity: 0.6;
     margin-left: 65px;
     margin-top: -6px;
 }
 #home-reg .ui-block-b a
-{ 
+{
   float: right;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 #home-reg .ui-block-b img
-{ 
+{
   width: 15px;
   height: 15px;
   margin-top: -12px;
     opacity: 0.9;
 }
 #home-reg .ui-block-b a
-{ 
+{
       font-family: Source Sans Pro;
     font-weight: 400;
   text-decoration: none;
@@ -357,7 +365,7 @@ input
     text-decoration: none;
   font-family: Source Sans Pro;
     font-weight: 400;
-   
+
 }
 #home-reg .post h2{font-size: 15px;color: #000;opacity: 0.6;  font-family: Source Sans Pro;
     font-weight: 400;}
@@ -395,7 +403,7 @@ input
 #message-reg .ui-content {
     border-width: 0;
     overflow: visible;
-     padding: 1em 0em 0em 0em; 
+     padding: 1em 0em 0em 0em;
 }
 #message-reg .ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d, .ui-grid-solo {
     overflow: hidden;
@@ -408,14 +416,14 @@ input
 #message-reg .content{cursor: pointer;height: 105px}
 #message-reg .content:hover{background: #f8f6f5}
 #message-reg .content img
-{   
+{
     width: 70px;
     height: 70px;
     margin-left: 10px;
     padding: 10px;
     padding-top: 16px !important;
 }
-#message-reg .content h2{    
+#message-reg .content h2{
     font-size: 14px;
     text-align: justify;
     margin-left: 0px;
@@ -441,7 +449,7 @@ input
 #notification-reg .ui-content {
     border-width: 0;
     overflow: visible;
-     padding: 1em 0em 0em 0em; 
+     padding: 1em 0em 0em 0em;
 }
 #notification-reg .ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d, .ui-grid-solo {
     overflow: hidden;
@@ -455,20 +463,20 @@ input
 #notification-reg .hr1{width: 100%;opacity: 0.4;margin-top: 0}
 #notification-reg .content:hover{background: #f8f6f5}
 #notification-reg .content img
-{   
+{
     width: 70px;
     height: 70px;
     margin-left: 10px;
     padding: 12px 10px;
 }
-#notification-reg .content h4{    
+#notification-reg .content h4{
   font-size: 12px;
     opacity: 0.5;
     margin-left: -65px;
     margin-top: -4px;
     font-family: Source Sans Pro;
 }
-#notification-reg .content p{    
+#notification-reg .content p{
     font-size: 12px;
     margin-left: -64px;
     line-height: 1.3;
@@ -529,9 +537,9 @@ margin-top:-50px;
     /* margin-left: -77px; */
     box-shadow: 1px 8px 16px -1px #bfb2c7;
     margin-top: -8px;
-   
+
 }
-#profile-Docter .bgfooter 
+#profile-Docter .bgfooter
 {
 background: url(../images/ffooter.png) no-repeat;
     width: 100%;
@@ -566,7 +574,7 @@ background: url(../images/ffooter.png) no-repeat;
 {
     width: 100%;
     height: 100%;
-    
+
 }
 .mapsearch
 {
@@ -674,7 +682,7 @@ select:hover
 
 }
 #chat-screen  h2{
-    
+
     color: #fff;
     margin-right: -33px;
     font-weight: 100;
@@ -755,7 +763,7 @@ select:hover
     background:url(../images/reply-arrow_03.png)no-repeat right !important;
     margin-top: 10px;
     margin-left: -22px;
- 
+
     }
 #chat-screen .reply .imgreply
 {
@@ -769,13 +777,13 @@ select:hover
 #chat-screen .reply input{height: 40px;}
 @media (height: 568px)
 {
-    .mapsearch 
+    .mapsearch
     {
         margin-top: -44px !important;
     }
     #select-button {
         top: -6px !important;
-        width: 27%; 
+        width: 27%;
     }
     #map-reg .content  .ui-input-text, .ui-input-search{
         top: 44px !important;
