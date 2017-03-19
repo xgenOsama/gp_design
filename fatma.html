@@ -28,16 +28,19 @@
 <!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">-->
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 <!-- Scripts -->
+
+        
         <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+       
 		<script>
 				$(document).ready(function(){
 						$( "[data-role='header']" ).toolbar();
 				});
 				
 				$(function () {
-  $("[data-role=panel]").enhanceWithin().panel();
-});
+				$("[data-role=panel]").enhanceWithin().panel();
+			    });
 		</script>
 </head>
 <body>
@@ -179,6 +182,11 @@
 <!-- comment -->
 				<div class="yourcomment">
 						<input type="text" placeholder="Write acomment" class="imgcomment">
+						<!--
+						<span>
+						<a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+						</span>
+				        -->
 			    </div>
 				
 		</div>
@@ -539,5 +547,7 @@
 		</div>
 </div>
 <!-- /page 7 -->
+		
+		
 </body>
 </html>

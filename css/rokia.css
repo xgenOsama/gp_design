@@ -32,7 +32,12 @@
 #start_screen .logo {
     height: 100px;
 }
+#start_screen .logo img {
+    margin-top: 22px;
+    padding-left: 4px;
+}
 #start_screen h1 {
+    padding-top: 81px;
     text-shadow: 0px 0 !important;
     color: white;
     font-family: Segoe UI !important;
@@ -47,10 +52,12 @@
     font-size: 20px;
     font-weight: normal;
     line-height: 1.5 !important;
+    margin-bottom: 44px;
+    margin-top: -18px;
 }
 #start_screen .btn {
     margin-bottom: 38px;
-    margin-top: 50px;
+    margin-top: 38px;
 }
 #start_screen .ui-btn {
     background-color: #573d5c !important;
@@ -80,6 +87,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #register_screen h1 {
     text-shadow: 0px 0 !important;
     color: white;
@@ -89,6 +97,9 @@
     line-height: 1.5 !important;
     margin-top: -3px !important;
     text-shadow: -1px -1px 5px !important;
+}
+#register_screen .photo .logo img {
+    padding-top: 30px;
 }
 #register_screen img {
     margin: auto;
@@ -193,6 +204,9 @@ textarea.desc {background: url(../images/desc.jpg) no-repeat left !important;}
     background-repeat: no-repeat;
     background-size: cover;
 }
+#login_screen .photo .logo img {
+    padding-top: 30px;
+}
 #login_screen .ui-btn {
     background-color: #7b5785 !important;
     border-color: #7b5785 !important;
@@ -203,8 +217,6 @@ textarea.desc {background: url(../images/desc.jpg) no-repeat left !important;}
     font-size: 20px !important;
     text-align: center !important;
 }
-
-
 #login_screen .btn .ui-btn {
     background-color: #7b5785 !important;
     border-color: #7b5785 !important;
