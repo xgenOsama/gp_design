@@ -146,6 +146,7 @@
     box-sizing: content-box !important;
     font-family: Source Sans Pro !important;
     color: #757575 !important;
+    font-weight: lighter;
 }
 #register_screen .icon .ui-btn {
     background-color: white !important;
@@ -199,7 +200,7 @@ textarea.desc {background: url(../images/desc.jpg) no-repeat left !important;}
 /*login screen*/
 #login_screen {background-color: #dfdfdf !important;}
 #login_screen .photo {
-    height: 200px;
+    height: 100%;
     background-image: url(../images/bg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -261,6 +262,7 @@ textarea.desc {background: url(../images/desc.jpg) no-repeat left !important;}
     font-family: Source Sans Pro !important;
     color: #757575 !important;
     border-bottom: 1px #dfdfdf solid !important;
+    font-weight: lighter;
 }
 #login_screen .icon .ui-btn {
     background-color: white !important;
