@@ -1,4 +1,5 @@
 /*for responsive*/
+/*
 @media all and (min-height: 736px){
     .error {
         height: 306px !important;
@@ -23,302 +24,160 @@
         height: 704px !important;
     }
 }
+*/
 /*start screen*/
-#start_screen .ui-content {
-    background-image: url(../images/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#start_screen .logo {
-    height: 100px;
-}
-#start_screen .logo img {
-    margin-top: 22px;
-    padding-left: 4px;
-}
-#start_screen h1 {
-    padding-top: 81px;
-    text-shadow: 0px 0 !important;
-    color: white;
-    font-family: Segoe UI !important;
-    font-size: 30px;
-    font-weight: normal;
-    line-height: 1.5 !important;
+#start_screen {
+    background-image: url("../images/loginbg.png");
+    background-size: 100% 100%;
 }
 #start_screen p {
-    text-shadow: 0px 0 !important;
-    color: #dddada;
-    font-family: Segoe UI;
-    font-size: 20px;
+    text-shadow: none !important;
+    color: #bfbabc;
+    font-family: Segoe UI !important;
+    font-size:20px;
+}
+#start_screen h2 {
+    margin-top: -8px;
+    text-shadow: none !important;
+    color: white;
+    font-family: Segoe UI !important;
+    font-size: 33px;
     font-weight: normal;
-    line-height: 1.5 !important;
-    margin-bottom: 44px;
-    margin-top: -18px;
 }
-#start_screen .btn {
-    margin-bottom: 38px;
-    margin-top: 38px;
+#start_screen input {
+    text-align: center;
+    color : white !important;
 }
-#start_screen .ui-btn {
-    background-color: #573d5c !important;
-    border-color: #573d5c !important;
-    color: white !important;
-    text-shadow: 0px 0 white !important;
-    font-family: Roboto !important;
-    font-weight: normal !important;
-    font-size: 20px !important;
-    width: 70% !important;
-    text-align: center !important;
-    box-shadow: 0 8px 15px rgba(29, 29, 29, 0.78) !important;
-    padding: 0.4em 0em !important;
-    margin: 0.3em 0 !important;
-    border-radius: 4px;
-    line-height: 1.5 !important;
+#start_screen .btn .ui-btn {
+    border: none !important;
+    background-color: #efeaee !important;
+    border-radius: 25px;
+    width: 85%;
+    padding: 13px;
+    box-shadow: 0px 8px 5px #241a26;
+    color: #492b51;
+    text-shadow: none !important;
 }
-
 /*register screen*/
-#register_screen .ui-content {
-    height: 100% !important;
-    overflow: initial !important;
+#register_screen {
+    background-image: url("../images/loginbg.png");
+    background-size: 100% 100%;
+    min-height: 100% !important;
 }
-#register_screen .photo {
-    height: 200px;
-    background-image: url(../images/bg2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+#register_screen form input {
+    text-align: center;
+    color : white !important;
 }
-
-#register_screen h1 {
-    text-shadow: 0px 0 !important;
-    color: white;
-    font-family: Source Sans Pro !important;
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 1.5 !important;
-    margin-top: -3px !important;
-    text-shadow: -1px -1px 5px !important;
+#register_screen form .btn .ui-btn {
+    border: none !important;
+    background-color: #efeaee !important;
+    border-radius: 25px;
+    width: 50%;
+    padding: 13px;
+    margin-top: 35px !important;
+    box-shadow: 0px 8px 5px #241a26;
+    color: #492b51;
+    text-shadow: none !important;
 }
-#register_screen .photo .logo img {
-    padding-top: 30px;
+#register_screen hr {
+    width: 95%;
+    border-color: #efeaee !important;
+    border-style: groove;
 }
-#register_screen img {
-    margin: auto;
+#register_screen #pass {
+    width: 48%;
+    float: left;
 }
-#register_screen .btn .ui-btn {
-    background-color: #7b5785 !important;
-    border-color: #7b5785 !important;
+#register_screen #pass_confirm {
+    width: 48%;
+    float: right;
+}
+#register_screen #file {
+    width: 48%;
+    float: left;
+}
+#register_screen #selector {
+    width: 48%;
+    float: right;
+}
+textarea.ui-input-text.ui-textinput-autogrow {
     color: white !important;
-    text-shadow: 0px 0 white !important;
-    font-family: Roboto !important;
-    font-weight: normal !important;
-    font-size: 20px !important;
-    text-align: center !important;
-    margin: 0em 0 !important;
+    text-align: center;
 }
-#register_screen .ui-content {
-    padding: 0em !important;
+/*select style*/
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head+body .ui-btn.ui-btn-a:visited {
+    padding: 24px;
+    border: none !important;
+    text-shadow: none !important;
+    box-shadow: 6px 6px 5px #241a26;
+    background-color: #4d3853 !important;
 }
-#register_screen form {
-    border-radius: 0px !important;
-    font-size: 19px !important;
-    background-color: white !important;
+.ui-select {
+    margin-top: 0px !important;
+    background-color: #4d3853 !important;
+    opacity: 0.6 !important;
+    color: white !important;
 }
-#register_screen .ui-corner-all {
-    border-radius: 0em !important;
+#register_screen option {
+    color: white !important;
 }
-#register_screen .ui-input-text {
-    border-width: 0px !important;
-    margin: 0em 0 !important;
-    color: #757575;
-}
-#register_screen .ui-select  {
-    margin-bottom: 0em !important;
-    margin-top: 0em !important;
-}
-#register_screen .ui-btn-icon-right {
-    padding-right: 14.5em !important;
-    color: #757575 !important;
-    padding-top: 27px;
-}
-#register_screen .ui-input-text input {
-
-    padding-left: 45px;
-    box-sizing: content-box !important;
-    font-family: Source Sans Pro !important;
-    color: #757575 !important;
+.ui-select .ui-btn>span:not(.ui-li-count) {
+    color: white !important;
     font-weight: lighter;
 }
-#register_screen .icon .ui-btn {
-    background-color: white !important;
-    position: absolute;
-    border-color: white !important;
+/*type file style*/
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
 }
-#register_screen .ui-select .ui-btn select {
-    padding-left: 52px;
-    opacity: 5 !important;
-    background-color: white !important;
-    border: 1px white solid !important;
-    color: #cacaca !important;
-    font-size: 16px;
-
+.custom-file-input:hover::before {
+    border-color: black;
 }
-::-webkit-input-placeholder {
-   color: #cecccc;
-   font-size: 16px;
-   padding-left: 3px;
-}
-textarea {
-    font-size: 16px !important;
-    color: #cecccc !important;
-    padding-left: 48px !important;
-    padding-top: 30px !important;
-}
-.inputfile {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-}
-.ui-mobile label, .ui-controlgroup-label {
-    padding-top: 16px;
-    padding-bottom: 9px;
-
-}
-.ui-mobile label, div.ui-controlgroup-label {
-    color: #cacaca ;
-    font-size: 14px !important;
+.custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }
 
-input.user {background: url(../images/user.jpg) no-repeat left !important;}
-input.age {background: url(../images/age.jpg) no-repeat left !important;}
-input.email {background: url(../images/email.jpg) no-repeat left !important;}
-input.pass {background: url(../images/pass.jpg) no-repeat left !important;}
-select.role {background: url(../images/role.jpg) no-repeat left !important;}
-textarea.desc {background: url(../images/desc.jpg) no-repeat left !important;}
 /*login screen*/
-#login_screen {background-color: #dfdfdf !important;}
-#login_screen .photo {
-    height: 100%;
-    background-image: url(../images/bg2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+#login_screen {
+    background-image: url("../images/loginbg.png");
+    background-size: 100% 100%;
 }
-#login_screen .photo .logo img {
-    padding-top: 30px;
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+    background-color: #4d3853 !important;
+    border: none !important;
+    opacity: 0.6;
+    text-shadow: none !important;
 }
-#login_screen .ui-btn {
-    background-color: #7b5785 !important;
-    border-color: #7b5785 !important;
-    color: white !important;
-    text-shadow: 0px 0 white !important;
-    font-family: Roboto !important;
-    font-weight: normal !important;
-    font-size: 20px !important;
-    text-align: center !important;
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+    padding: 15px;
+    margin-bottom: 13px;
+    margin-top: 13px;
+    box-shadow: 6px 6px 5px #241a26;
 }
-#login_screen .btn .ui-btn {
-    background-color: #7b5785 !important;
-    border-color: #7b5785 !important;
-    color: white !important;
-    text-shadow: 0px 0 white !important;
-    font-family: Roboto !important;
-    font-weight: normal !important;
-    font-size: 20px !important;
-    text-align: center !important;
-    margin: 0em 0 !important;
+#login_screen form input {
+    text-align: center;
+    color : white !important;
 }
-#login_screen .ui-content {
-    padding: 0em !important;
-    height: 100% !important;
-    overflow: initial !important;
+#login_screen form .btn .ui-btn {
+    border: none !important;
+    background-color: #efeaee !important;
+    border-radius: 25px;
+    width: 50%;
+    padding: 13px;
+    margin-top: 35px !important;
+    box-shadow: 0px 8px 5px #241a26;
+    color: #492b51;
+    text-shadow: none !important;
 }
-#login_screen form {
-    border-radius: 0px !important;
-    font-size: 19px !important;
-    background-color: white !important;
+#login_screen hr {
+    width: 95%;
+    border-color: #efeaee !important;
+    border-style: groove;
 }
-#login_screen .ui-corner-all {
-    border-radius: 0em !important;
+#login_screen h5 {
+    text-shadow: none;
+    color: #9b0016;
 }
-#login_screen .ui-input-text {
-    border-width: 0px !important;
-    margin: 0em 0 !important;
-    color: #757575;
-}
-#login_screen .ui-select  {
-    margin-bottom: 0em !important;
-    margin-top: 0em !important;
-}
-#login_screen .ui-btn-icon-right {
-    padding-right: 14.5em !important;
-    color: #757575 !important;
-}
-#login_screen .ui-input-text input {
-
-    padding-left: 45px;
-    box-sizing: content-box !important;
-    font-family: Source Sans Pro !important;
-    color: #757575 !important;
-    border-bottom: 1px #dfdfdf solid !important;
-    font-weight: lighter;
-}
-#login_screen .icon .ui-btn {
-    background-color: white !important;
-    position: absolute;
-    border-color: white !important;
-}
-::-webkit-input-placeholder {
-   color: #cecccc;
-   font-size: 16px;
-   padding-left: 3px;
-}
-input.user {background: url(../images/user.jpg) no-repeat left !important;}
-input.age {background: url(../images/age.jpg) no-repeat left !important;}
-input.email {background: url(../images/email.jpg) no-repeat left !important;}
-input.pass {background: url(../images/pass.jpg) no-repeat left !important;}
-#login_screen h1 {
-    text-shadow: 0px 0 !important;
-    color: white;
-    font-family: Source Sans Pro !important;
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 1.5 !important;
-    margin-top: -3px !important;
-    text-shadow: -1px -1px 5px !important;
-}
-#login_screen .error {
-    background-color: white !important;
-}
-#login_screen .error p {
-    color: #de0000 !important;
-    font-family: Source Sans Pro !important;
-    margin-top: -6px;
-}
-#login_screen .error h4 {
-    color: #9fa1a3 !important;
-    font-family: Source Sans Pro !important;
-}
-
-#login_screen .error .ui-btn {
-    background-color: #573d5c !important;
-    border-color: #573d5c !important;
-    color: white !important;
-    text-shadow: 0px 0 white !important;
-    font-family: Roboto !important;
-    font-weight: normal !important;
-    font-size: 14px !important;
-    width: 36% !important;
-    text-align: center !important;
-    box-shadow: 4px 5px 15px rgba(29, 29, 29, 0.20) !important;
-    padding: 0.4em 0em !important;
-    margin: 0.3em 0 !important;
-    border-radius: 4px;
-    line-height: 1.5 !important;
-    margin-bottom: 98px !important;
-    margin-top: -9px !important;
-}
+/*****/
 
 .ui-selectmenu-list .ui-btn-active {
     background-color: #573d5c !important;

@@ -40,13 +40,13 @@
 		<div role="main" class="ui-content">
 
 				<div class="logo">
-				    <img src="images/logo.png">
+				    <img src="images/.png">
 				</div>
 
 				<center>
-				<div>
-				    <h1>The Most Convenient Way To</h1>
-				    <p>Consult Your Health</p>
+				<div class="desc">
+				    <p>The Most Convenient <br> Way To</p>
+				    <h2>Consult Your Health</h2>
 				    <p>Get Quick Chatting, Request For
 				       Online Laboratory And The Nearest
 				       Hospital And Pharmacy From <br>
@@ -67,47 +67,57 @@
 
 <!-- page2 -->
 <div data-role="page" id="register_screen">
+	<div class="loader-default"><div class="loading"></div></div>
 
-   <div class="loader-default"><div class="loading"></div></div>
-   <div role="main" class="ui-content">
-        <center>
-        <div class="photo">
-				<!--<h1>ICare</h1>-->
-				<div class="logo">
-				    <img src="images/logo.png">
-				</div>
-        </div>
+	<div role="main" class="ui-content">
+		<center>
+			<div class="logo">
+				<img src="images/.png">
+			</div>
 		</center>
-	  <form method="post" action="demo.php">
+		<center>
+			<form method="post" action="demo.php">
+				<input class="name" type="text" name="name" id="fname" placeholder="Name">
+				<hr>
+				<input class="age" type="number" name="age" id="age" min="1" max="100" placeholder="Age">
+				<hr>
+				<input class="email" type="email" name="email" placeholder="Email Address">
+				<hr>
+				<div id="pass">
+				<input class="pass" type="password" name="psw" placeholder="Password">
+				</div>
+				<div id="pass_confirm">
+				<input class="pass_confirm" type="password" name="password_confirm" placeholder="Confirm Password">
+				</div>
+				<hr>
+				<div id="file">
+					<input type="file" class="custom-file-input">
 
-		<input class="user" type="text" name="name" id="fname" placeholder="Name">
-        <input class="age" type="number" name="age" id="age" min="1" max="100" placeholder="Age">
-		<input class="email" type="email" name="email" placeholder="Email Address">
-        <input class="pass" type="password" name="password" placeholder="Password">
-		<input class="pass" type="password" name="password_confirm" placeholder="Confirm Password">
-		<input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3">
-		<label for="file-3">
-				<img src="images/file.jpg">
-				<span>Choose Profile Picture</span>
-		</label>
-		<div class="ui-field-contain">
-        <select class="role" name="Role" id="select" value="Role" data-native-menu="false">
-            <option value="0" selected="selected"> ---- Type ----</option>
-            <option value="1">Patient</option>
-            <option value="2">Doctor</option>
-            <option value="3">Laboratory</option>
-        </select>
-        </div>
-		<textarea class="desc" name="Description" rows="10" cols="30" placeholder="Description"></textarea>
-         <div class="btn">
-      <a href="home-reg.html" rel="external" class="ui-btn">SIGN UP</a>
-   </div>
-	  </form>
+				</div>
+				<!--select-->
+				<div id="selector">
+					<div class="ui-field-contain">
+						<select class="role" name="Role" id="select" value="Role" data-native-menu="false">
+							<option value="0" selected="selected">Type</option>
+							<option value="1">Patient</option>
+							<option value="2">Doctor</option>
+							<option value="3">Laboratory</option>
+						</select>
+					</div>
+				</div>
+				<hr>
 
+				<textarea class="desc" name="Description" rows="10" cols="30" placeholder="Description"></textarea>
+				
+				<div class="btn">
+					<a href="home-reg.html" rel="external" class="ui-btn ui-shadow hvr-grow">Sign up</a>
+				</div>
 
-
+			</form>
+		</center>
+	</div>
 </div>
-</div>
+
 <!-- page2 -->
 
 <!-- page3 -->
@@ -116,35 +126,29 @@
 
    <div role="main" class="ui-content">
 		<center>
-        <div class="photo">
-
 				<div class="logo">
-				    <h4>Login</h4>
-				    <img src="images/logo.png">
+				    <img src="images/.png">
 				</div>
-        </div>
 		</center>
-
-
-		   <form method="post" action="demo.php">
-
-			 <input class="user" type="text" name="name" id="fname" placeholder="Name">
+	   <center>
+	    <form method="post" action="demo.php">
 			 <input class="email" type="email" name="email" placeholder="Email Address">
+			<hr>
 			 <input class="pass" type="password" name="psw" placeholder="Password">
 
-		   </form>
+				<div class="btn">
+					<a href="home-reg.html" rel="external" class="ui-btn ui-shadow hvr-grow">Login</a>
+				</div>
 
+	    </form>
+	   </center>
+<!--Error msg
 		<div class="error">
-				<center>
-				<br><br><br>
-				<p></p>
-				<h4>Don't have an account yet ?</h4>
-				<a href="#register_screen" class="ui-btn ui-shadow hvr-grow">Register for free</a>
-				</center>
+			<center>
+				<h5>error, please try again</h5>
+			</center>
 		</div>
-		<div class="btn">
-		   <a href="home-reg.html" rel="external" class="ui-btn">LOGIN</a>
-		</div>
+ -->
 </div>
 </div>
 <!-- page3 -->
