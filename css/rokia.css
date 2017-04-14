@@ -97,7 +97,7 @@
     float: left;
 }
 #register_screen #selector {
-    width: 48%;
+    width: 100%;
     float: right;
 }
 textarea.ui-input-text.ui-textinput-autogrow {
@@ -121,7 +121,11 @@ textarea.ui-input-text.ui-textinput-autogrow {
 #register_screen option {
     color: white !important;
 }
-.ui-select .ui-btn>span:not(.ui-li-count) {
+.ui-select  .ui-btn {
+    color: white !important;
+    font-weight: lighter;
+}
+.ui-listview  li a{
     color: white !important;
     font-weight: lighter;
 }
