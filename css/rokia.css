@@ -100,6 +100,22 @@
     width: 100%;
     float: right;
 }
+#register_screen #selector label {
+    color: white;
+}
+#register_screen #selector_special{
+    width: 100%;
+    float: right;
+}
+#register_screen #selector_special label {
+    color: white;
+}
+.file_image{
+    color: white;
+}
+.birth_date{
+    color: white;
+}
 textarea.ui-input-text.ui-textinput-autogrow {
     color: white !important;
     text-align: center;

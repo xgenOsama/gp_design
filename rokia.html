@@ -79,7 +79,8 @@
 			<form method="post" action="demo.php">
 				<input class="name" type="text" name="name" id="fname" placeholder="Name">
 				<hr>
-				<input class="age" type="number" name="age" id="age" min="1" max="100" placeholder="Age">
+				<lable for="age" class="birth_date select">Birth Date</lable>
+				<input class="birth_date" type="date" name="age" id="age">
 				<hr>
 				<input class="email" type="email" name="email" placeholder="Email Address">
 				<hr>
@@ -90,13 +91,27 @@
 				<input class="pass_confirm" type="password" name="password_confirm" placeholder="Confirm Password">
 				</div>
 				<hr>
-					<input type="file" name="image" class="ui-btn ui-icon-plus ui-btn-icon-left  fileinput-button custom-file-input" >
+				<div class="file">
+				<label class="file_image select" for="image">choose image</label>
+					<input type="file" id="image" name="image" class="ui-btn ui-icon-plus ui-btn-icon-left  fileinput-button custom-file-input" >
+					</div>
+					<hr>
 				<div id="selector">
+                    <label for="special_id" class="select">Type</label>
 					<div class="ui-field-contain">
-						<select class="role" name="Role" id="select" value="Role" data-native-menu="false">
+						<select class="role" name="role" id="select" data-native-menu="false">
 							<option value="1">Patient</option>
 							<option value="2">Doctor</option>
 							<option value="3">Laboratory</option>
+						</select>
+					</div>
+				</div>
+				<hr>
+				<div id="selector_special">
+				<label for="special_id" class="select">Specialize at</label>
+					<div class="ui-field-contain">
+						<select class="role" name="special_id" id="special_id" value="Role" data-native-menu="false">
+							
 						</select>
 					</div>
 				</div>
