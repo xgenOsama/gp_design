@@ -2,65 +2,65 @@
 <html lang="en">
 <head>
 
-<!-- Basic Page Needs ================================================== -->
+	<!-- Basic Page Needs ================================================== -->
 
-<meta charset="utf-8">
-<title>ICare</title>
-<meta name="description" content="Place to put your description text">
-<meta name="author" content="">
+	<meta charset="utf-8">
+	<title>ICare</title>
+	<meta name="description" content="Place to put your description text">
+	<meta name="author" content="">
 
-<!-- Mobile Specific Metas ================================================== -->
+	<!-- Mobile Specific Metas ================================================== -->
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<script>
-		if (window.screen.height==568) { // iPhone 4"
-		document.querySelector("meta[name=viewport]").content="width=320.1";
-		}
-</script>
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<script>
+        if (window.screen.height==568) { // iPhone 4"
+            document.querySelector("meta[name=viewport]").content="width=320.1";
+        }
+	</script>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-<!-- css -->
-<link rel="stylesheet" href="css/rokia.css">
-<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
-<link href="css/hover.css" rel="stylesheet" media="all">
-<link rel="stylesheet" href="css/animate.css">
-<!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">-->
-<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- css -->
+	<link rel="stylesheet" href="css/rokia.css">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link href="css/hover.css" rel="stylesheet" media="all">
+	<link rel="stylesheet" href="css/animate.css">
+	<!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">-->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 
-<!-- Scripts -->
-<script src="js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- Scripts -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 
 </head>
 <body>
 <!-- page1 -->
 <div data-role="page" id="start_screen">
-        <div class="loader-default"><div class="loading"></div></div>
-		<div role="main" class="ui-content">
+	<div class="loader-default"><div class="loading"></div></div>
+	<div role="main" class="ui-content">
 
-				<div class="logo">
-				    <img src="images/.png">
-				</div>
-
-				<center>
-				<div class="desc">
-				    <p>The Most Convenient <br> Way To</p>
-				    <h2>Consult Your Health</h2>
-				    <p>Get Quick Chatting, Request For
-				       Online Laboratory And The Nearest
-				       Hospital And Pharmacy From <br>
-				       Your Location
-					</p>
-				    <p>It's Free And Secure</p>
-				</div>
-
-				<div class="btn">
-				    <a href="#register_screen" class="ui-btn ui-shadow hvr-grow">SIGN UP</a>
-				    <a href="#login_screen" class="ui-btn ui-shadow hvr-grow">LOGIN</a>
-                </div>
-				</center>
+		<div class="logo">
+			<img src="images/.png">
 		</div>
+
+		<center>
+			<div class="desc">
+				<p>The Most Convenient <br> Way To</p>
+				<h2>Consult Your Health</h2>
+				<p>Get Quick Chatting, Request For
+					Online Laboratory And The Nearest
+					Hospital And Pharmacy From <br>
+					Your Location
+				</p>
+				<p>It's Free And Secure</p>
+			</div>
+
+			<div class="btn">
+				<a href="#register_screen" class="ui-btn ui-shadow hvr-grow">SIGN UP</a>
+				<a href="#login_screen" class="ui-btn ui-shadow hvr-grow">LOGIN</a>
+			</div>
+		</center>
+	</div>
 
 </div>
 <!-- /page1 -->
@@ -76,7 +76,7 @@
 			</div>
 		</center>
 		<center>
-			<form method="post" action="demo.php">
+			<form method="post" id="register_form" enctype="multipart/form-data">
 				<input class="name" type="text" name="name" id="fname" placeholder="Name">
 				<hr>
 				<lable for="age" class="birth_date select">Birth Date</lable>
@@ -85,19 +85,19 @@
 				<input class="email" type="email" name="email" placeholder="Email Address">
 				<hr>
 				<div id="pass">
-				<input class="pass" type="password" name="password" placeholder="Password">
+					<input class="pass" type="password" name="password" placeholder="Password">
 				</div>
 				<div id="pass_confirm">
-				<input class="pass_confirm" type="password" name="password_confirm" placeholder="Confirm Password">
+					<input class="pass_confirm" type="password" name="password_confirm" placeholder="Confirm Password">
 				</div>
 				<hr>
 				<div class="file">
-				<label class="file_image select" for="image">choose image</label>
+					<label class="file_image select" for="image">choose image</label>
 					<input type="file" id="image" name="image" class="ui-btn ui-icon-plus ui-btn-icon-left  fileinput-button custom-file-input" >
-					</div>
-					<hr>
+				</div>
+				<hr>
 				<div id="selector">
-                    <label for="special_id" class="select">Type</label>
+					<label for="special_id" class="select">Type</label>
 					<div class="ui-field-contain">
 						<select class="role" name="role" id="select" data-native-menu="false">
 							<option value="1">Patient</option>
@@ -108,10 +108,10 @@
 				</div>
 				<hr>
 				<div id="selector_special">
-				<label for="special_id" class="select">Specialize at</label>
+					<label for="special_id" class="select">Specialize at</label>
 					<div class="ui-field-contain">
 						<select class="role" name="special_id" id="special_id" value="Role" data-native-menu="false">
-							
+
 						</select>
 					</div>
 				</div>
@@ -120,7 +120,7 @@
 				<textarea class="desc" name="Description" rows="10" cols="30" placeholder="Description"></textarea>
 
 				<div class="btn">
-					<a href="home-reg.html" rel="external" class="ui-btn ui-shadow hvr-grow">Sign up</a>
+					<input type="submit" class="ui-btn ui-shadow hvr-grow">Sign up</input>
 				</div>
 
 			</form>
@@ -132,34 +132,34 @@
 
 <!-- page3 -->
 <div data-role="page" id="login_screen">
-   	<div class="loader-default"><div class="loading"></div></div>
+	<div class="loader-default"><div class="loading"></div></div>
 
-   <div role="main" class="ui-content">
+	<div role="main" class="ui-content">
 		<center>
-				<div class="logo">
-				    <img src="images/.png">
-				</div>
+			<div class="logo">
+				<img src="images/.png">
+			</div>
 		</center>
-	   <center>
-	    <form method="post" action="demo.php">
-			 <input class="email" type="email" name="email" placeholder="Email Address">
-			<hr>
-			 <input class="pass" type="password" name="password" placeholder="Password">
+		<center>
+			<form method="post" id="login_form">
+				<input class="email" type="email" name="email" placeholder="Email Address">
+				<hr>
+				<input class="pass" type="password" name="password" placeholder="Password">
 
 				<div class="btn">
-					<a href="home-reg.html" rel="external" class="ui-btn ui-shadow hvr-grow">Login</a>
+					<input type="submit" class="ui-btn ui-shadow hvr-grow">Login</input>
 				</div>
 
-	    </form>
-	   </center>
-<!--Error msg
-		<div class="error">
-			<center>
-				<h5>error, please try again</h5>
-			</center>
-		</div>
- -->
-</div>
+			</form>
+		</center>
+		<!--Error msg
+                <div class="error">
+                    <center>
+                        <h5>error, please try again</h5>
+                    </center>
+                </div>
+         -->
+	</div>
 </div>
 <!-- page3 -->
 </body>
