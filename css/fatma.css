@@ -432,7 +432,18 @@ input
     font-weight: 400;
     font-family:Source Sans Pro ;
     }
+#home-reg .imgcomment input  [type="text"] {
 
+    position: relative;
+
+}
+#home-reg .imgcomment input:before {
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    content: "\f007";
+}    
 /************pages 2*************************/
 
 /* jqury update*/
