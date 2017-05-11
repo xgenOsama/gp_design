@@ -324,7 +324,7 @@ input
 #home-reg .title{
     font-size: 15px;
     margin-top: -1px;
-      font-family: Source Sans Pro;
+    font-family: Source Sans Pro;
     font-weight: 400;
 }
 #home-reg .hr{
@@ -334,7 +334,7 @@ input
 }
 #home-reg #popupMenu
 {
-       background-color: #f7f7f7;
+    background-color: #f7f7f7;
     box-shadow: 5px 5px 5px transparent;
     background: none;
 }
@@ -342,7 +342,7 @@ input
     border-width: 1px;
     border-style: none;
 }
-#home-reg #popupMenu h3{font-size: 17px; opacity: 0.5;font-family:  Source Sans Pro; font-weight: 200px}
+#home-reg #popupMenu h3{font-size: 17px; opacity: 0.5; font-family:  Source Sans Pro; font-weight: 200px;}
 /*#home-reg .check
 {
     width: 92px;
@@ -358,7 +358,7 @@ input
 }
 #home-reg .ui-block-a h2
 {
-      font-family: Source Sans Pro;
+    font-family: Source Sans Pro;
     font-weight: 400;
     font-size: 17px;
     margin-top: -57px;
@@ -367,7 +367,7 @@ input
 }
 #home-reg .ui-block-a h4
 {
-       font-size: 12px;
+    font-size: 12px;
     opacity: 0.6;
     margin-left: 65px;
     margin-top: -6px;
@@ -535,8 +535,218 @@ input
 
 
 /************* page 4  profile Doctor **************/
+#profile-Docter {
+    background-image: url("../images/bgprofile.png");
+    background-size: 100% 100%;
+    padding-top: 0px!important;
+}
 
+/*edit responsive of profile page*/
 
+/* ----------- Nexus 5X ----------- */
+@media only screen
+and (min-device-width: 412px)
+and (max-device-width: 732px)
+{
+    #profile-Docter .profile-pic
+    {
+        margin-top: 102px;
+        width: 40%;
+    }
+    #profile-Docter .prof-info h1
+    {
+        font-size: 21px;
+        font-family: Source Sans Pro ;
+        color: #a87fb0;
+        font-weight: normal;
+        margin-top: -8px;
+        text-shadow: none !important;
+    }
+    #profile-Docter .prof-info h4
+    {
+        font-size: 18px;
+        font-family: Source Sans Pro ;
+        margin-top: -18px;
+        font-weight: lighter;
+        color: #b9b9b7;
+        text-shadow: none !important;
+    }
+}
+/* ----------- iPhone 4 and 4S -----------
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+ {
+    #profile-Docter .profile-pic
+    {
+        margin-top: 85px;
+        width: 36%;
+    }
+    #profile-Docter .prof-info h1
+    {
+        font-size: 21px;
+        font-family: Source Sans Pro ;
+        color: #a87fb0;
+        font-weight: normal;
+        margin-top: -8px;
+        text-shadow: none !important;
+    }
+    #profile-Docter .prof-info h4
+    {
+        font-size: 18px;
+        font-family: Source Sans Pro ;
+        margin-top: -18px;
+        font-weight: lighter;
+        color: #b9b9b7;
+        text-shadow: none !important;
+    }
+}
+/* ----------- iPhone 5 ----------- */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px) {
+    #profile-Docter .profile-pic
+    {
+        margin-top: 98px;
+        width: 44%;
+    }
+    #profile-Docter .prof-info h1
+    {
+        font-size: 23px;
+        font-family: Source Sans Pro ;
+        color: #a87fb0;
+        font-weight: normal;
+        margin-top: -6px;
+        text-shadow: none !important;
+    }
+    #profile-Docter .prof-info h4
+    {
+        font-size: 18px;
+        font-family: Source Sans Pro ;
+        margin-top: -18px;
+        font-weight: lighter;
+        color: #b9b9b7;
+        text-shadow: none !important;
+    }
+}
+/* ----------- iPhone 6 ----------- */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px) {
+    #profile-Docter .profile-pic
+    {
+        margin-top: 35%;
+        width: 45%;
+    }
+    #profile-Docter .prof-info h1
+    {
+        font-size: 26px;
+        font-family: Source Sans Pro ;
+        color: #a87fb0;
+        font-weight: normal;
+        margin-top: -6px;
+        text-shadow: none !important;
+    }
+    #profile-Docter .prof-info h4
+    {
+        font-size: 19px;
+        font-family: Source Sans Pro ;
+        margin-top: -18px;
+        font-weight: lighter;
+        color: #b9b9b7;
+        text-shadow: none !important;
+    }
+}
+/* ----------- iPhone 6 plus  ----------- */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px) {
+    #profile-Docter .profile-pic
+    {
+        margin-top: 35%;
+        width: 45%;
+    }
+    #profile-Docter .prof-info h1
+    {
+        font-size: 30px;
+        font-family: Source Sans Pro ;
+        color: #a87fb0;
+        font-weight: normal;
+        margin-top: -8px;
+        text-shadow: none !important;
+    }
+    #profile-Docter .prof-info h4
+    {
+        font-size: 23px;
+        font-family: Source Sans Pro ;
+        margin-top: -25px;
+        font-weight: lighter;
+        color: #b9b9b7;
+        text-shadow: none !important;
+    }
+}
+/* ----------- iPad ----------- */
+/* Portrait and Landscape */
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    #profile-Docter .profile-pic
+    {
+        margin-top: 171px;
+        width: 36%;
+    }
+    #profile-Docter .prof-info h1
+    {
+        font-size: 44px;
+        font-family: Source Sans Pro ;
+        color: #a87fb0;
+        font-weight: normal;
+        margin-top: -13px;
+        text-shadow: none !important;
+    }
+    #profile-Docter .prof-info h4
+    {
+        font-size: 33px;
+        font-family: Source Sans Pro ;
+        margin-top: -39px;
+        font-weight: lighter;
+        color: #b9b9b7;
+        text-shadow: none !important;
+    }
+}
+/* ----------- iPad pro----------- */
+/* Portrait and Landscape */
+
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1366px) {
+    #profile-Docter .profile-pic
+    {
+        margin-top: 264px;
+        width: 32%;
+    }
+    #profile-Docter .prof-info h1
+    {
+        font-size: 53px;
+        font-family: Source Sans Pro ;
+        color: #a87fb0;
+        font-weight: normal;
+        margin-top: -13px;
+        text-shadow: none !important;
+    }
+    #profile-Docter .prof-info h4
+    {
+        font-size: 40px;
+        font-family: Source Sans Pro ;
+        margin-top: -39px;
+        font-weight: lighter;
+        color: #b9b9b7;
+        text-shadow: none !important;
+    }
+}
+/*
+/*
 
 #profile-Docter #header{background: #7b5785;height: 60px;border-color: #7b5785}
 
@@ -581,9 +791,9 @@ margin-top:-50px;
     width: 178px;
     border-radius: 20px;
     font-size: 20px;
-    font-family: Source Sans Pro;
+    font-family: Source Sans Pro;/*
     /* margin-left: -77px; */
-    box-shadow: 1px 8px 16px -1px #bfb2c7;
+  /*  box-shadow: 1px 8px 16px -1px #bfb2c7;
     margin-top: -8px;
 
 }
@@ -608,7 +818,7 @@ background: url(../images/ffooter.png) no-repeat;
 }
 
 .clear{width: 50px;height: 50px;clear: both;}
-
+*/
 /************* page 6  map screen **************/
 /* jqury update*/
 #map-reg .ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page {height: 100% !important;}
