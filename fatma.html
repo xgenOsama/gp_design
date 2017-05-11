@@ -59,7 +59,7 @@
 		</div>
 </div>
 <!--sub menu-->
-        <div data-role="panel" id="myPanel" data-display="overlay" class="ui-panel-inner">
+        <div data-role="panel" id="myPanel" data-display="overlay" class="ui-panel-inner"  style="position: fixed;">
 				<input type="text" placeholder="Search" >
 				<center class="info">
 						<a href="#profile-Docter" data-transition="flip" ><img src="images/doc_profile_03.png" class="hvr-grow"></a>
@@ -451,10 +451,20 @@
 <!--header-->
 <!--doc profile-->
 		<div role="main" class="ui-content">
-			<center class="prof-info">
-				<a href="#"><img class="profile-pic img-responsive" src="images/doc_profile_03.png"></a>
-				<h1>Magdi Yacoub</h1>
-				<h4>Doctor</h4>
+			<center>
+				<div class="prof-info">
+					<a href="#"><img class="profile-pic img-responsive" src="images/doc_profile_03.png"></a>
+					<h1>Magdi Yacoub</h1>
+					<h4>Doctor</h4>
+				</div>
+				<div>
+					<p>Professor of Cardiothoracic Surgery at the
+						National Heart and Lung Institute, Imperial
+						College London and Founder and Director
+						of Research at the Harefield Heart Science
+						Centre
+					</p>
+				</div>
 			</center>
 			<!--
 				<img class="backphoto"src="images/headrerprof_01.png">
@@ -522,7 +532,8 @@
 <!-- /page6 -->
 <!-- page7 -->
 <div data-role="page" id="chat-screen">
-		<div data-role="header" id="header">
+    <div class="clear"></div>
+		<div id="chattitle">
 				<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
 				<img src="images/doc_profile_03.png">
 				<center>

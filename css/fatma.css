@@ -89,7 +89,7 @@
     padding:3px;
      margin-top: 4px;
 }
-#myPanel{background-image:url(../images/sub-menue.png); position: absolute;}
+#myPanel{background-image:url(../images/sub-menue.png); background-size: cover;}
 #myPanel input
 {
     border-radius: 50%;
@@ -539,8 +539,15 @@ input
     background-image: url("../images/bgprofile.png");
     background-size: 100% 100%;
     padding-top: 0px!important;
+    position :fixed !important;
+    margin-top: 40px;
 }
-
+#profile-Docter p
+{
+    color: #71507d;
+    font-family: Source Sans Pro;
+    font-size: 20px;
+}
 /*edit responsive of profile page*/
 
 /* ----------- Nexus 5X ----------- */
@@ -571,15 +578,20 @@ and (max-device-width: 732px)
         color: #b9b9b7;
         text-shadow: none !important;
     }
+    #profile-Docter p
+    {
+        font-size: 20px;
+        margin-top: 72px;
+    }
 }
 /* ----------- iPhone 4 and 4S -----------
 @media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px)
+and (device-width: 320px)
+and (device-height: 480px)
  {
     #profile-Docter .profile-pic
     {
-        margin-top: 85px;
+        margin-top: 62px;
         width: 36%;
     }
     #profile-Docter .prof-info h1
@@ -604,10 +616,10 @@ and (max-device-width: 480px)
 /* ----------- iPhone 5 ----------- */
 @media only screen
 and (min-device-width: 320px)
-and (max-device-width: 568px) {
+and (max-device-height: 568px) {
     #profile-Docter .profile-pic
     {
-        margin-top: 98px;
+        margin-top: 87px;
         width: 44%;
     }
     #profile-Docter .prof-info h1
@@ -628,14 +640,19 @@ and (max-device-width: 568px) {
         color: #b9b9b7;
         text-shadow: none !important;
     }
+    #profile-Docter p
+    {
+        font-size: 16px;
+        margin-top: 53px;
+    }
 }
 /* ----------- iPhone 6 ----------- */
 @media only screen
 and (min-device-width: 375px)
-and (max-device-width: 667px) {
+and (max-device-height: 667px) {
     #profile-Docter .profile-pic
     {
-        margin-top: 35%;
+        margin-top: 107px;
         width: 45%;
     }
     #profile-Docter .prof-info h1
@@ -656,6 +673,11 @@ and (max-device-width: 667px) {
         color: #b9b9b7;
         text-shadow: none !important;
     }
+    #profile-Docter p
+    {
+        font-size: 18px;
+        margin-top: 56px;
+    }
 }
 /* ----------- iPhone 6 plus  ----------- */
 @media only screen
@@ -663,7 +685,7 @@ and (min-device-width: 414px)
 and (max-device-width: 736px) {
     #profile-Docter .profile-pic
     {
-        margin-top: 35%;
+        margin-top: 118px;
         width: 45%;
     }
     #profile-Docter .prof-info h1
@@ -684,6 +706,11 @@ and (max-device-width: 736px) {
         color: #b9b9b7;
         text-shadow: none !important;
     }
+    #profile-Docter p
+    {
+        font-size: 21px;
+        margin-top: 65px;
+    }
 }
 /* ----------- iPad ----------- */
 /* Portrait and Landscape */
@@ -693,7 +720,7 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px) {
     #profile-Docter .profile-pic
     {
-        margin-top: 171px;
+        margin-top: 156px;
         width: 36%;
     }
     #profile-Docter .prof-info h1
@@ -714,6 +741,11 @@ and (max-device-width: 1024px) {
         color: #b9b9b7;
         text-shadow: none !important;
     }
+    #profile-Docter p
+    {
+        font-size: 30px;
+        margin-top: 85px;
+    }
 }
 /* ----------- iPad pro----------- */
 /* Portrait and Landscape */
@@ -723,7 +755,7 @@ and (min-device-width: 1024px)
 and (max-device-width: 1366px) {
     #profile-Docter .profile-pic
     {
-        margin-top: 264px;
+        margin-top: 239px;
         width: 32%;
     }
     #profile-Docter .prof-info h1
@@ -743,6 +775,11 @@ and (max-device-width: 1366px) {
         font-weight: lighter;
         color: #b9b9b7;
         text-shadow: none !important;
+    }
+    #profile-Docter p
+    {
+        font-size: 39px;
+        margin-top: 127px;
     }
 }
 /*
@@ -911,26 +948,29 @@ select:hover
     position: relative;
     top: -41px;
 }
+#chat-screen .clear {width: 50px; height: 50px; clear: both;}
+#chat-screen {padding-top: 0px !important;}
 #chat-screen .ui-content {
     border-width: 0;
     overflow: visible;
     overflow-x: hidden;
     padding: 1em;
     height: 70%;
+    padding-top: 0px !important;
 }
-#chat-screen  #header
+#chat-screen  #chattitle
 {
     background-color: #573d5c;
     height: 100px;
     border: #ddd;
 
 }
-#chat-screen  #header i{
+#chat-screen  #chattitle i{
     font-size: 30px;
     color: #fff;
     padding: 30px;
 }
-#chat-screen #header  img
+#chat-screen #chattitle  img
 {
     width: 60px;
     height: 60px;
@@ -948,7 +988,7 @@ select:hover
     font-size: 18px;
     font-family: Source Sans Pro ;
 }
-#chat-screen #header h4{
+#chat-screen #chattitle h4{
      color: #b3a1b7;
     margin-right: -5px;
     font-weight: 100;
