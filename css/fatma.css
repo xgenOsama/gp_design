@@ -89,7 +89,7 @@
     padding:3px;
      margin-top: 4px;
 }
-#myPanel{background-image:url(../images/sub-menue.png); background-size: cover;}
+#myPanel{background-image:url(../images/sub-menue.png); background-size: cover; position: fixed;}
 #myPanel input
 {
     border-radius: 50%;
@@ -542,18 +542,52 @@ input
     position :fixed !important;
     margin-top: 40px;
 }
+#profile-Docter .ui-content
+{
+    margin-top: 5px;
+}
 #profile-Docter p
 {
     color: #71507d;
     font-family: Source Sans Pro;
     font-size: 20px;
 }
+#profile-Docter .prof-info h1
+{
+    font-size: 21px;
+    font-family: Source Sans Pro ;
+    color: #a87fb0;
+    font-weight: normal;
+    margin-top: -8px;
+    text-shadow: none !important;
+}
+#profile-Docter .prof-info h4
+{
+    font-size: 18px;
+    font-family: Source Sans Pro ;
+    margin-top: -18px;
+    font-weight: lighter;
+    color: #b9b9b7;
+    text-shadow: none !important;
+}
+#profile-Docter .ui-btn {
+    border: none !important;
+    background-color: #71507d !important;
+    border-radius: 25px;
+    width: 61%;
+    padding: 12px;
+    margin-top: 5px !important;
+    box-shadow: 0px 3px 20px #241a26;
+    color: white;
+    text-shadow: none !important;
+    font-weight: lighter;
+    font-size: 18px;
+}
 /*edit responsive of profile page*/
 
 /* ----------- Nexus 5X ----------- */
-@media only screen
-and (min-device-width: 412px)
-and (max-device-width: 732px)
+@media screen
+and (max-width: 412px)
 {
     #profile-Docter .profile-pic
     {
@@ -584,14 +618,13 @@ and (max-device-width: 732px)
         margin-top: 72px;
     }
 }
-/* ----------- iPhone 4 and 4S -----------
-@media only screen
-and (device-width: 320px)
-and (device-height: 480px)
+/* ----------- iPhone 4 and 4S -----------*/
+@media screen
+and (min-height: 480px)
  {
     #profile-Docter .profile-pic
     {
-        margin-top: 62px;
+        margin-top: 77px;
         width: 36%;
     }
     #profile-Docter .prof-info h1
@@ -612,11 +645,26 @@ and (device-height: 480px)
         color: #b9b9b7;
         text-shadow: none !important;
     }
+    #profile-Docter p
+    {
+        margin-top: 31px;
+        font-size: 16px;
+    }
+    #profile-Docter .ui-btn {
+        border: none !important;
+        background-color: #71507d !important;
+        border-radius: 25px;
+        width: 61%;
+        padding: 12px;
+        margin-top: -6px !important;
+        box-shadow: 0px 3px 20px #241a26;
+        color: white;
+        text-shadow: none !important;
+    }
 }
 /* ----------- iPhone 5 ----------- */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-height: 568px) {
+@media screen
+and (min-height: 568px) {
     #profile-Docter .profile-pic
     {
         margin-top: 87px;
@@ -746,6 +794,11 @@ and (max-device-width: 1024px) {
         font-size: 30px;
         margin-top: 85px;
     }
+    #profile-Docter .ui-btn
+    {
+        padding: 14px;
+        font-size: 28px;
+    }
 }
 /* ----------- iPad pro----------- */
 /* Portrait and Landscape */
@@ -780,6 +833,11 @@ and (max-device-width: 1366px) {
     {
         font-size: 39px;
         margin-top: 127px;
+    }
+    #profile-Docter .ui-btn
+    {
+        padding: 14px;
+        font-size: 34px;
     }
 }
 /*
