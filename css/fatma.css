@@ -238,7 +238,14 @@ input
     margin-right: 12px;
     margin-left: 10px;
 }
-
+#home-reg .ui-block-b .ui-select{
+   float: left;
+    width: 60px;
+    height: 0;
+    margin-top: 67px;
+    z-index: 1;
+    margin-left: 75px;
+}
 /*select category post*/
 #select-native-11-button {
    background-color: #7b5785 !important;
@@ -255,6 +262,7 @@ input
    position: absolute !important;
    width: !important;
 }
+
 /*for responsive select category post*/
 
 @media all and (min-height: 568px){
@@ -295,6 +303,7 @@ input
     text-shadow: 0 0 0 !important;
     font-weight: lighter !important;
 }
+
 /*.newpost #select-native-11-button
 {
     background-color: #968699 !important;
@@ -929,6 +938,16 @@ background: url(../images/ffooter.png) no-repeat;
     height: 100%;
 
 }
+#map-reg .ui-select{  
+    padding-left: -6%;
+    width: 40%;
+    margin-top: 70px !important;
+   
+    z-index: 1;
+    float: right;
+
+
+}
 .mapsearch
 {
     margin-top: -16px !important;
@@ -1004,7 +1023,7 @@ select:hover
 #map-reg iframe
 {
     position: relative;
-    top: -41px;
+    top: -132px;
 }
 #chat-screen .clear {width: 50px; height: 50px; clear: both;}
 #chat-screen {padding-top: 0px !important;}
