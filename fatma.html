@@ -42,6 +42,18 @@
 				$("[data-role=panel]").enhanceWithin().panel();
 			    });
 		</script>
+		<script>
+		$(document).ready(function(){
+    $('.love').click(function(){
+        $(this).toggleClass("main");
+    });
+     });
+    </script>
+    <style>
+    .main{color: blue}
+
+    </style>
+		
 </head>
 <body>
 <!--header-->
@@ -172,7 +184,7 @@
 
 <!-- react -->
 				<div class="react">
-						<a href="#" class="like"><img src="images/like.png">&nbsp; 23 </a>
+						<a href="#" class="like"><img class="love" src="images/like.png">&nbsp; 23 </a>
 						<a href="#" class="comment"><img src="images/chat.png">&nbsp; 5</i></a>
 				</div>
 <!-- comment -->
@@ -512,12 +524,15 @@
 <div data-role="page" id="map-reg">
 <!--header-->
 <!--map-->
-      <div class="ui-grid-a content">
-				<div class="mapsearch">
+    <fieldset class="ui-grid-a content">
+    <div class="ui-block-a">
+		<div class="mapsearch">
 						<input type="text" placeholder="Search">
 				</div>
-				
-				<div class="ui-field-contain" >
+
+    </div>
+    <div class="ui-block-b">
+		<div class="ui-field-contain" >
 		
 							    <select name="select-native-11" id="select-native-11"   data-native-menu="false">
 							        <option value="#">Hospital</option>
@@ -526,6 +541,10 @@
 							    </select>
 						
 					    </div>
+
+   </div>
+</fieldset>
+				
 				
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54695.48648760058!2d31.417859261952252!3d31.041071221694903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79db7a9053547%3A0xf8dab3bbed766c97!2z2KfZhNmF2YbYtdmI2LHYqdiMINin2YTZhdmG2LXZiNix2KkgKNmC2LPZhSAyKdiMINin2YTZhdmG2LXZiNix2KnYjCDYp9mE2K_ZgtmH2YTZitip!5e0!3m2!1sar!2seg!4v1488417348850" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
