@@ -180,10 +180,10 @@ input
 
 /***********************/
 
-#home-reg .ui-cont;ent{background: #f5f3f6; overflow: hidden !important;}
+#home-reg .ui-content{background: #f5f3f6; overflow: hidden !important;}
 #home-reg .fullcontent{background: white !important;padding: 8px}
 #home-reg .yourcomment ::-webkit-input-placeholder {
-   color: #ddd
+   color: #ddd;
    font-size: 14px;
    font-weight: lighter;
    font-family: Source Sans Pro;
@@ -395,8 +395,8 @@ input
 }
 #home-reg .ui-block-b a
 {
-      font-family: Source Sans Pro;
-    font-weight: 400;
+   font-family: Source Sans Pro;
+  font-weight: 400;
   text-decoration: none;
   color: #000;
   font-size:12px;
@@ -405,7 +405,7 @@ input
 }
 #home-reg .post img{width: 100%;}
 #home-reg .post p{line-height: 2;
-  font-family: Source Sans Pro;
+     font-family: Source Sans Pro;
     font-weight: 400;}
 #home-reg .post a{
     text-decoration: none;
@@ -1150,4 +1150,4 @@ select:hover
         width: 45%;
     }
 }
-#home-reg .react  a:active{color: red};
+.clear{height:10px;width: 50px;clear: both;}
