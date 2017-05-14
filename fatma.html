@@ -41,18 +41,36 @@
 				$(function () {
 				$("[data-role=panel]").enhanceWithin().panel();
 			    });
+				/*like and comment functions*/
+				$(function () {
+					$('.like').click(function () {
+						$(this).toggleClass('red');
+					});
+				});
+				$(function () {
+					$('.comment').click(function () {
+						$(this).toggleClass('move');
+					});
+				});
 		</script>
-		<script>
-		$(document).ready(function(){
-    $('.love').click(function(){
-        $(this).toggleClass("main");
-    });
-     });
-    </script>
-    <style>
-    .main{color: blue}
-
-    </style>
+	<style>
+		.fa-heart-o {
+			cursor: pointer;
+			color: gainsboro;
+			font-size: 20px;
+		}
+		.red{
+			color: red;
+		}
+		.fa-comment-o {
+			cursor: pointer;
+			color: gainsboro;
+			font-size: 20px;
+		}
+		.move {
+			color: #573d5c;
+		}
+	</style>
 		
 </head>
 <body>
@@ -184,8 +202,8 @@
 
 <!-- react -->
 				<div class="react">
-						<a href="#" class="like"><img class="love" src="images/like.png">&nbsp; 23 </a>
-						<a href="#" class="comment"><img src="images/chat.png">&nbsp; 5</i></a>
+					<a href="#" class="like"><div class='fa fa-heart-o like'></div></a>
+					<a href="#" class="comment"><div class='fa fa-comment-o comment'></div></a>
 				</div>
 <!-- comment -->
 				<div class="yourcomment">
@@ -242,8 +260,8 @@
 
 <!-- react -->
 				<div class="react">
-						<a href="#" class="like"><img src="images/like.png">&nbsp; 23 </a>
-						<a href="#" class="comment"><img src="images/chat.png">&nbsp; 5</i></a>
+					<a href="#" class="like"><div class='fa fa-heart-o like'></div></a>
+					<a href="#" class="comment"><div class='fa fa-comment-o comment'></div></a>
 				</div>
 <!-- comment -->
 				<div class="yourcomment">
