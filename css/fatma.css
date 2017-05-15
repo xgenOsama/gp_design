@@ -239,15 +239,45 @@ input
     margin-left: 10px;
 }
 #home-reg .ui-block-b .ui-select{
-   float: left;
-    width: 60px;
+  float: right;
+    width: 100px;
     height: 0;
     margin-top: 67px;
     z-index: 1;
-    margin-left: 75px;
+    
 }
 /*select category post*/
 #select-native-11-button {
+   background-color: #7b5785 !important;
+   color: white !important;
+   border-radius: 50px !important;
+   font-size: 16px !important;
+   box-shadow: 5px 5px 14px -2px #ddd !important;
+   top: -94px;
+   float: left !important;
+   margin-left: 12px !important;
+   text-align: left !important;
+   font-weight: normal !important;
+   text-shadow: none !important;
+   position: absolute !important;
+   width: !important;
+}
+#select-native-12-button {
+   background-color: #7b5785 !important;
+   color: white !important;
+   border-radius: 50px !important;
+   font-size: 16px !important;
+   box-shadow: 5px 5px 14px -2px #ddd !important;
+   top: -94px;
+   float: left !important;
+   margin-left: 12px !important;
+   text-align: left !important;
+   font-weight: normal !important;
+   text-shadow: none !important;
+   position: absolute !important;
+   width: !important;
+}
+#select-native-13-button {
    background-color: #7b5785 !important;
    color: white !important;
    border-radius: 50px !important;
@@ -401,7 +431,7 @@ input
   color: #000;
   font-size:12px;
   text-align: right;
-  opacity: 0.5
+  
 }
 #home-reg .post img{width: 100%;}
 #home-reg .post p{line-height: 2;
@@ -1151,3 +1181,9 @@ select:hover
     }
 }
 .clear{height:10px;width: 50px;clear: both;}
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head+body .ui-btn.ui-btn-a:visited {
+    background-color: #7b5785 !important;
+    border-color: #ddd !important;
+    color: #fff !important;
+    text-shadow: 0 1px 0 #f3f3f3 !important;
+}
