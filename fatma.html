@@ -1,624 +1,687 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<style>
-				{
-				  font-family: Source Sans Pro;
-				}
-		</style>
-<!-- Basic Page Needs ================================================== -->
-		<meta charset="utf-8">
-		<title>ICare</title>
-		<meta name="description" content="Place to put your description text">
-		<meta name="author" content="">
-<!-- Mobile Specific Metas ================================================== -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-		<script>
-				if (window.screen.height==568) { // iPhone 4"
-				document.querySelector("meta[name=viewport]").content="width=320.1";
-				}
-		</script>
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<!-- css -->
-		<link rel="stylesheet" href="css/fatma.css">
-		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
-		<link href="css/hover.css" rel="stylesheet" media="all">
-		<link rel="stylesheet" href="css/animate.css">
-<!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">-->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-<!-- Scripts -->
+    <style>
+        {
+            font-family: Source Sans Pro
+        ;
+        }
+    </style>
+    <!-- Basic Page Needs ================================================== -->
+    <meta charset="utf-8">
+    <title>ICare</title>
+    <meta name="description" content="Place to put your description text">
+    <meta name="author" content="">
+    <!-- Mobile Specific Metas ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <script>
+        if (window.screen.height == 568) { // iPhone 4"
+            document.querySelector("meta[name=viewport]").content = "width=320.1";
+        }
+    </script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- css -->
+    <link rel="stylesheet" href="css/fatma.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/animate.css">
+    <!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Scripts -->
 
 
-        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 
-		<script>
-				$(document).ready(function(){
-						$( "[data-role='header']" ).toolbar();
-				});
+    <script>
+        $(document).ready(function () {
+            $("[data-role='header']").toolbar();
+        });
 
-				$(function () {
-				$("[data-role=panel]").enhanceWithin().panel();
-			    });
-				/*like and comment functions*/
-				$(function () {
-					$('.like').click(function () {
-						$(this).toggleClass('red');
-					});
-				});
-				$(function () {
-					$('.comment').click(function () {
-						$(this).toggleClass('move');
-					});
-				});
-		</script>
-	<style>
-		.fa-heart-o {
-			cursor: pointer;
-			color: gainsboro;
-			font-size: 20px;
-		}
-		.red{
-			color: red;
-		}
-		.fa-comment-o {
-			cursor: pointer;
-			color: gainsboro;
-			font-size: 20px;
-			margin-left: 30px;
-		}
-		.move {
-			color: #573d5c;
-		}
-	</style>
-		
+        $(function () {
+            $("[data-role=panel]").enhanceWithin().panel();
+        });
+        /*like and comment functions*/
+        $(function () {
+            $('.like').click(function () {
+                $(this).toggleClass('red');
+            });
+        });
+        $(function () {
+            $('.comment').click(function () {
+                $(this).toggleClass('move');
+            });
+        });
+    </script>
+    <style>
+        .fa-heart-o {
+            cursor: pointer;
+            color: gainsboro;
+            font-size: 20px;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .fa-comment-o {
+            cursor: pointer;
+            color: gainsboro;
+            font-size: 20px;
+        }
+
+        .move {
+            color: #573d5c;
+        }
+    </style>
+
 </head>
 <body>
 <!--header-->
 <div data-role="header" id="header" data-position="fixed">
 
-		<div class="right">
-				<a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="icon-bar"></a>
-		</div>
-		<div class="left">
-				<center>
-						<a href="#map-reg"><img src="images/placeholder-(1)_03.png" class="icon-map hvr-grow"></a>
-						<a href="#message-reg"><img src="images/speech-bubbles-comment-option-(1)_03.png" class="message hvr-grow"></a>
-						<a href="#notification-reg"><img src="images/alarm-bell_03.png" class="not hvr-grow"></a>
-				</center>
-		</div>
+    <div class="right">
+        <a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="icon-bar"></a>
+    </div>
+    <div class="left">
+        <center>
+            <a href="#map-reg" data-transition="flip"><img src="images/placeholder-(1)_03.png"
+                                                           class="icon-map hvr-grow"></a>
+            <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option-(1)_03.png"
+                                                               class="message hvr-grow"></a>
+            <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell_03.png" class="not hvr-grow"></a>
+        </center>
+    </div>
 </div>
 <!--sub menu-->
-        <div data-role="panel" id="myPanel" data-display="overlay" class="ui-panel-inner" >
-				<input type="text" placeholder="Search" >
-				<center class="info">
-						<a href="#profile-Docter" data-transition="flip" ><img src="images/doc_profile_03.png" class="hvr-grow"></a>
-						<h2>Magdy Yacoub</h2>
-						<span>Doctor</span>
+<div data-role="panel" id="myPanel" data-display="overlay" class="ui-panel-inner">
+    <input type="text" placeholder="Search">
+    <center class="info">
+        <a href="#profile-Docter" data-transition="flip"><img src="images/doc_profile_03.png" class="hvr-grow"></a>
+        <h2>Magdy Yacoub</h2>
+        <span>Doctor</span>
 
-				</center>
-			    <a href="#home-reg"data-transition="flip" >
-				<div class="link1 hvr-grow">
-						<img src="images/menue_03.png">
-						<h2>Home</h2>
-				</div></a>
+    </center>
+    <a href="#home-reg" data-transition="flip">
+        <div class="link1 hvr-grow">
+            <img src="images/menue_03.png">
+            <h2>Home</h2>
+        </div>
+    </a>
 
-				<div class="link1 hvr-grow">
-						<a href="#"><img src="images/info_03.png"></a>
-						<h2>About</h2>
-				</div>
-				<div class="link1 hvr-grow">
-						<a href="#"><img src="images/lock_03_03.png"></a>
-						<h2>Policy</h2>
-				</div>
-				<div class="link1 hvr-grow">
-						<a href="#"><img src="images/contact_05.png"></a>
-						<h2>Contact Us</h2>
-				</div>
-				<div class="link1 hvr-grow">
-						<a href="#"><img src="images/logout_07.png"></a>
-						<h2>Log Out</h2>
-				</div>
+    <div class="link1 hvr-grow">
+        <a href="#"><img src="images/info_03.png"></a>
+        <h2>About</h2>
+    </div>
+    <div class="link1 hvr-grow">
+        <a href="#"><img src="images/lock_03_03.png"></a>
+        <h2>Policy</h2>
+    </div>
+    <div class="link1 hvr-grow">
+        <a href="#"><img src="images/contact_05.png"></a>
+        <h2>Contact Us</h2>
+    </div>
+    <div class="link1 hvr-grow">
+        <a href="#"><img src="images/logout_07.png"></a>
+        <h2>Log Out</h2>
+    </div>
 
-		</div>
+</div>
 <!-- page1 -->
 <div data-role="page" id="home-reg">
 
-<!--header-->
-<!--sub menu-->
-<!--home posts-->
-		<div role="main" class="ui-content">
-				<div class="newpost">
-						<input type="text" placeholder="What's in your mind...?">
-						<a href="#" class="ui-btn ui-shadow hvr-grow post">Add Post</a>
+    <!--header-->
+    <!--sub menu-->
+    <!--home posts-->
+    <div role="main" class="ui-content">
+        <div class="newpost">
+            <input type="text" placeholder="What's in your mind...?">
+            <a href="#" class="ui-btn ui-shadow hvr-grow post">Add Post</a>
 
-						<div class="ui-field-contain">
-		
-							    <select name="select-native-11" id="select-native-11"   data-native-menu="false">
-							        <option value="#">Heart attack and  blood pressure</option>
-							        <option value="#">Heart attack and  blood pressure</option>
-							        <option value="#">Heart attack and  blood pressure</option>
-							    </select>
-						
-					    </div>
+            <div class="ui-field-contain">
 
-				</div>
+                    <select name="select-native-11" id="select-native-11" data-native-menu="false">
+                        
+                <option value="#">Heart attack and blood pressure</option>
+                        
+                <option value="#">Heart attack and blood pressure</option>
+                        
+                <option value="#">Heart attack and blood pressure</option>
+                    </select>
 
-                <!--
-				<input type="file" name="file-3[]" id="file-3" class="inputfile">
-				<label for="file-3" style="width: 80px;
-						height: 16px;
-						background-color: #7b5785;
-						color: #fff;
-						font-size: 14px;
-						text-align: center;
-						padding: 6px;
-						float: right;
-						margin-top: 1px;
-						margin-right:5px;
-						box-shadow: 5px 5px 14px -2px #ddd;
-						font-weight: 400;
-						font-family: Source Sans Pro;"class="hvr-grow">
+            </div>
 
-						<span>Choose File</span>
-				</label>
-                -->
-				<br> <br>
-				<div class="fullcontent" style="background-color: white !important; padding: 15px; border-radius: 5px; box-shadow: 1px 8px 20px 3px rgb(192, 190, 190);">
-				<h2 class="title">Heart attack and  blood pressure</h2>
-				<hr class="hr" />
-				<div class="clear"></div>
-				<div class="ui-grid-a">
-						<div class="ui-block-a">
-								<a href="#"><img src="images/picdoctor_15.png"></a>
-								<center>
-										<h2>Dr.Mohammed Fasil</h2>
-									    <h4>Cardiologist</h4></center>
-							   </center>
-						</div>
+        </div>
 
-						<div class="ui-block-b">
-					<div class="ui-field-contain " >
-		
-							    <select  id="select-native-12"   data-native-menu="false">
-							        <option value="#">Edit</option>
-							        <option value="#">Delete</option>
-							       
-							    </select>
-						
-					    </div>
-            
-         			
-				</div>
+        <!--
+        <input type="file" name="file-3[]" id="file-3" class="inputfile">
+        <label for="file-3" style="width: 80px;
+                height: 16px;
+                background-color: #7b5785;
+                color: #fff;
+                font-size: 14px;
+                text-align: center;
+                padding: 6px;
+                float: right;
+                margin-top: 1px;
+                margin-right:5px;
+                box-shadow: 5px 5px 14px -2px #ddd;
+                font-weight: 400;
+                font-family: Source Sans Pro;"class="hvr-grow">
 
-<!-- delete and change -->
+                <span>Choose File</span>
+        </label>
+        -->
+        <br> <br>
+        <div class="fullcontent" style="background-color: white !important; padding: 15px; border-radius: 5px;">
+            <h2 class="title">Heart attack and blood pressure</h2>
+            <hr class="hr"/>
+            <div class="clear"></div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#"><img src="images/picdoctor_15.png"></a>
+                    <center>
+                        <h2>Dr.Mohammed Fasil</h2>
+                        <h4>Cardiologist</h4></center>
+                    </center>
+                </div>
+
+                <div class="ui-block-b">
+                    <!--
+                    <div class="ui-field-contain  editpost">
+
+                        <select id="select-native-12" data-native-menu="false">
+                                
+                            <option value="#">Edit</option>
+                                 
+                            <option value="#">Delete</option>
+                                   
+                                </select>
+
+                    </div>-->
+                </div>
+
+                <!-- delete and change -->
 
 
-<!-- post -->
-				<div class="post">
-						<img src="images/picpost_19.png">
-						<p>Blood pressure is a measure of how hard the blood pushes against the walls of your arteries as it moves</p>
-						<a href="#"><h2>Read more...</h2></a>
-				</div>
+                <!-- post -->
+                <div class="post">
+                    <img src="images/picpost_19.png">
+                    <p>Blood pressure is a measure of how hard the blood pushes against the walls of your arteries as it
+                        moves</p>
+                    <a href="#"><h2>Read more...</h2></a>
+                </div>
 
-<!-- react -->
-				<div class="react">
-					<a href="#" class="like"><div class='fa fa-heart-o like'></div></a>
-					<a href="#" class="comment"><div class='fa fa-comment-o comment'></div></a>
-				</div>
-<!-- comment -->
-				<div class="yourcomment">
-						<input type="text" placeholder="Write acomment" class="imgcomment">
-						<!--
-						<span>
-						<a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-						</span>
-				        -->
+                <!-- react -->
+                <div class="react">
+                    <a href="#" class="like">
+                        <div class='fa fa-heart-o like'></div>
+                    </a>
+                    <a href="#" class="comment">
+                        <div class='fa fa-comment-o comment'></div>
+                    </a>
+                </div>
+                <!-- comment -->
+                <div class="yourcomment">
+                    <input type="text" placeholder="Write acomment" class="imgcomment">
+                    <!--
+                    <span>
+                    <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                    </span>
+                    -->
 
-				        <i class="fa fa-trash" aria-hidden="true" style="float: right;
+                    <i class="fa fa-trash" aria-hidden="true" style="float: right;
     margin-right: 20px;
     margin-top: -45px;
     /* opacity: 0.7; */
     color: #7b5785;
         cursor: pointer;"
-    ></i>
-			    </div>
+                    ></i>
+                </div>
 
-		</div>
+            </div>
 
-</div>
-		<br>
-		<div class="fullcontent" style="background-color: white !important; padding: 15px; border-radius: 5px; box-shadow: 1px 8px 20px 3px rgb(192, 190, 190);">
-				<h2 class="title">Heart attack and  blood pressure</h2>
-				<hr class="hr" />
-				<div class="ui-grid-a">
-						<div class="ui-block-a">
-								<a href="#"><img src="images/picdoctor_15.png"></a>
-								<center>
-										<h2>Dr.Mohammed Fasil</h2>
-									    <h4>Cardiologist</h4>
-								</center>
 
-						</div>
-						<div class="ui-block-b">
-	                           <div class="ui-field-contain " >
-		
-							    <select  id="select-native-12"   data-native-menu="false">
-							        <option value="#">Edit</option>
-							        <option value="#">Delete</option>
-							       
-							    </select>
-						
-					    </div>
-            
+            <br>
+            <div class="fullcontent" style="background-color: white !important; padding: 15px; border-radius: 5px;">
+                <h2 class="title">Heart attack and blood pressure</h2>
+                <hr class="hr"/>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a href="#"><img src="images/picdoctor_15.png"></a>
+                        <center>
+                            <h2>Dr.Mohammed Fasil</h2>
+                            <h4>Cardiologist</h4></center>
+                        </center>
+                    </div>
+                    <div class="ui-block-b">
+                        <div class="ui-field-contain  editpost">
 
-						</div>
-				</div>
+                            <select id="select-native-12" data-native-menu="false">
+                                    
+                                <option value="#">Edit</option>
+                                     
+                                <option value="#">Delete</option>
+                                       
+                                    </select>
 
-<!-- delete and change -->
+                        </div>
 
-				
+                    </div>
+                </div>
 
-<!-- post -->
-				<div class="post">
-						<img src="images/picpost_19.png">
-						<p>Blood pressure is a measure of how hard the blood pushes against the walls of your arteries as it moves</p>
-						<a href="#"><h2>Read more...</h2></a>
-				</div>
+                <!-- delete and change -->
 
-<!-- react -->
-				<div class="react">
-					<a href="#" class="like"><div class='fa fa-heart-o like'></div></a>
-					<a href="#" class="comment"><div class='fa fa-comment-o comment'></div></a>
-				</div>
-<!-- comment -->
-				<div class="yourcomment">
-						<input type="text" placeholder="Write acomment" class="imgcomment">
-			    </div>
-			      <i class="fa fa-trash" aria-hidden="true" style="float: right;
+
+                <!-- post -->
+                <div class="post">
+                    <img src="images/picpost_19.png">
+                    <p>Blood pressure is a measure of how hard the blood pushes against the walls of your arteries as it
+                        moves</p>
+                    <a href="#"><h2>Read more...</h2></a>
+                </div>
+
+                <!-- react -->
+                <div class="react">
+                    <a href="#" class="like">
+                        <div class='fa fa-heart-o like'></div>
+                    </a>
+                    <a href="#" class="comment">
+                        <div class='fa fa-comment-o comment'></div>
+                    </a>
+                </div>
+                <!-- comment -->
+                <div class="yourcomment">
+                    <input type="text" placeholder="Write acomment" class="imgcomment">
+                </div>
+                <i class="fa fa-trash" aria-hidden="true" style="float: right;
     margin-right: 20px;
     margin-top: -45px;
     /* opacity: 0.7; */
     color: #7b5785;
         cursor: pointer;"
-    ></i>
-				</div>
-		</div>
-
-<!--footer-->
+                ></i>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
 </div>
 <!-- /page1 -->
 
 <!-- page2 -->
 <div data-role="page" id="message-reg">
 
-<!--header-->
-<!--sub menu-->
-<!--msg content-->
-        <div role="main" class="ui-content">
-				<div class="title">
+    <!--header-->
+    <!--sub menu-->
+    <!--msg content-->
+    <div role="main" class="ui-content">
+        <div class="title">
 
-					   <hr class="hr" style="margin-top: -16px;">
-			   </div>
-<!-- /******************************************************/-->
-				<div class="ui-grid-b content">
-						<div class="ui-block-a">
-								<a href="#chat-screen" data-transition="flip"> <img src="images/photo1_07.png"></a>
-			            </div>
-
-						<div class="ui-block-b">
-								<h2>Ashley Ford</h2>
-								<p>Ok,Thanks alot.</p>
-						</div>
-
-						<div class="ui-block-c ">
-								<p>9.33 PM</p>
-						</div>
-				</div>
-
-                <hr class="hr1" />
-<!-- /******************************************************/-->
-                <div class="ui-grid-b content">
-						<div class="ui-block-a">
-								<a href="#chat-screen" data-transition="flip"> <img src="images/photo2_10.png"></a>
-					    </div>
-						<div class="ui-block-b">
-							    <h2>Felip Santana</h2>
-						</div>
-						<div class="ui-block-c ">
-						        <p>9.33 PM</p>
-						</div>
-				</div>
-
-				<hr class="hr1" />
-<!-- /******************************************************/-->
-                <div class="ui-grid-b content">
-						<div class="ui-block-a">
-								<a href="#chat-screen" data-transition="flip"> <img src="images/photo3_13.png"></a>
-						</div>
-						<div class="ui-block-b">
-								<h2>Adelle charles</h2>
-						</div>
-						<div class="ui-block-c ">
-							    <p>9.33 PM</p>
-						</div>
-				</div>
-				<hr class="hr1" />
-<!-- /******************************************************/-->
-				<div class="ui-grid-b content">
-						<div class="ui-block-a">
-						        <a href="#chat-screen" data-transition="flip"> <img src="images/photo4_17.png"></a>
-
-						</div>
-						<div class="ui-block-b">
-						        <h2>jina Anne</h2>
-						</div>
-						<div class="ui-block-c ">
-						        <p>9.33 PM</p>
-						</div>
-				</div>
-                <hr class="hr1" />
-<!-- /******************************************************/-->
-				<div class="ui-grid-b content">
-						<div class="ui-block-a">
-						        <a href="#chat-screen" data-transition="flip"> <img src="images/photo5_20.png"></a>
-						</div>
-						<div class="ui-block-b">
-						        <h2>Riza selcuk </h2>
-						</div>
-						<div class="ui-block-c ">
-						        <p>9.33 PM</p>
-						</div>
-				</div>
-				<hr class="hr1" />
-<!-- /******************************************************/-->
-				<div class="ui-grid-b content">
-					    <div class="ui-block-a">
-							    <a href="#chat-screen" data-transition="flip"> <img src="images/photo6_24.png"></a>
-
-					    </div>
-						<div class="ui-block-b">
-							    <h2>Dann Counsell</h2>
-						</div>
-						<div class="ui-block-c ">
-								<p>9.33 PM</p>
-						</div>
-				</div>
-				<hr class="hr1" />
-<!-- /******************************************************/-->
-                <br><br>
-                <!--
-				<div class="search">
-					    <i class="fa fa-search fa-1x"></i>
-				</div>-->
-                <br>
-<!-- /******************************************************/-->
+            <hr class="hr" style="margin-top: -16px;">
         </div>
- <!--footer-->
+        <!-- /******************************************************/-->
+        <div class="ui-grid-b content">
+            <div class="ui-block-a">
+                <a href="#chat-screen" data-transition="flip"> <img src="images/photo1_07.png"></a>
+            </div>
+
+            <div class="ui-block-b">
+                <h2>Ashley Ford</h2>
+                <p>Ok,Thanks alot.</p>
+            </div>
+
+            <div class="ui-block-c ">
+                <p>9.33 PM</p>
+            </div>
+        </div>
+
+        <hr class="hr1"/>
+        <!-- /******************************************************/-->
+        <div class="ui-grid-b content">
+            <div class="ui-block-a">
+                <a href="#chat-screen" data-transition="flip"> <img src="images/photo2_10.png"></a>
+            </div>
+            <div class="ui-block-b">
+                <h2>Felip Santana</h2>
+            </div>
+            <div class="ui-block-c ">
+                <p>9.33 PM</p>
+            </div>
+        </div>
+
+        <hr class="hr1"/>
+        <!-- /******************************************************/-->
+        <div class="ui-grid-b content">
+            <div class="ui-block-a">
+                <a href="#chat-screen" data-transition="flip"> <img src="images/photo3_13.png"></a>
+            </div>
+            <div class="ui-block-b">
+                <h2>Adelle charles</h2>
+            </div>
+            <div class="ui-block-c ">
+                <p>9.33 PM</p>
+            </div>
+        </div>
+        <hr class="hr1"/>
+        <!-- /******************************************************/-->
+        <div class="ui-grid-b content">
+            <div class="ui-block-a">
+                <a href="#chat-screen" data-transition="flip"> <img src="images/photo4_17.png"></a>
+
+            </div>
+            <div class="ui-block-b">
+                <h2>jina Anne</h2>
+            </div>
+            <div class="ui-block-c ">
+                <p>9.33 PM</p>
+            </div>
+        </div>
+        <hr class="hr1"/>
+        <!-- /******************************************************/-->
+        <div class="ui-grid-b content">
+            <div class="ui-block-a">
+                <a href="#chat-screen" data-transition="flip"> <img src="images/photo5_20.png"></a>
+            </div>
+            <div class="ui-block-b">
+                <h2>Riza selcuk </h2>
+            </div>
+            <div class="ui-block-c ">
+                <p>9.33 PM</p>
+            </div>
+        </div>
+        <hr class="hr1"/>
+        <!-- /******************************************************/-->
+        <div class="ui-grid-b content">
+            <div class="ui-block-a">
+                <a href="#chat-screen" data-transition="flip"> <img src="images/photo6_24.png"></a>
+
+            </div>
+            <div class="ui-block-b">
+                <h2>Dann Counsell</h2>
+            </div>
+            <div class="ui-block-c ">
+                <p>9.33 PM</p>
+            </div>
+        </div>
+        <hr class="hr1"/>
+        <!-- /******************************************************/-->
+        <br><br>
+        <!--
+        <div class="search">
+                <i class="fa fa-search fa-1x"></i>
+        </div>-->
+        <br>
+        <!-- /******************************************************/-->
+    </div>
+    <!--footer-->
 </div>
 <!-- page2 -->
 
 <!-- page3 -->
 <div data-role="page" id="notification-reg">
 
-<!--header-->
-<!--sub menu-->
-<!--notification content-->
-		<div role="main" class="ui-content">
-				<div class="title">
+    <!--header-->
+    <!--sub menu-->
+    <!--notification content-->
+    <div role="main" class="ui-content">
+        <div class="title">
 
-					    <hr class="hr" style= " margin-top: -16px;"/>
-				</div>
-<!-- /******************************************************/-->
-				<div class="ui-grid-a content">
-						<div class="ui-block-a">
-								<a href="#"> <img src="images/photo1_07.png"></a>
-						</div>
-						<div class="ui-block-b">
-								<p>Ashley Ford and 20 other also commented on Dr.Mohamed’s post</p>
-								<h4>40 minute ago</h4>
-						</div>
-				</div>
-				<hr class="hr1" />
-<!-- /******************************************************/-->
-				<div class="ui-grid-a content">
-						<div class="ui-block-a">
-								<a href="#"> <img src="images/photo2_10.png"></a>
-						</div>
-						<div class="ui-block-b">
-							<p>Felip Santana and 50 other also commented on Dr.Mohamed’s post</p>
-								<h4>21 Hours ago</h4>
-						</div>
-				</div>
-				<hr class="hr1" />
-<!-- /******************************************************/-->
-				<div class="ui-grid-a content">
-						<div class="ui-block-a">
-								<a href="#"> <img src="images/photo3_13.png"></a>
-						</div>
-						<div class="ui-block-b">
-								<p>Adelle charls and 35 other also commented on Dr.Mohamed’s post</p>
-								<h4>21 Hours ago</h4>
-						</div>
-				</div>
-				<hr class="hr1" />
-<!-- /******************************************************/-->
-				<div class="ui-grid-a content">
-						<div class="ui-block-a">
-								<a href="#"> <img src="images/photo4_17.png"></a>
-						</div>
-						<div class="ui-block-b">
-							<p>Jinne Anne and 25 other also commented on Dr.Mohamed’s post</p>
-								<h4> 20 minute ago</h4>
-						</div>
-				</div>
-				<hr class="hr1" />
-<!-- /******************************************************/-->
-				<div class="ui-grid-a content">
-						<div class="ui-block-a">
-								<a href="#"> <img src="images/photo5_20.png"></a>
-						</div>
-						<div class="ui-block-b">
-								<p>Rize Selcuk and 40 other also commented on Dr.Mohamed’s post</p>
-								<h4>2 days ago</h4>
-						</div>
-				</div>
-				<hr class="hr1" />
-<!-- /******************************************************/-->
-				<div class="ui-grid-a content">
-						<div class="ui-block-a">
-								<a href="#"> <img src="images/photo6_24.png"></a>
-						</div>
-						<div class="ui-block-b">
-							<p>Dann Counsel and 30 other also commented on Dr.Mohamed’s post</p>
-								<h4> 4 hours ago</h4>
-						</div>
-				</div>
-				<hr class="hr1" />
-<!-- /******************************************************/-->
-		</div>
-<!--footer-->
+            <hr class="hr" style=" margin-top: -16px;"/>
+        </div>
+        <!-- /******************************************************/-->
+        <div class="ui-grid-a content">
+            <div class="ui-block-a">
+                <a href="#"> <img src="images/photo1_07.png"></a>
+            </div>
+            <div class="ui-block-b">
+                <p>Ashley Ford and 20 other also commented on Dr.Mohamed’s post</p>
+                <h4>40 minute ago</h4>
+            </div>
+        </div>
+        <hr class="hr1"/>
+        <!-- /******************************************************/-->
+        <div class="ui-grid-a content">
+            <div class="ui-block-a">
+                <a href="#"> <img src="images/photo2_10.png"></a>
+            </div>
+            <div class="ui-block-b">
+                <p>Felip Santana and 50 other also commented on Dr.Mohamed’s post</p>
+                <h4>21 Hours ago</h4>
+            </div>
+        </div>
+        <hr class="hr1"/>
+        <!-- /******************************************************/-->
+        <div class="ui-grid-a content">
+            <div class="ui-block-a">
+                <a href="#"> <img src="images/photo3_13.png"></a>
+            </div>
+            <div class="ui-block-b">
+                <p>Adelle charls and 35 other also commented on Dr.Mohamed’s post</p>
+                <h4>21 Hours ago</h4>
+            </div>
+        </div>
+        <hr class="hr1"/>
+        <!-- /******************************************************/-->
+        <div class="ui-grid-a content">
+            <div class="ui-block-a">
+                <a href="#"> <img src="images/photo4_17.png"></a>
+            </div>
+            <div class="ui-block-b">
+                <p>Jinne Anne and 25 other also commented on Dr.Mohamed’s post</p>
+                <h4> 20 minute ago</h4>
+            </div>
+        </div>
+        <hr class="hr1"/>
+        <!-- /******************************************************/-->
+        <div class="ui-grid-a content">
+            <div class="ui-block-a">
+                <a href="#"> <img src="images/photo5_20.png"></a>
+            </div>
+            <div class="ui-block-b">
+                <p>Rize Selcuk and 40 other also commented on Dr.Mohamed’s post</p>
+                <h4>2 days ago</h4>
+            </div>
+        </div>
+        <hr class="hr1"/>
+        <!-- /******************************************************/-->
+        <div class="ui-grid-a content">
+            <div class="ui-block-a">
+                <a href="#"> <img src="images/photo6_24.png"></a>
+            </div>
+            <div class="ui-block-b">
+                <p>Dann Counsel and 30 other also commented on Dr.Mohamed’s post</p>
+                <h4> 4 hours ago</h4>
+            </div>
+        </div>
+        <hr class="hr1"/>
+        <!-- /******************************************************/-->
+    </div>
+    <!--footer-->
 </div>
 <!-- /page3 -->
 <!-- page4 -->
 <div data-role="page" id="profile-Docter">
-<!--header-->
-<!--doc profile-->
-		<div role="main" class="ui-content">
-			<center>
-				<div class="prof-info">
-					<a href="#"><img class="profile-pic img-responsive" src="images/doc_profile_03.png"></a>
-					<h1>Magdi Yacoub</h1>
-					<h4>Doctor</h4>
-				</div>
-				<div>
-					<p>Professor of Cardiothoracic Surgery at the
-						National Heart and Lung Institute, Imperial
-						College London and Founder and Director
-						of Research at the Harefield Heart Science
-						Centre
-					</p>
-				</div>
-				<a href="#chat-screen" class="ui-btn ui-shadow hvr-grow">Message</a>
-			</center>
-			<!--
-				<img class="backphoto"src="images/headrerprof_01.png">
-				<center class="prof-info">
-						<a href="#"><img class="profile-pic hvr-grow"src="images/doc_profile_03.png"></a>
-						<h1>Magdi Yacoub</h1>
-						<h4>Doctor</h4>
-	            </center>
-                <div class="bgfooter">
-						<div class="clear"></div>
-						<center>
-								<p>Professor of Cardiothoracic Surgery at the
-								National Heart and Lung Institute, Imperial
-								College London and Founder and Director
-								of Research at the Harefield Heart ScienceCentre
-								</p>
-								<a href="#chat-screen" data-transition="flip" class="ui-btn ui-btn-inline  ui-btn-shadow ui-btn-corner-all hvr-grow">Message</a>
-					    </center>
-				</div>
-				-->
-        </div>
+    <!--header-->
+    <!--doc profile-->
+    <div role="main" class="ui-content">
+        <center>
+            <div class="prof-info">
+                <a href="#"><img class="profile-pic img-responsive" src="images/doc_profile_03.png"></a>
+                <h1>Magdi Yacoub</h1>
+                <h4>Doctor</h4>
+            </div>
+            <div>
+                <p>Professor of Cardiothoracic Surgery at the
+                    National Heart and Lung Institute, Imperial
+                    College London and Founder and Director
+                    of Research at the Harefield Heart Science
+                    Centre
+                </p>
+            </div>
+            <a href="#chat-screen" class="ui-btn ui-shadow hvr-grow">Message</a>
+        </center>
+        <!--
+            <img class="backphoto"src="images/headrerprof_01.png">
+            <center class="prof-info">
+                    <a href="#"><img class="profile-pic hvr-grow"src="images/doc_profile_03.png"></a>
+                    <h1>Magdi Yacoub</h1>
+                    <h4>Doctor</h4>
+            </center>
+            <div class="bgfooter">
+                    <div class="clear"></div>
+                    <center>
+                            <p>Professor of Cardiothoracic Surgery at the
+                            National Heart and Lung Institute, Imperial
+                            College London and Founder and Director
+                            of Research at the Harefield Heart ScienceCentre
+                            </p>
+                            <a href="#chat-screen" data-transition="flip" class="ui-btn ui-btn-inline  ui-btn-shadow ui-btn-corner-all hvr-grow">Message</a>
+                    </center>
+            </div>
+            -->
+    </div>
 </div>
 <!-- /page 4-->
 <!-- page 5-->
 <div data-role="page" id="profile-patient">
-<!--header-->
-<!--patient profile-->
-		<div role="main" class="ui-content">
-				<img class="backphoto"src="images/headrerprof_01.png">
-				<center class="prof-info">
-						<a href="#"><img class="profile-pic hvr-grow"src="images/osama_03.png"></a>
-						<h1>Osama Mohammed</h1>
-						<h4>Patient</h4>
-				</center>
-				<div class="bgfooter">
-			            <div class="clear"></div>
-				        <center>
-								<p>
-								student at faculty of computer and information science mansoura university Pentesting webdeveloper (php,python,nodejs)system admin
-								</p>
-								<a href="#" class="ui-btn ui-btn-inline  ui-btn-shadow ui-btn-corner-all hvr-grow">Message</a>
-					    </center>
-                </div>
+    <!--header-->
+    <!--patient profile-->
+    <div role="main" class="ui-content">
+        <img class="backphoto" src="images/headrerprof_01.png">
+        <center class="prof-info">
+            <a href="#"><img class="profile-pic hvr-grow" src="images/osama_03.png"></a>
+            <h1>Osama Mohammed</h1>
+            <h4>Patient</h4>
+        </center>
+        <div class="bgfooter">
+            <div class="clear"></div>
+            <center>
+                <p>
+                    student at faculty of computer and information science mansoura university Pentesting webdeveloper
+                    (php,python,nodejs)system admin
+                </p>
+                <a href="#" class="ui-btn ui-btn-inline  ui-btn-shadow ui-btn-corner-all hvr-grow">Message</a>
+            </center>
         </div>
+    </div>
 </div>
 <!-- /page5 -->
 <!-- page6 -->
 <div data-role="page" id="map-reg">
-<!--header-->
-<!--map-->
+    <!--header-->
+    <!--map-->
     <fieldset class="ui-grid-a content">
-    <div class="ui-block-a">
-		<div class="mapsearch">
-						<input type="text" placeholder="Search">
-				</div>
+            
+        <div class="ui-block-a">
+            <div class="mapsearch">
+                <input type="text" placeholder="Search">
+            </div>
 
-    </div>
-    <div class="ui-block-b">
-		<div class="ui-field-contain" >
-		
-							    <select name="select-native-11" id="select-native-13"   data-native-menu="false">
-							        <option value="#">Hospital</option>
-							        <option value="#">Pharmacy</option>
-							        <option value="#">Laboratory</option>
-							    </select>
-						
-					    </div>
+        </div>
+            
+        <div class="ui-block-b">
+            <div class="ui-field-contain">
 
-   </div>
-</fieldset>
-				
-				
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54695.48648760058!2d31.417859261952252!3d31.041071221694903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79db7a9053547%3A0xf8dab3bbed766c97!2z2KfZhNmF2YbYtdmI2LHYqdiMINin2YTZhdmG2LXZiNix2KkgKNmC2LPZhSAyKdiMINin2YTZhdmG2LXZiNix2KnYjCDYp9mE2K_ZgtmH2YTZitip!5e0!3m2!1sar!2seg!4v1488417348850" width="100%" height="100%" frameborder="0" style="border:0;position: fixed;margin-top: 130px;" allowfullscreen=""></iframe>
-		</div>
+                    <select name="select-native-13" id="select-native-13" data-native-menu="false">
+                        
+                <option value="#">Hospital</option>
+                        
+                <option value="#">Pharmacy</option>
+                        
+                <option value="#">Laboratory</option>
+                    </select>
+
+            </div>
+
+        </div>
+    </fieldset>
+
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54695.48648760058!2d31.417859261952252!3d31.041071221694903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79db7a9053547%3A0xf8dab3bbed766c97!2z2KfZhNmF2YbYtdmI2LHYqdiMINin2YTZhdmG2LXZiNix2KkgKNmC2LPZhSAyKdiMINin2YTZhdmG2LXZiNix2KnYjCDYp9mE2K_ZgtmH2YTZitip!5e0!3m2!1sar!2seg!4v1488417348850"
+            width="100%" height="100%" frameborder="0" style="border:0 ; margin-top: 130px;"
+            allowfullscreen=""></iframe>
+</div>
 </div>
 <!-- /page6 -->
 <!-- page7 -->
 <div data-role="page" id="chat-screen">
     <div class="clear"></div>
-		<div id="chattitle">
-				<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
-				<img src="images/doc_profile_03.png">
-				<center>
-						<h2>Magdy Yacoub</h2>
-						<h4>Active Now</h4>
-				</center>
-	    </div>
-		<div data-role="main"class="ui-content">
-				<img class="leftchat"src="images/doc_profile_03.png">
-				<div class="ui-grid-solo">
-						<div class="ui-block-a">
-							<p class="dateleft">Jannuary 18</p>
-								<div class="left">
-										<p>
-										Hi ;<br>
-										Do you need help with GPs?
-										</p>
-						        </div>
-					    </div>
-			    </div>
-			    <br>
-				<div class="ui-grid-solo">
-					<!--<img class="rightchat "src="images/e32f9a8a76b9a41f89dce20832bf9b43_400x400.png">-->
-						<div class="ui-block-a">
-							<p class="dateright">Jannuary 20</p>
-								<div class="Right">
-										<p>
-										No Thanks
-										</p>
-								</div>
-								<p class="seen">Just now. seen</p>
-						</div>
-				</div>
-		</div>
-<!-- comment -->
-        <div class="reply">
-				<input type="text" placeholder="Write a reply..." class="imgreply">
-		</div>
+    <div class="peoplechat">
+        <div id="chattitle">
+            <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
+            <img src="images/doc_profile_03.png">
+            <center>
+                <h2>Magdy Yacoub</h2>
+                <h4>Active Now</h4>
+            </center>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div class="mainchat">
+
+                <img class="leftchat" src="images/doc_profile_03.png">
+                <div class="ui-grid-solo">
+                    <div class="ui-block-a">
+                        <p class="dateleft">Jannuary 18</p>
+                        <div class="left">
+                            <p>
+                                Hi ;<br>
+                                Do you need help with GPs?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <img class="leftchat" src="images/doc_profile_03.png">
+                <div class="ui-grid-solo">
+                    <div class="ui-block-a">
+                        <p class="dateleft">Jannuary 18</p>
+                        <div class="left">
+                            <p>
+                                Hi ;<br>
+                                Do you need help with GPs?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <br>
+                <div class="ui-grid-solo">
+                    <!--<img class="rightchat "src="images/e32f9a8a76b9a41f89dce20832bf9b43_400x400.png">-->
+                    <div class="ui-block-a">
+                        <p class="dateright">Jannuary 20</p>
+                        <div class="Right">
+                            <p>
+                                No Thanks
+                            </p>
+                        </div>
+                        <p class="seen">Just now. seen</p>
+                    </div>
+                </div>
+                <div class="ui-grid-solo">
+                    <!--<img class="rightchat "src="images/e32f9a8a76b9a41f89dce20832bf9b43_400x400.png">-->
+                    <div class="ui-block-a">
+                        <p class="dateright">Jannuary 20</p>
+                        <div class="Right">
+                            <p>
+                                No Thanks
+                            </p>
+                        </div>
+                        <p class="seen">Just now. seen</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rplychat">
+                <div class="reply">
+                    <input type="text" placeholder="Write a reply..." class="imgreply">
+                </div>
+                <i class="fa fa-reply-all iconreply" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- comment -->
+
 </div>
 <!-- /page 7 -->
 
