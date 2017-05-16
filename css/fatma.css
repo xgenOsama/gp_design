@@ -105,8 +105,6 @@
     border-radius: 20px;
     background: #443049;
     border-color:#443049 ;
-
-
 }
 #myPanel img
 {
@@ -114,10 +112,12 @@
     height: 130px;
     margin-top: 10px
 }
-#myPanel .info h2{color: #ce97d9;
+#myPanel .info {margin-bottom: 13px;}
+#myPanel .info h2{color: #ae84b6;
     font-size: 24px;
-    font-family: Source Sans Pro;
-    margin-top: 15px;
+    font-family: sans-serif;
+    margin-top: 1px;
+    margin-bottom: 8px;
     text-shadow: 1px 1px 1px black;
 }
 #myPanel .info span{
@@ -181,7 +181,7 @@ input
 /***********************/
 
 #home-reg .ui-content{background: #f5f3f6; overflow: hidden !important;}
-#home-reg .fullcontent{background: white !important;padding: 8px}
+#home-reg .fullcontent{background: white !important;}
 #home-reg .yourcomment ::-webkit-input-placeholder {
    color: #ddd;
    font-size: 14px;
@@ -209,18 +209,18 @@ input
     width: 100%;
     background-color: white;
     height: 126px;
-    box-shadow: 5px 5px 16px 3px #ddd;
+    box-shadow: 1px 8px 20px 3px rgb(192, 190, 190);
     border-radius: 5px;
 }
 #home-reg .newpost input
 {
-    font-family: Source Sans Pro;
+    font-family: sans-serif;
     font-weight: 400;
     opacity: 0.5;
     font-size: 15px;
     padding: 32px;
     padding-top: 12px;
-    padding-left: 10px;
+    padding-left: 14px;
     color: #000;
 
 }
@@ -230,9 +230,8 @@ input
     color: #fff;
     float: right;
     font-size: 16px;
-    box-shadow: 5px 5px 14px -2px #ddd;
     margin-top: 0;
-    font-family: Source Sans Pro;
+    font-family: sans-serif;
     font-weight: normal;
     border-radius: 50px;
     margin-right: 12px;
@@ -252,7 +251,6 @@ input
    color: white !important;
    border-radius: 50px !important;
    font-size: 16px !important;
-   box-shadow: 5px 5px 14px -2px #ddd !important;
    top: -94px;
    float: left !important;
    margin-left: 12px !important;
@@ -267,7 +265,6 @@ input
    color: white !important;
    border-radius: 50px !important;
    font-size: 16px !important;
-   box-shadow: 5px 5px 14px -2px #ddd !important;
    top: -94px;
    float: left !important;
    margin-left: 12px !important;
@@ -275,14 +272,15 @@ input
    font-weight: normal !important;
    text-shadow: none !important;
    position: absolute !important;
-   width: !important;
+   width: 25% !important;
 }
 #select-native-13-button {
    background-color: #7b5785 !important;
+    border-color: #7b5785 !important;
    color: white !important;
    border-radius: 50px !important;
    font-size: 16px !important;
-   box-shadow: 5px 5px 14px -2px #ddd !important;
+   box-shadow: 2px 7px 19px #888888 !important;
    top: -94px;
    float: left !important;
    margin-left: 12px !important;
@@ -290,7 +288,7 @@ input
    font-weight: normal !important;
    text-shadow: none !important;
    position: absolute !important;
-   width: !important;
+   opacity: 0.7;
 }
 
 /*for responsive select category post*/
@@ -361,9 +359,9 @@ input
 }*/
 
 #home-reg .title{
-    font-size: 15px;
+    font-size: 18px;
     margin-top: -1px;
-    font-family: Source Sans Pro;
+    font-family: sans-serif;
     font-weight: 400;
 }
 #home-reg .hr{
@@ -397,7 +395,7 @@ input
 }
 #home-reg .ui-block-a h2
 {
-    font-family: Source Sans Pro;
+    font-family: sans-serif;
     font-weight: 400;
     font-size: 17px;
     margin-top: -57px;
@@ -406,10 +404,11 @@ input
 }
 #home-reg .ui-block-a h4
 {
-    font-size: 12px;
-    opacity: 0.6;
+    font-size: 13px;
+    opacity: 0.5;
     margin-left: 65px;
     margin-top: -6px;
+    font-family: sans-serif;
 }
 #home-reg .ui-block-b a
 {
@@ -434,19 +433,28 @@ input
   
 }
 #home-reg .post img{width: 100%;}
-#home-reg .post p{line-height: 2;
-     font-family: Source Sans Pro;
-    font-weight: 400;}
+#home-reg .post p
+{
+    line-height: 2;
+    font-family: sans-serif;
+    font-weight: 400;
+}
 #home-reg .post a{
     text-decoration: none;
-  font-family: Source Sans Pro;
+    font-family: Source Sans Pro;
     font-weight: 400;
-
 }
-#home-reg .post h2{font-size: 15px;color: #000;opacity: 0.6;  font-family: Source Sans Pro;
-    font-weight: 400;}
+#home-reg .post h2
+{
+    font-size: 14px;
+    color: #000;
+    opacity: 0.6;
+    font-family: sans-serif;
+    font-weight: 400;
+}
 #home-reg .post h2:hover{color: #00f;}
-#home-reg .react .icon-heart{
+#home-reg .react .icon-heart
+{
     color: #000;
     text-align: center;
     opacity: 0.6;
@@ -455,14 +463,14 @@ input
 }
 
 #home-reg .react img{width:20px;margin-top: 10px}
-#home-reg .react a{padding: 20px;
+#home-reg .react a
+{
     text-decoration: none;
     color: #000;
-
 }
 
 #home-reg .imgcomment{
-    background:url(../images/Untitled-2.png)no-repeat left !important;
+    background:url(../images/Untitled-2.png)no-repeat !important;
     margin-top: 6px;
     height: 60px;
     width: 100%;
@@ -486,6 +494,7 @@ input
 /************pages 2*************************/
 
 /* jqury update*/
+#message-reg {background-color: white;}
 #message-reg .ui-content{background: #fff}
 #message-reg .ui-content {
     border-width: 0;
@@ -616,7 +625,6 @@ input
     width: 61%;
     padding: 12px;
     margin-top: 5px !important;
-    box-shadow: 0px 3px 20px #241a26;
     color: white;
     text-shadow: none !important;
     font-weight: lighter;
