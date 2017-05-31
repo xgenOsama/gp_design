@@ -483,7 +483,7 @@ input
     padding-right: 10px;
 }
 #home-reg .imgcomment{
-    background:url(../images/user1.png)no-repeat left !important;
+    background:url(../images/user12.png)no-repeat left !important;
     margin-top: 6px;
     height: 60px;
     width: 100%;
@@ -505,95 +505,83 @@ input
     content: "\f007";
 }
 /************pages 2*************************/
-
-/* jqury update*/
 #message-reg .ui-content{background: #fff}
 #message-reg .ui-content {
     border-width: 0;
     overflow: visible;
-     padding: 1em 0em 0em 0em;
+    background-color: rgb(253, 253, 253);
 }
-#message-reg .ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d, .ui-grid-solo {
-    overflow: hidden;
-    margin-top: -8px;
-}
-/**/
-#message-reg #header{background: #7b5785;height: 60px}
-#message-reg #footer{background: #7b5785;}
-#message-reg .hr1{width: 100%;opacity: 0.4;margin-top: 0}
-#message-reg .content{cursor: pointer;height: 105px}
-#message-reg .content:hover{background: #f8f6f5}
-#message-reg .content img
+#message-reg .imag_msg
 {
-    width: 70px;
-    height: 70px;
-    margin-left: 10px;
-    padding: 10px;
-    padding-top: 16px !important;
-}
-#message-reg .content h2{
-    font-size: 14px;
-    text-align: justify;
-    margin-left: 0px;
-    margin-top: 27px;
-}
-#message-reg .content .ui-block-c p{
-    font-size: 14px;
-    margin-left: 55px;
-    margin-top: 30px;
-    opacity: 0.6;
-}
-#message-reg .content .ui-block-b p{
-    font-size: 15px;
+    float:left;
+    width: 20%;
     margin-top: -5px;
-    opacity: 0.6;
-    margin-left: 0px
 }
-
+#message-reg .msg_content
+{
+    width: 77%;
+    float: right;
+}
+#message-reg .msg_content .msg_name
+{
+    font-family: sans-serif;
+    color: #4e2f5a;
+    opacity: 0.8;
+    font-size: 16px;
+    text-shadow: none !important;
+}
+#message-reg .msg_content .msg_time
+{
+    float: right;
+    margin-top: -27px;
+    font-size: 13px;
+    opacity: 0.6;
+    text-shadow: none !important;
+}
+#message-reg .msg_content .msg
+{
+    font-family: sans-serif;
+    opacity: 0.8;
+    font-size: 13px;
+    margin-top: -7px;
+    text-shadow: none !important;
+    color: rgba(0, 0, 0, 0.86);
+}
 /************pages 3*************************/
-
-/* jqury update*/
 #notification-reg .ui-content{background: #fff}
 #notification-reg .ui-content {
     border-width: 0;
     overflow: visible;
-     padding: 1em 0em 0em 0em;
+    background-color: rgb(253, 253, 253);
 }
-#notification-reg .ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d, .ui-grid-solo {
-    overflow: hidden;
-    margin-top: -8px;
-}
-/**/
-#notification-reg  #header{background: #7b5785;height: 60px}
-#notification-reg  #footer{background: #7b5785;}
-
-#notification-reg.content{cursor: pointer;}
-#notification-reg .hr1{width: 100%;opacity: 0.4;margin-top: 0}
-#notification-reg .content:hover{background: #f8f6f5}
-#notification-reg .content img
+#notification-reg .imagnotifications
 {
-    width: 70px;
-    height: 70px;
-    margin-left: 10px;
-    padding: 12px 10px;
+    float:left;
+    width: 20%;
+    margin-top: -2px;
 }
-#notification-reg .content h4{
-  font-size: 12px;
-    opacity: 0.5;
-    margin-left: -65px;
-    margin-top: -4px;
-    font-family: Source Sans Pro;
+#notification-reg .noti_content
+{
+    width: 77%;
+    float: right;
 }
-#notification-reg .content p{
-    font-size: 12px;
-    margin-left: -64px;
-    line-height: 1.3;
-    font-family: Source Sans Pro;
-    margin-top: 22px;
-    font-weight: bold;
+#notification-reg .noti_content .noti
+{
+    font-family: sans-serif;
+    color: black;
+    opacity: 0.8;
+    margin-top: 5px;
+    font-size: 13px;
+    text-shadow: none !important;
 }
-
-
+#notification-reg .noti_content .noti_time
+{
+    font-family: sans-serif;
+    opacity: 0.6;
+    font-size: 13px;
+    margin-top: -7px;
+    text-shadow: none !important;
+}
 /************* page 4  profile Doctor **************/
 #profile-Docter {
     background-image: url("../images/bgprofile.png");
@@ -604,18 +592,18 @@ input
 }
 #profile-Docter .ui-content
 {
-    margin-top: 5px;
+    margin-top: 32%;
 }
 #profile-Docter p
 {
     color: #71507d;
-    font-family: Source Sans Pro;
-    font-size: 20px;
+    font-family: sans-serif;
+    font-size: 18px;
 }
 #profile-Docter .prof-info h1
 {
     font-size: 21px;
-    font-family: Source Sans Pro ;
+    font-family: "Source Sans Pro";
     color: #a87fb0;
     font-weight: normal;
     margin-top: -8px;
@@ -636,273 +624,13 @@ input
     border-radius: 25px;
     width: 61%;
     padding: 12px;
-    margin-top: 5px !important;
     box-shadow: 0px 3px 20px #241a26;
     color: white;
     text-shadow: none !important;
     font-weight: lighter;
     font-size: 18px;
 }
-/*edit responsive of profile page*/
-
-/* ----------- Nexus 5X ----------- */
-@media screen
-and (max-width: 412px)
-{
-    #profile-Docter .profile-pic
-    {
-        margin-top: 102px;
-        width: 40%;
-    }
-    #profile-Docter .prof-info h1
-    {
-        font-size: 21px;
-        font-family: Source Sans Pro ;
-        color: #a87fb0;
-        font-weight: normal;
-        margin-top: -8px;
-        text-shadow: none !important;
-    }
-    #profile-Docter .prof-info h4
-    {
-        font-size: 18px;
-        font-family: Source Sans Pro ;
-        margin-top: -18px;
-        font-weight: lighter;
-        color: #b9b9b7;
-        text-shadow: none !important;
-    }
-    #profile-Docter p
-    {
-        font-size: 20px;
-        margin-top: 72px;
-    }
-}
-/* ----------- iPhone 4 and 4S -----------*/
-@media screen
-and (min-height: 480px)
- {
-    #profile-Docter .profile-pic
-    {
-        margin-top: 77px;
-        width: 36%;
-    }
-    #profile-Docter .prof-info h1
-    {
-        font-size: 21px;
-        font-family: Source Sans Pro ;
-        color: #a87fb0;
-        font-weight: normal;
-        margin-top: -8px;
-        text-shadow: none !important;
-    }
-    #profile-Docter .prof-info h4
-    {
-        font-size: 18px;
-        font-family: Source Sans Pro ;
-        margin-top: -18px;
-        font-weight: lighter;
-        color: #b9b9b7;
-        text-shadow: none !important;
-    }
-    #profile-Docter p
-    {
-        margin-top: 31px;
-        font-size: 16px;
-    }
-    #profile-Docter .ui-btn {
-        border: none !important;
-        background-color: #71507d !important;
-        border-radius: 25px;
-        width: 61%;
-        padding: 12px;
-        margin-top: -6px !important;
-        box-shadow: 0px 3px 20px #241a26;
-        color: white;
-        text-shadow: none !important;
-    }
-}
-/* ----------- iPhone 5 ----------- */
-@media screen
-and (min-height: 568px) {
-    #profile-Docter .profile-pic
-    {
-        margin-top: 87px;
-        width: 44%;
-    }
-    #profile-Docter .prof-info h1
-    {
-        font-size: 23px;
-        font-family: Source Sans Pro ;
-        color: #a87fb0;
-        font-weight: normal;
-        margin-top: -6px;
-        text-shadow: none !important;
-    }
-    #profile-Docter .prof-info h4
-    {
-        font-size: 18px;
-        font-family: Source Sans Pro ;
-        margin-top: -18px;
-        font-weight: lighter;
-        color: #b9b9b7;
-        text-shadow: none !important;
-    }
-    #profile-Docter p
-    {
-        font-size: 16px;
-        margin-top: 53px;
-    }
-}
-/* ----------- iPhone 6 ----------- */
-@media only screen
-and (min-device-width: 375px)
-and (max-device-height: 667px) {
-    #profile-Docter .profile-pic
-    {
-        margin-top: 107px;
-        width: 45%;
-    }
-    #profile-Docter .prof-info h1
-    {
-        font-size: 26px;
-        font-family: Source Sans Pro ;
-        color: #a87fb0;
-        font-weight: normal;
-        margin-top: -6px;
-        text-shadow: none !important;
-    }
-    #profile-Docter .prof-info h4
-    {
-        font-size: 19px;
-        font-family: Source Sans Pro ;
-        margin-top: -18px;
-        font-weight: lighter;
-        color: #b9b9b7;
-        text-shadow: none !important;
-    }
-    #profile-Docter p
-    {
-        font-size: 18px;
-        margin-top: 56px;
-    }
-}
-/* ----------- iPhone 6 plus  ----------- */
-@media only screen
-and (min-device-width: 414px)
-and (max-device-width: 736px) {
-    #profile-Docter .profile-pic
-    {
-        margin-top: 118px;
-        width: 45%;
-    }
-    #profile-Docter .prof-info h1
-    {
-        font-size: 30px;
-        font-family: Source Sans Pro ;
-        color: #a87fb0;
-        font-weight: normal;
-        margin-top: -8px;
-        text-shadow: none !important;
-    }
-    #profile-Docter .prof-info h4
-    {
-        font-size: 23px;
-        font-family: Source Sans Pro ;
-        margin-top: -25px;
-        font-weight: lighter;
-        color: #b9b9b7;
-        text-shadow: none !important;
-    }
-    #profile-Docter p
-    {
-        font-size: 21px;
-        margin-top: 65px;
-    }
-}
-/* ----------- iPad ----------- */
-/* Portrait and Landscape */
-
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px) {
-    #profile-Docter .profile-pic
-    {
-        margin-top: 156px;
-        width: 36%;
-    }
-    #profile-Docter .prof-info h1
-    {
-        font-size: 44px;
-        font-family: Source Sans Pro ;
-        color: #a87fb0;
-        font-weight: normal;
-        margin-top: -13px;
-        text-shadow: none !important;
-    }
-    #profile-Docter .prof-info h4
-    {
-        font-size: 33px;
-        font-family: Source Sans Pro ;
-        margin-top: -39px;
-        font-weight: lighter;
-        color: #b9b9b7;
-        text-shadow: none !important;
-    }
-    #profile-Docter p
-    {
-        font-size: 30px;
-        margin-top: 85px;
-    }
-    #profile-Docter .ui-btn
-    {
-        padding: 14px;
-        font-size: 28px;
-    }
-}
-/* ----------- iPad pro----------- */
-/* Portrait and Landscape */
-
-@media only screen
-and (min-device-width: 1024px)
-and (max-device-width: 1366px) {
-    #profile-Docter .profile-pic
-    {
-        margin-top: 239px;
-        width: 32%;
-    }
-    #profile-Docter .prof-info h1
-    {
-        font-size: 53px;
-        font-family: Source Sans Pro ;
-        color: #a87fb0;
-        font-weight: normal;
-        margin-top: -13px;
-        text-shadow: none !important;
-    }
-    #profile-Docter .prof-info h4
-    {
-        font-size: 40px;
-        font-family: Source Sans Pro ;
-        margin-top: -39px;
-        font-weight: lighter;
-        color: #b9b9b7;
-        text-shadow: none !important;
-    }
-    #profile-Docter p
-    {
-        font-size: 39px;
-        margin-top: 127px;
-    }
-    #profile-Docter .ui-btn
-    {
-        padding: 14px;
-        font-size: 34px;
-    }
-}
 /*
-/*
-
 #profile-Docter #header{background: #7b5785;height: 60px;border-color: #7b5785}
 
 .backphoto{
@@ -1112,13 +840,13 @@ select:hover
 
 }
 #chat-screen  h2{
-
     color: #fff;
     margin-right: -33px;
-    font-weight: 100;
+    font-weight: normal;
     margin-top: -67px;
     font-size: 18px;
-    font-family: Source Sans Pro ;
+    font-family: sans-serif;
+    text-shadow: none !important;
 }
 #chat-screen #chattitle h4{
      color: #b3a1b7;
@@ -1145,8 +873,8 @@ select:hover
     padding: 16px;
 
 }
-#chat-screen .dateleft{font-size: 14px;opacity: 0.5;text-align: center;margin-right: 70px}
-#chat-screen .dateright{font-size: 14px;opacity: 0.5;text-align: center;margin-right: 20px}
+#chat-screen .dateleft{font-size: 14px;opacity: 0.5;text-align: center;margin-right: 70px; text-shadow: none !important;}
+#chat-screen .dateright{font-size: 14px;opacity: 0.5;text-align: center;margin-right: 20px; text-shadow: none !important;}
 #chat-screen  .left{
      font-family: Source Sans Pro ;
     font-size: 18px;
@@ -1158,14 +886,15 @@ select:hover
      margin-top: 6px;
      border-radius: 5px;
 }
-.rightchat{width: 30px;
+.rightchat{
+    width: 30px;
     height: 30px;
     border-radius: 50px;
     float: right;
     margin-top: 70px;
     padding: 0;
 }
-#chat-screen  .left p{font-size: 16px;font-weight: lighter;font-family: Source Sans Pro ; }
+#chat-screen  .left p{font-size: 16px;font-weight: lighter;font-family: Source Sans Pro ; text-shadow: none !important; }
 #chat-screen  .Right
 {
      font-family: Source Sans Pro ;
@@ -1181,14 +910,21 @@ select:hover
     margin-right: 8px;
     border-radius: 5px
 }
- #chat-screen  .Right p{font-size: 15px;font-weight: lighter;font-family: Source Sans Pro ; }
+ #chat-screen  .Right p{
+     font-size: 15px;
+     font-weight: lighter;
+     font-family: Source Sans Pro ;
+     text-shadow: none !important;
+ }
  #chat-screen .seen {
- opacity: 0.5;
+    opacity: 0.5;
     font-size: 15px;
     float: right;
     margin-top: 74px;
     margin-right: -100px;
- font-family: Source Sans Pro ;}
+    font-family: Source Sans Pro ;
+     text-shadow: none !important;
+ }
 
 #chat-screen .reply input{height: 40px;}
 #chat-screen .iconreply{
@@ -1215,7 +951,7 @@ select:hover
 .editpost{float: right;
     margin-right: 39px;
     margin-top: -37px;}
-.clear{height:10px;clear: both;}
+.clear{clear: both;}
 .ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head+body .ui-btn.ui-btn-a:visited {
     background-color: #7b5785 !important;
     border-color: #ddd !important;
