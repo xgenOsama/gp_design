@@ -99,36 +99,31 @@
  }
 #myPanel input
 {
-    border-radius: 50%;
     color: #fff;
-    padding: 12px;
-    text-shadow: none;
+    padding: 9px;
+    text-shadow: none !important;
+    padding-left: 21px;
 }
 #myPanel .ui-input-text, .ui-input-search
 {
     margin: .5em 0;
-    border-width: -10px;
-    border-style: solid;
-    border-radius: 20px;
+    border-radius: 50px;
     background: #443049;
-    border-color:#443049 ;
-
-
+    border-color: rgb(102, 76, 107) ;
 }
 #myPanel img
 {
-    width:130px;
-    height: 130px;
     margin-top: 10px
 }
 #myPanel .info {margin-bottom: 13px;}
 #myPanel .info h2{
     color: #ae84b6;
-    font-size: 24px;
-    font-family: sans-serif;
-    margin-top: 1px;
-    margin-bottom: 8px;
+    font-size: 28px;
+    font-family:Source sans pro;
+    margin-top: -8px;
+    margin-bottom: 3px;
     text-shadow: 1px 1px 1px black;
+    font-weight: normal;
 }
 #myPanel .info span{
     color: #fff;
@@ -146,13 +141,14 @@
 }
 #myPanel .link1 img{width: 37px;
     height: 37px;
-margin-left: 37px;
-    margin-top: 7px;}
+    margin-left: 18px;
+    margin-top: 7px;
+}
 #myPanel .link1 a{margin-top: -10px}
 #myPanel .link1 h2{
     font-size: 20px;
     font-family: Source Sans Pro ;
-    margin-left: 100px;
+    margin-left: 64px;
     margin-top: -35px;
     text-align: left;
     color: #fff;
@@ -450,7 +446,7 @@ input
 }
 #home-reg .post img{width: 100%;}
 #home-reg .post p{
-    line-height: 2;
+    line-height: 1.3;
     font-family: sans-serif;
     font-weight: 400;
     opacity:0.9;
@@ -517,6 +513,12 @@ input
     width: 20%;
     margin-top: -5px;
 }
+#message-reg .imag_msg img
+{
+    border-radius: 50%;
+    border:2px rgba(123, 87, 133, 0.35) solid;
+    width: 83%;
+}
 #message-reg .msg_content
 {
     width: 77%;
@@ -560,6 +562,12 @@ input
     width: 20%;
     margin-top: -2px;
 }
+#notification-reg .imagnotifications img
+{
+    border: 2px rgba(123, 87, 133, 0.35) solid;
+    border-radius: 50%;
+    width: 83%;
+}
 #notification-reg .noti_content
 {
     width: 77%;
@@ -602,7 +610,7 @@ input
 }
 #profile-Docter .prof-info h1
 {
-    font-size: 21px;
+    font-size: 23px;
     font-family: "Source Sans Pro";
     color: #a87fb0;
     font-weight: normal;
@@ -837,7 +845,7 @@ select:hover
     position: absolute;
     margin-top: 22px;
     margin-left: -12px;
-
+    border-radius: 50%;
 }
 #chat-screen  h2{
     color: #fff;
@@ -925,7 +933,6 @@ select:hover
     font-family: Source Sans Pro ;
      text-shadow: none !important;
  }
-
 #chat-screen .reply input{height: 40px;}
 #chat-screen .iconreply{
     float: right;
@@ -957,4 +964,51 @@ select:hover
     border-color: #ddd !important;
     color: #fff !important;
     text-shadow: 0 1px 0 #f3f3f3 !important;
+}
+/*result search page*/
+#result-search-page.ui-content{background: #fff}
+#result-search-page .ui-content {
+    border-width: 0;
+    overflow: visible;
+    background-color: rgb(253, 253, 253);
+}
+#result-search-page .imag-result-search
+{
+    float:left;
+    width: 20%;
+    margin-top: -2px;
+}
+#result-search-page .imag-result-search img
+{
+    border-radius: 50%;
+    border: 2px rgba(123, 87, 133, 0.35) solid;
+    width: 83%;
+}
+#result-search-page .result-search-content
+{
+    width: 77%;
+    float: right;
+}
+#result-search-page .result-search-content .dr-name
+{
+    font-family: sans-serif;
+    color: #4e2f5a;
+    opacity: 0.8;
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    text-shadow: none !important;
+}
+#result-search-page .result-search-content .dr
+{
+    margin-top: -16px;
+    opacity:0.9;
+}
+#result-search-page .result-search-content .category
+{
+    font-family: sans-serif;
+    opacity: 0.6;
+    font-size: 15px;
+    margin-top: -16px;
+    text-shadow: none !important;
 }
