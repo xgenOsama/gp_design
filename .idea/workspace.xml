@@ -2,36 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a8813ac-bfb1-4a63-a66f-420e43c6f81a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/alarm-bell.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/doc_profile_03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/hr_03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lock_03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mapselect.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/not_03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/osama_03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/picdoctor_15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/placeholder-(1).png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/placeholder.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/rect_Hr_34.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/role_row.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/search_03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/shadow_14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sharepic_28.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/speech-bubbles-comment-option-(1).png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/speech-bubbles-comment-option.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/user11.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/user1.png" afterPath="$PROJECT_DIR$/images/user1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/user10.png" afterPath="$PROJECT_DIR$/images/user10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/user2.png" afterPath="$PROJECT_DIR$/images/user2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/user3.png" afterPath="$PROJECT_DIR$/images/user3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/user4.png" afterPath="$PROJECT_DIR$/images/user4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/user5.png" afterPath="$PROJECT_DIR$/images/user5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/user6.png" afterPath="$PROJECT_DIR$/images/user6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/user7.png" afterPath="$PROJECT_DIR$/images/user7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/user8.png" afterPath="$PROJECT_DIR$/images/user8.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/user9.png" afterPath="$PROJECT_DIR$/images/user9.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/fatma.css" afterPath="$PROJECT_DIR$/css/fatma.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fatma.html" afterPath="$PROJECT_DIR$/fatma.html" />
     </list>
     <ignored path="gp_design.iws" />
@@ -58,8 +28,8 @@
       <file leaf-file-name="fatma.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fatma.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="833" column="43" selection-start-line="833" selection-start-column="43" selection-end-line="833" selection-end-column="43" />
+            <state relative-caret-position="405">
+              <caret line="905" column="24" selection-start-line="905" selection-start-column="24" selection-end-line="905" selection-end-column="24" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#center#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -387,11 +357,12 @@
       <workItem from="1496702560715" duration="593000" />
       <workItem from="1497007662033" duration="1305000" />
       <workItem from="1497009815777" duration="250000" />
+      <workItem from="1497010497104" duration="43000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209553000" />
+    <option name="totallyTimeSpent" value="209596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1178,8 +1149,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fatma.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="833" column="43" selection-start-line="833" selection-start-column="43" selection-end-line="833" selection-end-column="43" />
+        <state relative-caret-position="405">
+          <caret line="905" column="24" selection-start-line="905" selection-start-column="24" selection-end-line="905" selection-end-column="24" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#center#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
