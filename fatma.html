@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        {
-            font-family: Source Sans Pro
-        ;
-        }
-    </style>
     <!-- Basic Page Needs ================================================== -->
     <meta charset="utf-8">
     <title>ICare</title>
@@ -55,19 +49,19 @@
         });
     </script>
     <style>
-        .fa-heart-o {
+        .fa-heart {
             cursor: pointer;
-            color: gainsboro;
+            color: #e1e1e1;
             font-size: 20px;
         }
 
         .red {
-            color: red;
+            color: #d30404;
         }
 
-        .fa-comment-o {
+        .fa-comment {
             cursor: pointer;
-            color: gainsboro;
+            color: #e1e1e1;
             font-size: 20px;
             margin-left: 30px;
         }
@@ -205,14 +199,17 @@
                 </div>
 
                 <!-- react -->
-                <div class="react">
-                    <a href="#" class="like">
-                        <div class='fa fa-heart-o like'></div>
-                    </a>
-                    <a href="#" class="comment">
-                        <div class='fa fa-comment-o comment'></div>
-                    </a>
-                </div>
+            <div class="react">
+                <a href="#" class="like">
+                    <div class='fa fa-heart like' style="float: left;"></div>
+                    <p style="float: left; margin-left: 6px; margin-top: 2px; opacity: 0.6;">2</p>
+                </a>
+                <a href="#" class="comment">
+                    <div class='fa fa-comment comment' style="float: left;"></div>
+                    <p style="float: left; margin-left: 6px; margin-top: 2px; opacity: 0.6;">5</p>
+                </a>
+            </div>
+            <br>
                 <!-- comment -->
                 <div class="comments">
                     <!--first comment-->
@@ -298,12 +295,15 @@
                 <!-- react -->
                 <div class="react">
                     <a href="#" class="like">
-                        <div class='fa fa-heart-o like'></div>
+                        <div class='fa fa-heart like' style="float: left;"></div>
+                        <p style="float: left; margin-left: 6px; margin-top: 2px; opacity: 0.6;">5</p>
                     </a>
                     <a href="#" class="comment">
-                        <div class='fa fa-comment-o comment'></div>
+                        <div class='fa fa-comment comment' style="float: left;"></div>
+                        <p style="float: left; margin-left: 6px; margin-top: 2px; opacity: 0.6;">0</p>
                     </a>
                 </div>
+                <br>
                 <!-- comment -->
                 <div class="comments">
                     <!--first comment
