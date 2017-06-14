@@ -49,14 +49,35 @@
         });
     </script>
     <style>
+        .navbar {
+            font-size: 26px;
+            padding: 5px 54px;
+        }
+        .button {
+            color: white;
+            display: inline-block;
+            position: relative;
+            padding: 2px 5px 0px 51px;
+            text-shadow: none !important;
+        }
+        .button__badge {
+            background-color: #e93737;
+            border-radius: 2px;
+            color: white;
+            padding: 1px 4px;
+            font-size: 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
         .fa-heart {
             cursor: pointer;
             color: #e1e1e1;
             font-size: 20px;
         }
-
+        /*like and comment style*/
         .red {
-            color: #d30404;
+            color: #e93737;
         }
 
         .fa-comment {
@@ -77,15 +98,34 @@
 <div data-role="header" id="header" data-position="fixed">
 
     <div class="right">
-        <a href="#myPanel"><img src="images/16997149_2057350667824987_160940880_n.png" class="icon-bar"></a>
+        <a href="#myPanel">
+            <div style="font-size: 26px; color: white;text-shadow: none;padding: 21px;margin-top: -6px;">
+                <i class="fa fa-bars"></i>
+            </div>
+        </a>
     </div>
     <div class="left">
         <center>
+            <div class="navbar">
+                <div class="button">
+                    <i class="fa fa-map-marker "></i>
+                </div>
+                <div class="button">
+                    <i class="fa fa-comments"></i>
+                    <span class="button__badge">2</span>
+                </div>
+                <div class="button">
+                    <i class="fa fa-globe"></i>
+                    <span class="button__badge">4</span>
+                </div>
+            </div>
+            <!--
             <a href="#map-reg" data-transition="flip"><img src="images/placeholder-(1)_03.png"
                                                            class="icon-map hvr-grow"></a>
             <a href="#message-reg" data-transition="flip"><img src="images/speech-bubbles-comment-option-(1)_03.png"
                                                                class="message hvr-grow"></a>
             <a href="#notification-reg" data-transition="flip"><img src="images/alarm-bell_03.png" class="not hvr-grow"></a>
+            -->
         </center>
     </div>
 </div>
