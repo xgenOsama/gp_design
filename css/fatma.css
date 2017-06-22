@@ -908,6 +908,31 @@ select:hover
     color: #fff !important;
     text-shadow: 0 1px 0 #f3f3f3 !important;
 }
+/*edit post*/
+#edit-post .ui-content
+{
+    background-color: #f5f3f6;
+    height:100%;
+}
+#edit-post .ui-content .fullcontent .btn input[type="submit"]
+{
+    width: 100%;
+    height: 80%;
+}
+#edit-post .ui-content .fullcontent .btn
+{
+    height:57px;
+}
+#edit-post .ui-content .fullcontent .btn .ui-btn
+{
+    border-radius: 25px;
+    width: 20%;
+    text-shadow: none !important;
+    float: right;
+    border: none !important;
+    margin-left: -8px;
+    margin-right: 16px;
+}
 /*result search page*/
 #result-search-page.ui-content{background: #fff}
 #result-search-page .ui-content {
